@@ -1,0 +1,9 @@
+# Project Popcorn 설정
+
+scraper:
+  base_url: ""  # 국회 데이터 URL
+  output_dir: "data/raw"
+
+parser:
+  input_dir: "data/raw"
+  output_dir: "data/processed"
