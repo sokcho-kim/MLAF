@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python:*)",
+      "WebSearch",
+      "WebFetch(domain:open.law.go.kr)",
+      "Bash(curl:*)",
+      "Bash(git clean:*)",
+      "Bash(ls:*)"
+    ]
+  }
+}
