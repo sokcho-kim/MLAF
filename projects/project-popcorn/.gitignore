@@ -1,0 +1,27 @@
+# Environment
+.env
+.venv/
+venv/
+
+# Qdrant Storage
+qdrant_storage/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temp
+tmpclaude-*
