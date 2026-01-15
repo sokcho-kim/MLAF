@@ -1,0 +1,267 @@
+---
+title: "임베딩 모델 비교 테스트 결과"
+subtitle: "Cross-Domain 법안 감지를 위한 임베딩 모델 성능 평가"
+author: "Project Popcorn"
+date: "2026-01-15"
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    code-fold: true
+    theme: cosmo
+execute:
+  echo: true
+  warning: false
+---
+
+## 1. 개요
+
+### 1.1 테스트 목적
+
+타 상임위 소관 법안 중 **산업통상자원부 R&R과 연관된 법안**을 선제 감지하기 위한 최적의 임베딩 모델을 선정합니다.
+
+### 1.2 테스트 대상 모델
+
+| 모델 | 제공사 | 특징 |
+|------|--------|------|
+| Solar Embedding | Upstage | 한국어 특화, API 기반 |
+| text-embedding-3-small | OpenAI | 다국어 지원, 저비용 |
+| Multilingual-E5-Large | Intfloat | 오픈소스, 로컬 실행 |
+
+### 1.3 평가 데이터
+
+- **R&R 데이터**: 산업통상자원부 R&R (증강 버전, 822자)
+- **테스트 법안**: 22대 국회 법안 100건 (10개 상임위 × 10건)
+- **Golden Set**: Cross-Domain 감지 테스트용 5건
+
+## 2. Golden Set 구성
+
+```{python}
+import json
+import pandas as pd
+from pathlib import Path
+
+# 데이터 로드 (research/reports/ 기준)
+data_dir = Path("../../data")
+golden_data = json.load(open(data_dir / "golden_set.json", encoding="utf-8"))
+
+golden_df = pd.DataFrame(golden_data["bills"])
+golden_df = golden_df[["golden_id", "difficulty", "bill_name", "committee", "propose_dt"]]
+golden_df.columns = ["ID", "난이도", "법안명", "소관위", "발의일"]
+golden_df
+```
+
+### 2.1 Golden Set 선정 기준
+
+| 난이도 | 선정 기준 | 예시 |
+|--------|----------|------|
+| **Easy** | 산업부 키워드 직접 포함 | 탄소중립, 중대재해 |
+| **Medium** | 간접 연관 (데이터, AI) | 개인정보보호법 |
+| **Hard** | Cross-Domain 핵심 타겟 | 약사법(공장 설비), 국유재산특례제한법(세제) |
+
+## 3. 테스트 결과
+
+```{python}
+# 결과 로드
+results_path = Path("../results/embedding_comparison.json")
+results = json.load(open(results_path, encoding="utf-8"))
+
+# 종합 비교표 생성
+summary_data = []
+for model_key in ["solar", "openai", "multilingual_e5"]:
+    if model_key in results and "evaluation" in results[model_key]:
+        eval_data = results[model_key]["evaluation"]
+        summary_data.append({
+            "모델": results[model_key]["model"],
+            "Recall@10": f"{eval_data['recall_at_10']:.1%}",
+            "Recall@20": f"{eval_data['recall_at_20']:.1%}",
+            "Recall@50": f"{eval_data['recall_at_50']:.1%}",
+            "Hard 평균순위": f"{eval_data['avg_hard_rank']:.1f}",
+            "전체 평균순위": f"{eval_data['mean_rank']:.1f}"
+        })
+
+summary_df = pd.DataFrame(summary_data)
+summary_df
+```
+
+### 3.1 Golden Set 상세 순위
+
+```{python}
+# Golden Set 순위 비교
+golden_ranks_data = []
+
+for model_key in ["solar", "openai", "multilingual_e5"]:
+    if model_key in results and "evaluation" in results[model_key]:
+        model_name = results[model_key]["model"].split(" (")[0]
+        for g in results[model_key]["evaluation"]["golden_ranks"]:
+            golden_ranks_data.append({
+                "모델": model_name,
+                "법안": g["bill_name"][:20] + "...",
+                "난이도": g["difficulty"],
+                "순위": g["rank"],
+                "유사도": round(g["similarity"], 3)
+            })
+
+ranks_df = pd.DataFrame(golden_ranks_data)
+ranks_pivot = ranks_df.pivot_table(
+    index=["법안", "난이도"],
+    columns="모델",
+    values="순위",
+    aggfunc="first"
+).reset_index()
+ranks_pivot
+```
+
+### 3.2 시각화
+
+```{python}
+#| fig-cap: "모델별 Golden Set 순위 비교"
+import matplotlib.pyplot as plt
+import matplotlib.font_manager as fm
+
+# 한글 폰트 설정
+plt.rcParams['font.family'] = 'Malgun Gothic'
+plt.rcParams['axes.unicode_minus'] = False
+
+fig, axes = plt.subplots(1, 2, figsize=(14, 5))
+
+# 1. 순위 비교 바 차트
+models = ["Solar", "OpenAI", "E5"]
+colors = ["#FF6B6B", "#4ECDC4", "#45B7D1"]
+
+for model_key, model_name, color in zip(
+    ["solar", "openai", "multilingual_e5"],
+    models,
+    colors
+):
+    if model_key in results and "evaluation" in results[model_key]:
+        ranks = [g["rank"] for g in results[model_key]["evaluation"]["golden_ranks"]]
+        difficulties = [g["difficulty"] for g in results[model_key]["evaluation"]["golden_ranks"]]
+
+        x_pos = [0, 1, 2, 3, 4]
+        offset = (models.index(model_name) - 1) * 0.25
+        axes[0].bar([x + offset for x in x_pos], ranks, 0.25, label=model_name, color=color, alpha=0.8)
+
+axes[0].set_xlabel("Golden Set 법안")
+axes[0].set_ylabel("순위 (낮을수록 좋음)")
+axes[0].set_title("모델별 Golden Set 순위")
+axes[0].set_xticks(range(5))
+axes[0].set_xticklabels(["탄소중립\n(Easy)", "중대재해\n(Easy)", "개인정보\n(Medium)", "약사법\n(Hard)", "국유재산\n(Hard)"], fontsize=9)
+axes[0].legend()
+axes[0].axhline(y=10, color='red', linestyle='--', alpha=0.5, label='Top 10 기준')
+axes[0].axhline(y=50, color='orange', linestyle='--', alpha=0.5, label='Top 50 기준')
+
+# 2. Hard 난이도 순위 비교
+hard_ranks = {}
+for model_key, model_name in zip(["solar", "openai", "multilingual_e5"], models):
+    if model_key in results and "evaluation" in results[model_key]:
+        hard = [g["rank"] for g in results[model_key]["evaluation"]["golden_ranks"] if g["difficulty"] == "Hard"]
+        hard_ranks[model_name] = hard
+
+ax2 = axes[1]
+x = range(len(models))
+width = 0.35
+yaksa = [hard_ranks[m][0] for m in models]
+guyu = [hard_ranks[m][1] for m in models]
+
+bars1 = ax2.bar([i - width/2 for i in x], yaksa, width, label='약사법', color='#FF6B6B')
+bars2 = ax2.bar([i + width/2 for i in x], guyu, width, label='국유재산특례제한법', color='#4ECDC4')
+
+ax2.set_xlabel("모델")
+ax2.set_ylabel("순위")
+ax2.set_title("Hard 난이도 법안 순위 비교")
+ax2.set_xticks(x)
+ax2.set_xticklabels(models)
+ax2.legend()
+ax2.axhline(y=50, color='orange', linestyle='--', alpha=0.5)
+
+# 바 위에 숫자 표시
+for bar in bars1:
+    ax2.text(bar.get_x() + bar.get_width()/2, bar.get_height() + 1, f'{int(bar.get_height())}', ha='center', va='bottom', fontsize=10)
+for bar in bars2:
+    ax2.text(bar.get_x() + bar.get_width()/2, bar.get_height() + 1, f'{int(bar.get_height())}', ha='center', va='bottom', fontsize=10)
+
+plt.tight_layout()
+plt.show()
+```
+
+## 4. 분석
+
+### 4.1 주요 발견
+
+1. **법안명만으로는 Cross-Domain 감지가 매우 어려움**
+   - 3개 모델 모두 Recall@10 = 0%
+   - Golden Set이 Top 10에 단 1건도 진입하지 못함
+
+2. **Hard 난이도 감지력**
+   - **OpenAI 우위**: 국유재산특례제한법 #32 (가장 좋음)
+   - Solar: 국유재산특례제한법 #49
+   - E5: 약사법 #51
+
+3. **유사도 분포 특성**
+
+```{python}
+# 유사도 분포 분석
+sim_data = []
+for model_key, model_name in zip(["solar", "openai", "multilingual_e5"], ["Solar", "OpenAI", "E5"]):
+    if model_key in results and "evaluation" in results[model_key]:
+        sims = [g["similarity"] for g in results[model_key]["evaluation"]["golden_ranks"]]
+        sim_data.append({
+            "모델": model_name,
+            "최소 유사도": f"{min(sims):.3f}",
+            "최대 유사도": f"{max(sims):.3f}",
+            "범위": f"{max(sims) - min(sims):.3f}"
+        })
+
+pd.DataFrame(sim_data)
+```
+
+### 4.2 Top 10 분석
+
+각 모델의 Top 10 법안을 분석하면, 대부분 **산업통상자원중소벤처기업위원회** 소관 법안이 상위를 차지합니다.
+
+```{python}
+# Top 10 소관위 분포
+for model_key, model_name in zip(["solar", "openai", "multilingual_e5"], ["Solar", "OpenAI", "E5"]):
+    if model_key in results and "top_10" in results[model_key]:
+        committees = [b["committee"][:10] for b in results[model_key]["top_10"]]
+        print(f"\n[{model_name}] Top 10 소관위 분포:")
+        for c, cnt in pd.Series(committees).value_counts().items():
+            print(f"  - {c}: {cnt}건")
+```
+
+## 5. 한계점 및 개선 방향
+
+### 5.1 현재 테스트의 한계
+
+| 한계점 | 설명 |
+|--------|------|
+| **법안명만 사용** | 제안이유, 주요내용 등 본문 미포함 |
+| **의미적 정보 부족** | 짧은 법안명으로는 Cross-Domain 연관성 파악 어려움 |
+| **Golden Set 규모** | 5건으로 통계적 유의성 제한적 |
+
+### 5.2 개선 방향
+
+1. **법안 본문 수집** - 열린국회정보 API에서 제안이유/주요내용 수집
+2. **본문 포함 재테스트** - 의미적 유사도 정확도 향상 기대
+3. **Reranker 추가** - 초기 검색 후 정밀 재순위화
+
+## 6. 결론
+
+### 6.1 v1 테스트 결과 요약
+
+- **Winner (Hard 감지 기준)**: OpenAI text-embedding-3-small
+  - Hard 평균 순위 45.0으로 가장 우수
+  - 국유재산특례제한법 #32로 가장 높은 순위 기록
+
+- **차선**: Solar Embedding (Upstage)
+  - Hard 평균 순위 52.0
+  - 한국어 특화 모델로서 잠재력 있음
+
+### 6.2 다음 단계
+
+**v2 테스트**: 법안 본문(제안이유) 포함 후 재테스트 예정
+
+---
+
+*Generated: 2026-01-15*

@@ -1,0 +1,1019 @@
+{
+  "description": "22대 국회 법안 샘플 (임베딩 비교 테스트용)",
+  "sampling_method": "소관위별 균등 샘플링",
+  "total_count": 100,
+  "committees": [
+    "환경노동위원회",
+    "보건복지위원회",
+    "산업통상자원중소벤처기업위원회",
+    "국토교통위원회",
+    "농림축산식품해양수산위원회",
+    "교육위원회",
+    "행정안전위원회",
+    "법제사법위원회",
+    "기획재정위원회",
+    "과학기술정보방송통신위원회"
+  ],
+  "bills": [
+    {
+      "bill_id": "PRC_K2J5I0P8O0N7M1G0F5E6N0W4V9S5I9",
+      "bill_no": "2212175",
+      "bill_name": "전통시장 및 상점가 육성을 위한 특별법 일부개정법률안",
+      "proposer": "위성곤의원 등 10인",
+      "committee": "산업통상자원중소벤처기업위원회",
+      "propose_dt": "2025-08-14",
+      "proc_result": null,
+      "detail_link": null
+    },
+    {
+      "bill_id": "PRC_Z2A5Y1Z2H1H6G1E6F5D6D0M5M5K5L2",
+      "bill_no": "2215312",
+      "bill_name": "국가첨단전략산업 경쟁력 강화 및 보호에 관한 특별조치법 일부개정법률안",
+      "proposer": "김소희의원 등 11인",
+      "committee": "산업통상자원중소벤처기업위원회",
+      "propose_dt": "2025-12-17",
+      "proc_result": null,
+      "detail_link": null
+    },
+    {
+      "bill_id": "PRC_G2E5E1D1E1Z9A1Y7Z2X1X0W6E0E7C1",
+      "bill_no": "2215854",
+      "bill_name": "소재ㆍ부품ㆍ장비산업 경쟁력 강화 및 공급망 안정화를 위한 특별조치법 일부개정법률안",
+      "proposer": "정동만의원 등 10인",
+      "committee": "산업통상자원중소벤처기업위원회",
+      "propose_dt": "2026-01-05",
+      "proc_result": null,
+      "detail_link": null
+    },
+    {
+      "bill_id": "PRC_I2G5H1C1B0C7A1A2Y0Z1H1I1G8H1F6",
+      "bill_no": "2214278",
+      "bill_name": "부정경쟁방지 및 영업비밀보호에 관한 법률 일부개정법률안",
+      "proposer": "곽상언의원 등 10인",
+      "committee": "산업통상자원중소벤처기업위원회",
+      "propose_dt": "2025-11-14",
+      "proc_result": null,
+      "detail_link": null
+    },
+    {
+      "bill_id": "PRC_K2G5H1F1G1E8E1D6L1L8K1K1I8J4I7",
+      "bill_no": "2214500",
+      "bill_name": "지역 산업위기 대응 및 지역경제 회복을 위한 특별법 일부개정법률안",
+      "proposer": "권향엽의원 등 10인",
+      "committee": "산업통상자원중소벤처기업위원회",
+      "propose_dt": "2025-11-24",
+      "proc_result": null,
+      "detail_link": null
+    },
+    {
+      "bill_id": "PRC_K2A5M1S1T1A9A1U9X0X0D2U8R7Z6A1",
+      "bill_no": "2214592",
+      "bill_name": "폐광지역 개발 지원에 관한 특별법 일부개정법률안(대안)",
+      "proposer": "산업통상자원중소벤처기업위원장",
+      "committee": "산업통상자원중소벤처기업위원회",
+      "propose_dt": "2025-11-26",
+      "proc_result": null,
+      "detail_link": null
+    },
+    {
+      "bill_id": "PRC_B2A5B1Z1Z0H6I1G5E0F9D1E0Z3A7Z6",
+      "bill_no": "2215093",
+      "bill_name": "소재ㆍ부품ㆍ장비산업 경쟁력 강화 및 공급망 안정화를 위한 특별조치법 일부개정법률안",
+      "proposer": "이재관의원 등 12인",
+      "committee": "산업통상자원중소벤처기업위원회",
+      "propose_dt": "2025-12-10",
+      "proc_result": null,
+      "detail_link": null
+    },
+    {
+      "bill_id": "PRC_J2Z5N1G1P2Q0X1Y5U4Z1K0A9N4V9K4",
+      "bill_no": "2215402",
+      "bill_name": "대·중소기업 상생협력 촉진에 관한 법률 일부개정법률안(대안)",
+      "proposer": "산업통상자원중소벤처기업위원장",
+      "committee": "산업통상자원중소벤처기업위원회",
+      "propose_dt": "2025-12-19",
+      "proc_result": null,
+      "detail_link": null
+    },
+    {
+      "bill_id": "PRC_C2D5B0A7A2Y8Z1H3I1G0G5E4D3E1Z8",
+      "bill_no": "2211892",
+      "bill_name": "미래자동차 부품산업의 전환촉진 및 생태계 육성에 관한 특별법 일부개정법률안",
+      "proposer": "장철민의원 등 13인",
+      "committee": "산업통상자원중소벤처기업위원회",
+      "propose_dt": "2025-07-31",
+      "proc_result": null,
+      "detail_link": null
+    },
+    {
+      "bill_id": "PRC_W2U5D0D9B0C1B1B8Z5I7I0G4H8F6G4",
+      "bill_no": "2212715",
+      "bill_name": "어린이제품 안전 특별법 일부개정법률안",
+      "proposer": "오세희의원 등 16인",
+      "committee": "산업통상자원중소벤처기업위원회",
+      "propose_dt": "2025-09-05",
+      "proc_result": null,
+      "detail_link": null
+    },
+    {
+      "bill_id": "PRC_S2A5A1Z0X2Y2W1X6S1T6R1S0Q9O5P3",
+      "bill_no": "2213762",
+      "bill_name": "조세특례제한법 일부개정법률안",
+      "proposer": "정태호의원 등 13인",
+      "committee": "기획재정위원회",
+      "propose_dt": "2025-10-28",
+      "proc_result": null,
+      "detail_link": null
+    },
+    {
+      "bill_id": "PRC_I2H5H0G7G0O9P1N8M0M3K1L1T0T2S3",
+      "bill_no": "2211539",
+      "bill_name": "조세특례제한법 일부개정법률안",
+      "proposer": "박희승의원 등 10인",
+      "committee": "기획재정위원회",
+      "propose_dt": "2025-07-17",
+      "proc_result": null,
+      "detail_link": null
+    },
+    {
+      "bill_id": "PRC_K2J5I0Q8R1P2O1N5N3J5I5G9F2G2O6",
+      "bill_no": "2212163",
+      "bill_name": "조세특례제한법 일부개정법률안",
+      "proposer": "추경호의원 등 10인",
+      "committee": "기획재정위원회",
+      "propose_dt": "2025-08-13",
+      "proc_result": null,
+      "detail_link": null
+    },
+    {
+      "bill_id": "PRC_J2Y5J0K9K2H2C1U6K4K5Z2Y3V1I0X9",
+      "bill_no": "2214588",
+      "bill_name": "담배사업법 일부개정법률안(대안)",
+      "proposer": "기획재정위원장",
+      "committee": "기획재정위원회",
+      "propose_dt": "2025-11-26",
+      "proc_result": null,
+      "detail_link": null
+    },
+    {
+      "bill_id": "PRC_E2V5Q1X1A2U5R1O5C0N6I2U2V7E5H1",
+      "bill_no": "2214730",
+      "bill_name": "국유재산특례제한법 일부개정법률안(대안)",
+      "proposer": "기획재정위원장",
+      "committee": "기획재정위원회",
+      "propose_dt": "2025-12-01",
+      "proc_result": null,
+      "detail_link": null
+    },
+    {
+      "bill_id": "PRC_E2D5D1B0C2A0I1J7H2H4G1H2F9F7N0",
+      "bill_no": "2213759",
+      "bill_name": "조세특례제한법 일부개정법률안",
+      "proposer": "이소영의원 등 10인",
+      "committee": "기획재정위원회",
+      "propose_dt": "2025-10-28",
+      "proc_result": null,
+      "detail_link": null
+    },
+    {
+      "bill_id": "PRC_E2D5L0K9J0I3E0D8C3A5J3H4G7F4M6",
+      "bill_no": "2212977",
+      "bill_name": "조세특례제한법 일부개정법률안",
+      "proposer": "강명구의원 등 10인",
+      "committee": "기획재정위원회",
+      "propose_dt": "2025-09-15",
+      "proc_result": null,
+      "detail_link": null
+    },
+    {
+      "bill_id": "PRC_Y2L5K0I8X2W0V1V4U2C2B3Z1Y0G0E2",
+      "bill_no": "2212931",
+      "bill_name": "조세특례제한법 일부개정법률안",
+      "proposer": "서영교의원 등 10인",
+      "committee": "기획재정위원회",
+      "propose_dt": "2025-09-12",
+      "proc_result": null,
+      "detail_link": null
+    },
+    {
+      "bill_id": "PRC_V2U5V0T8T0R1T0A9B5Z2Y0Y8W9X1F5",
+      "bill_no": "2211950",
+      "bill_name": "조세특례제한법 일부개정법률안",
+      "proposer": "추경호의원 등 15인",
+      "committee": "기획재정위원회",
+      "propose_dt": "2025-08-04",
+      "proc_result": null,
+      "detail_link": null
+    },
+    {
+      "bill_id": "PRC_S2O5O0N7N0L8K1L0S5T5R5S4Q3R1P5",
+      "bill_no": "2211365",
+      "bill_name": "조세특례제한법 일부개정법률안",
+      "proposer": "임미애의원 등 12인",
+      "committee": "기획재정위원회",
+      "propose_dt": "2025-07-09",
+      "proc_result": null,
+      "detail_link": null
+    },
+    {
+      "bill_id": "PRC_G2H5F1F2D2E9M1L4L3J2K5I0J8F0F1",
+      "bill_no": "2215973",
+      "bill_name": "근로자퇴직급여 보장법 일부개정법률안",
+      "proposer": "강명구의원 등 10인",
+      "committee": "환경노동위원회",
+      "propose_dt": "2026-01-12",
+      "proc_result": null,
+      "detail_link": null
+    },
+    {
+      "bill_id": "PRC_K2U5Q0P8N2O5N1V7U0S9R3S3A4Z8X7",
+      "bill_no": "2214620",
+      "bill_name": "채용절차의 공정화에 관한 법률 일부개정법률안",
+      "proposer": "박정현의원 등 12인",
+      "committee": "환경노동위원회",
+      "propose_dt": "2025-11-27",
+      "proc_result": null,
+      "detail_link": null
+    },
+    {
+      "bill_id": "PRC_X2X5V1W2U1V1D1D7C2C2A5Z9A9H8I0",
+      "bill_no": "2215462",
+      "bill_name": "노동조합 및 노동관계조정법 일부개정법률안",
+      "proposer": "최혁진의원ㆍ박해철의원 등 10인",
+      "committee": "환경노동위원회",
+      "propose_dt": "2025-12-19",
+      "proc_result": null,
+      "detail_link": null
+    },
+    {
+      "bill_id": "PRC_L2M5K0L7T2T2S1S3R2P2Q5X3Y2W3X4",
+      "bill_no": "2214243",
+      "bill_name": "유기성 폐자원을 활용한 바이오가스의 생산 및 이용 촉진법 일부개정법률안",
+      "proposer": "정희용의원 등 11인",
+      "committee": "환경노동위원회",
+      "propose_dt": "2025-11-14",
+      "proc_result": null,
+      "detail_link": null
+    },
+    {
+      "bill_id": "PRC_X2V5T1U1S1T4A1Y0Y3X2Y4W0W4V5V2",
+      "bill_no": "2214371",
+      "bill_name": "전기사업법 일부개정법률안",
+      "proposer": "김원이의원 등 10인",
+      "committee": "환경노동위원회",
+      "propose_dt": "2025-11-19",
+      "proc_result": null,
+      "detail_link": null
+    },
+    {
+      "bill_id": "PRC_X2X5V1W1S1T4R1R1P2O8P4W8X2V0W0",
+      "bill_no": "2214276",
+      "bill_name": "영산강·섬진강수계 물관리 및 주민지원 등에 관한 법률 일부개정법률안",
+      "proposer": "이용우의원 등 10인",
+      "committee": "환경노동위원회",
+      "propose_dt": "2025-11-14",
+      "proc_result": null,
+      "detail_link": null
+    },
+    {
+      "bill_id": "PRC_E2E5D1D1L2J6K1I3J3H2I3Q6Q2O6P4",
+      "bill_no": "2214645",
+      "bill_name": "근로기준법 일부개정법률안",
+      "proposer": "김기표의원 등 11인",
+      "committee": "환경노동위원회",
+      "propose_dt": "2025-11-27",
+      "proc_result": null,
+      "detail_link": null
+    },
+    {
+      "bill_id": "PRC_V2T5S1S2Q0R1Z1A7Y5Y1X3V3W1M2M7",
+      "bill_no": "2214979",
+      "bill_name": "산업안전보건법 일부개정법률안",
+      "proposer": "안호영의원 등 11인",
+      "committee": "환경노동위원회",
+      "propose_dt": "2025-12-08",
+      "proc_result": null,
+      "detail_link": null
+    },
+    {
+      "bill_id": "PRC_S2A5Y1Z2X1Y6W1X6E5F6E4C6C1A5B4",
+      "bill_no": "2215425",
+      "bill_name": "외국인근로자의 고용 등에 관한 법률 일부개정법률안",
+      "proposer": "김소희의원 등 10인",
+      "committee": "환경노동위원회",
+      "propose_dt": "2025-12-19",
+      "proc_result": null,
+      "detail_link": null
+    },
+    {
+      "bill_id": "PRC_L2K5K1S1S2R7S1Q9Q5P7P0X4W1W0U6",
+      "bill_no": "2214914",
+      "bill_name": "채용절차의 공정화에 관한 법률 일부개정법률안",
+      "proposer": "이용우의원 등 10인",
+      "committee": "환경노동위원회",
+      "propose_dt": "2025-12-04",
+      "proc_result": null,
+      "detail_link": null
+    },
+    {
+      "bill_id": "PRC_N2L5T1U1S1T4R0S9Q4R5Y3X7Y4W2W2",
+      "bill_no": "2214363",
+      "bill_name": "공익사업을 위한 토지 등의 취득 및 보상에 관한 법률 일부개정법률안",
+      "proposer": "김원이의원 등 10인",
+      "committee": "국토교통위원회",
+      "propose_dt": "2025-11-18",
+      "proc_result": null,
+      "detail_link": null
+    },
+    {
+      "bill_id": "PRC_F2G5E1M2M1L5M1K6K2J0R4R3Q1Q6O8",
+      "bill_no": "2215284",
+      "bill_name": "전세사기피해자 지원 및 주거안정에 관한 특별법 일부개정법률안",
+      "proposer": "안도걸의원ㆍ황운하의원 등 10인",
+      "committee": "국토교통위원회",
+      "propose_dt": "2025-12-16",
+      "proc_result": null,
+      "detail_link": null
+    },
+    {
+      "bill_id": "PRC_O2O5N1N2J2H9I1G7H1F2F1N0O7M5N9",
+      "bill_no": "2215985",
+      "bill_name": "재건축초과이익 환수에 관한 법률 일부개정법률안",
+      "proposer": "조정식의원 등 10인",
+      "committee": "국토교통위원회",
+      "propose_dt": "2026-01-12",
+      "proc_result": null,
+      "detail_link": null
+    },
+    {
+      "bill_id": "PRC_Y2W5X1V2W2E3E1D3D5B7A1B4I3J7I2",
+      "bill_no": "2215608",
+      "bill_name": "부동산투자회사법 일부개정법률안",
+      "proposer": "박용갑의원 등 12인",
+      "committee": "국토교통위원회",
+      "propose_dt": "2025-12-24",
+      "proc_result": null,
+      "detail_link": null
+    },
+    {
+      "bill_id": "PRC_N2T5W0J9Q2R4L1O2Y2H9R2P0B6U8H7",
+      "bill_no": "2214053",
+      "bill_name": "국가공간정보 기본법 일부개정법률안(대안)",
+      "proposer": "국토교통위원장",
+      "committee": "국토교통위원회",
+      "propose_dt": "2025-11-10",
+      "proc_result": null,
+      "detail_link": null
+    },
+    {
+      "bill_id": "PRC_W2X5F1G2E0F3D1B6C3K3K3J6J7H9I0",
+      "bill_no": "2214915",
+      "bill_name": "주택법 일부개정법률안",
+      "proposer": "김정호의원 등 12인",
+      "committee": "국토교통위원회",
+      "propose_dt": "2025-12-04",
+      "proc_result": null,
+      "detail_link": null
+    },
+    {
+      "bill_id": "PRC_K2I5J1F2D0E5C1C3B3B5J4K4I7J6H4",
+      "bill_no": "2215197",
+      "bill_name": "공동주택관리법 일부개정법률안",
+      "proposer": "김문수의원 등 11인",
+      "committee": "국토교통위원회",
+      "propose_dt": "2025-12-12",
+      "proc_result": null,
+      "detail_link": null
+    },
+    {
+      "bill_id": "PRC_S2R5S1Q2R2Y4Z1X0Y0W4U1V3D2E1C5",
+      "bill_no": "2215634",
+      "bill_name": "항공·철도 사고조사에 관한 법률 일부개정법률안",
+      "proposer": "김미애의원 등 10인",
+      "committee": "국토교통위원회",
+      "propose_dt": "2025-12-26",
+      "proc_result": null,
+      "detail_link": null
+    },
+    {
+      "bill_id": "PRC_B2B5W1R2J0X9V1R3N0R5M1A0Q1J0L0",
+      "bill_no": "2215414",
+      "bill_name": "항공·철도 사고조사에 관한 법률 일부개정법률안(대안)",
+      "proposer": "국토교통위원장",
+      "committee": "국토교통위원회",
+      "propose_dt": "2025-12-19",
+      "proc_result": null,
+      "detail_link": null
+    },
+    {
+      "bill_id": "PRC_X2Y5W1W2U1W0U1U5Q3Q7P3N2O2M6M1",
+      "bill_no": "2215201",
+      "bill_name": "택시운송사업의 발전에 관한 법률 일부개정법률안",
+      "proposer": "손명수의원ㆍ권영진의원 등 11인",
+      "committee": "국토교통위원회",
+      "propose_dt": "2025-12-12",
+      "proc_result": null,
+      "detail_link": null
+    },
+    {
+      "bill_id": "PRC_O2M5N1M2K2L4S1T7R1S2Q4R3P5Q1F5",
+      "bill_no": "2215800",
+      "bill_name": "식품위생법 일부개정법률안",
+      "proposer": "정점식의원 등 10인",
+      "committee": "보건복지위원회",
+      "propose_dt": "2025-12-31",
+      "proc_result": null,
+      "detail_link": null
+    },
+    {
+      "bill_id": "PRC_O2P5W1X2W2W6U1V7U2B6C4A1B8Z3A4",
+      "bill_no": "2215829",
+      "bill_name": "국민건강보험법 일부개정법률안",
+      "proposer": "전진숙의원 등 11인",
+      "committee": "보건복지위원회",
+      "propose_dt": "2026-01-02",
+      "proc_result": null,
+      "detail_link": null
+    },
+    {
+      "bill_id": "PRC_I2P5Q1O2N0N2M0M8U5U7T0U5S8S9Q3",
+      "bill_no": "2214895",
+      "bill_name": "의사상자 등 예우 및 지원에 관한 법률 일부개정법률안",
+      "proposer": "김병기의원 등 11인",
+      "committee": "보건복지위원회",
+      "propose_dt": "2025-12-04",
+      "proc_result": null,
+      "detail_link": null
+    },
+    {
+      "bill_id": "PRC_Z2A5Y1Y2X2V6W1D7E2D7D3B3C9A6I8",
+      "bill_no": "2215828",
+      "bill_name": "국민건강증진법 일부개정법률안",
+      "proposer": "전진숙의원 등 11인",
+      "committee": "보건복지위원회",
+      "propose_dt": "2026-01-02",
+      "proc_result": null,
+      "detail_link": null
+    },
+    {
+      "bill_id": "PRC_N2L5L1T2U0S3T1R1S1Q1Y1Z3X4X2W4",
+      "bill_no": "2214940",
+      "bill_name": "노인복지법 일부개정법률안",
+      "proposer": "임종득의원 등 10인",
+      "committee": "보건복지위원회",
+      "propose_dt": "2025-12-05",
+      "proc_result": null,
+      "detail_link": null
+    },
+    {
+      "bill_id": "PRC_B2C5A0Z5Z0X8Y1G0H0F5F4E7E8D2L7",
+      "bill_no": "2214980",
+      "bill_name": "아동복지법 일부개정법률안",
+      "proposer": "이성권의원 등 12인",
+      "committee": "보건복지위원회",
+      "propose_dt": "2025-12-08",
+      "proc_result": null,
+      "detail_link": null
+    },
+    {
+      "bill_id": "PRC_F2G5E0F9V2V9U1U5S2T3S3Z8A4Y9Z9",
+      "bill_no": "2214158",
+      "bill_name": "노인장기요양보험법 일부개정법률안",
+      "proposer": "안상훈의원 등 12인",
+      "committee": "보건복지위원회",
+      "propose_dt": "2025-11-12",
+      "proc_result": null,
+      "detail_link": null
+    },
+    {
+      "bill_id": "PRC_S2T5R1S2Q1Y7Z1X6X0V6X5V8V0D2D1",
+      "bill_no": "2215347",
+      "bill_name": "모자보건법 일부개정법률안",
+      "proposer": "강명구의원 등 11인",
+      "committee": "보건복지위원회",
+      "propose_dt": "2025-12-17",
+      "proc_result": null,
+      "detail_link": null
+    },
+    {
+      "bill_id": "PRC_W2X6V0W1U0U7S1B3B5Z2A4Y2Z4X6Y7",
+      "bill_no": "2215942",
+      "bill_name": "치매관리법 일부개정법률안",
+      "proposer": "임종득의원 등 11인",
+      "committee": "보건복지위원회",
+      "propose_dt": "2026-01-09",
+      "proc_result": null,
+      "detail_link": null
+    },
+    {
+      "bill_id": "PRC_H2Q5O1O0M2O3M1M6U1U7T5R8S4Q6R2",
+      "bill_no": "2213746",
+      "bill_name": "장사 등에 관한 법률 일부개정법률안",
+      "proposer": "안호영의원 등 10인",
+      "committee": "보건복지위원회",
+      "propose_dt": "2025-10-28",
+      "proc_result": null,
+      "detail_link": null
+    },
+    {
+      "bill_id": "PRC_E2C5D0B9B2A9I1I1H2H3F0G2F5F5N7",
+      "bill_no": "2213465",
+      "bill_name": "교육기본법 일부개정법률안",
+      "proposer": "정성국의원 등 14인",
+      "committee": "교육위원회",
+      "propose_dt": "2025-10-02",
+      "proc_result": null,
+      "detail_link": null
+    },
+    {
+      "bill_id": "PRC_G2H5G0G9E1M9N1L6M3K4L0J0K2S8Q2",
+      "bill_no": "2213174",
+      "bill_name": "유아교육법 일부개정법률안",
+      "proposer": "임오경의원 등 10인",
+      "committee": "교육위원회",
+      "propose_dt": "2025-09-23",
+      "proc_result": null,
+      "detail_link": null
+    },
+    {
+      "bill_id": "PRC_W2V5K1K1I2J7H1I1G3H3O3N3O2M8M3",
+      "bill_no": "2215363",
+      "bill_name": "한국학중앙연구원 육성법 전부개정법률안",
+      "proposer": "정을호의원 등 11인",
+      "committee": "교육위원회",
+      "propose_dt": "2025-12-18",
+      "proc_result": null,
+      "detail_link": null
+    },
+    {
+      "bill_id": "PRC_X2Y5W1X0W3U1U1C6D2B6C4A5Z4Z7H6",
+      "bill_no": "2213994",
+      "bill_name": "학교보건법 일부개정법률안",
+      "proposer": "김민전의원 등 10인",
+      "committee": "교육위원회",
+      "propose_dt": "2025-11-07",
+      "proc_result": null,
+      "detail_link": null
+    },
+    {
+      "bill_id": "PRC_M2K5J0J6H0I5Q1Q6O4P2O3O0M4N8J6",
+      "bill_no": "2215570",
+      "bill_name": "사립학교법 일부개정법률안",
+      "proposer": "백선희의원 등 10인",
+      "committee": "교육위원회",
+      "propose_dt": "2025-12-24",
+      "proc_result": null,
+      "detail_link": null
+    },
+    {
+      "bill_id": "PRC_E2D5J0J9I0O8N1N1V4S2Q1P8V2V4U9",
+      "bill_no": "2213039",
+      "bill_name": "산업교육진흥 및 산학연협력촉진에 관한 법률 일부개정법률안",
+      "proposer": "서지영의원 등 13인",
+      "committee": "교육위원회",
+      "propose_dt": "2025-09-17",
+      "proc_result": null,
+      "detail_link": null
+    },
+    {
+      "bill_id": "PRC_Z2Y4X0X5F3C0E1D3L1K0J1I3P2N0M8",
+      "bill_no": "2214505",
+      "bill_name": "교육환경 보호에 관한 법률 일부개정법률안",
+      "proposer": "문정복의원 등 10인",
+      "committee": "교육위원회",
+      "propose_dt": "2025-11-24",
+      "proc_result": null,
+      "detail_link": null
+    },
+    {
+      "bill_id": "PRC_U2V5T0R5S0R1R1N6N4L5K1L1J5K8S5",
+      "bill_no": "2212664",
+      "bill_name": "법학전문대학원 설치·운영에 관한 법률 일부개정법률안",
+      "proposer": "진선미의원 등 11인",
+      "committee": "교육위원회",
+      "propose_dt": "2025-09-03",
+      "proc_result": null,
+      "detail_link": null
+    },
+    {
+      "bill_id": "PRC_G2E5D0E9L0M2K1L3J2K3I4E1E0D8E6",
+      "bill_no": "2212693",
+      "bill_name": "영유아보육법 일부개정법률안",
+      "proposer": "강경숙의원 등 13인",
+      "committee": "교육위원회",
+      "propose_dt": "2025-09-04",
+      "proc_result": null,
+      "detail_link": null
+    },
+    {
+      "bill_id": "PRC_H2F5F1E0E3M1N1L6M2K4K2J9R9R5P5",
+      "bill_no": "2214044",
+      "bill_name": "교육기본법 일부개정법률안",
+      "proposer": "김민전의원 등 11인",
+      "committee": "교육위원회",
+      "propose_dt": "2025-11-10",
+      "proc_result": null,
+      "detail_link": null
+    },
+    {
+      "bill_id": "ARC_S2R5Z0B8F2A8O1Y3P5N1K5W7M3W3W8",
+      "bill_no": "2212466",
+      "bill_name": "원자력안전법 일부개정법률안",
+      "proposer": "정부",
+      "committee": "과학기술정보방송통신위원회",
+      "propose_dt": "2025-08-28",
+      "proc_result": null,
+      "detail_link": null
+    },
+    {
+      "bill_id": "PRC_N2V5R1K1D2L4M0R8H3M2D5U6F1U6K9",
+      "bill_no": "2214863",
+      "bill_name": "연구실 안전환경 조성에 관한 법률 일부개정법률안(대안)",
+      "proposer": "과학기술정보방송통신위원장",
+      "committee": "과학기술정보방송통신위원회",
+      "propose_dt": "2025-12-04",
+      "proc_result": null,
+      "detail_link": null
+    },
+    {
+      "bill_id": "PRC_M2M5L0L7H0I2G0H9F2D7E2M8M9K3M3",
+      "bill_no": "2211546",
+      "bill_name": "전기통신사업법 일부개정법률안",
+      "proposer": "민병덕의원 등 13인",
+      "committee": "과학기술정보방송통신위원회",
+      "propose_dt": "2025-07-18",
+      "proc_result": null,
+      "detail_link": null
+    },
+    {
+      "bill_id": "PRC_F2E5F1N2N2L2M1K5L4J1R4R9Q0Q3P9",
+      "bill_no": "2215625",
+      "bill_name": "전기통신사업법 일부개정법률안",
+      "proposer": "이주희의원 등 16인",
+      "committee": "과학기술정보방송통신위원회",
+      "propose_dt": "2025-12-24",
+      "proc_result": null,
+      "detail_link": null
+    },
+    {
+      "bill_id": "PRC_R2Q5Q1O2P1L2M1K7K2I0J0I3P4Q9O8",
+      "bill_no": "2215666",
+      "bill_name": "전기통신사업법 일부개정법률안",
+      "proposer": "이주희의원 등 14인",
+      "committee": "과학기술정보방송통신위원회",
+      "propose_dt": "2025-12-29",
+      "proc_result": null,
+      "detail_link": null
+    },
+    {
+      "bill_id": "PRC_V2T5T0S5O2O0M1N1M0M1L2S9T7R3S4",
+      "bill_no": "2211773",
+      "bill_name": "디지털포용법 일부개정법률안",
+      "proposer": "허영의원 등 10인",
+      "committee": "과학기술정보방송통신위원회",
+      "propose_dt": "2025-07-28",
+      "proc_result": null,
+      "detail_link": null
+    },
+    {
+      "bill_id": "PRC_Y2Y5W1X1V2W6U1V4D4D7C0A4B4Z0A2",
+      "bill_no": "2214722",
+      "bill_name": "정보통신공사업법 일부개정법률안",
+      "proposer": "김주영의원 등 10인",
+      "committee": "과학기술정보방송통신위원회",
+      "propose_dt": "2025-11-28",
+      "proc_result": null,
+      "detail_link": null
+    },
+    {
+      "bill_id": "PRC_D2E5M1M1K1L0K1I1I1Q0R3P9Q7O7O0",
+      "bill_no": "2214289",
+      "bill_name": "정보보호 교육 진흥 및 전문인력 육성에 관한 법률안",
+      "proposer": "김도읍의원 등 11인",
+      "committee": "과학기술정보방송통신위원회",
+      "propose_dt": "2025-11-14",
+      "proc_result": null,
+      "detail_link": null
+    },
+    {
+      "bill_id": "PRC_T2R5R1Q2O2P2X1X3V4W1V0V1T8U3P7",
+      "bill_no": "2215604",
+      "bill_name": "정보통신망 이용촉진 및 정보보호 등에 관한 법률 일부개정법률안",
+      "proposer": "최민희의원 등 10인",
+      "committee": "과학기술정보방송통신위원회",
+      "propose_dt": "2025-12-24",
+      "proc_result": null,
+      "detail_link": null
+    },
+    {
+      "bill_id": "PRC_X2V5W0U7V2D9D1B1C3A4B0Z2H9I6G9",
+      "bill_no": "2214631",
+      "bill_name": "소프트웨어 진흥법 일부개정법률안",
+      "proposer": "이해민의원 등 13인",
+      "committee": "과학기술정보방송통신위원회",
+      "propose_dt": "2025-11-27",
+      "proc_result": null,
+      "detail_link": null
+    },
+    {
+      "bill_id": "PRC_S2T5B1Z2A2Y9Z1X6X5M9N0L3M0K0L9",
+      "bill_no": "2215718",
+      "bill_name": "해양폐기물 및 해양오염퇴적물 관리법 일부개정법률안",
+      "proposer": "주철현의원 등 11인",
+      "committee": "농림축산식품해양수산위원회",
+      "propose_dt": "2025-12-30",
+      "proc_result": null,
+      "detail_link": null
+    },
+    {
+      "bill_id": "PRC_U2P5H0D9V2P9X2W0W5U5X2Y2F3O2D5",
+      "bill_no": "2214194",
+      "bill_name": "농업·농촌 및 식품산업 기본법 일부개정법률안(대안)",
+      "proposer": "농림축산식품해양수산위원장",
+      "committee": "농림축산식품해양수산위원회",
+      "propose_dt": "2025-11-12",
+      "proc_result": null,
+      "detail_link": null
+    },
+    {
+      "bill_id": "PRC_L2K5K1I1J1R3P1Q8O4P4N2O2J5K4J3",
+      "bill_no": "2214751",
+      "bill_name": "한국농수산대학교 설치법 일부개정법률안",
+      "proposer": "윤준병의원 등 12인",
+      "committee": "농림축산식품해양수산위원회",
+      "propose_dt": "2025-12-02",
+      "proc_result": null,
+      "detail_link": null
+    },
+    {
+      "bill_id": "PRC_G2C5D1B0C2A0A0Z9Z0H9G0G1E4F9D7",
+      "bill_no": "2213792",
+      "bill_name": "농업·농촌 공익기능 증진 직접지불제도 운영에 관한 법률 일부개정법률안",
+      "proposer": "어기구의원 등 10인",
+      "committee": "농림축산식품해양수산위원회",
+      "propose_dt": "2025-10-29",
+      "proc_result": null,
+      "detail_link": null
+    },
+    {
+      "bill_id": "PRC_C2B5B0Z7A0Y2Z0H9F3G9E1E6D5E4L4",
+      "bill_no": "2212571",
+      "bill_name": "임업 및 산촌 진흥촉진에 관한 법률 일부개정법률안",
+      "proposer": "엄태영의원 등 11인",
+      "committee": "농림축산식품해양수산위원회",
+      "propose_dt": "2025-09-01",
+      "proc_result": null,
+      "detail_link": null
+    },
+    {
+      "bill_id": "PRC_U2T5T1S0Z2A3Y1Z6X0Y4W3E1F1D0D2",
+      "bill_no": "2214338",
+      "bill_name": "동물보호법 일부개정법률안",
+      "proposer": "한정애의원 등 12인",
+      "committee": "농림축산식품해양수산위원회",
+      "propose_dt": "2025-11-18",
+      "proc_result": null,
+      "detail_link": null
+    },
+    {
+      "bill_id": "PRC_D2B5C1K2K1I9J1I1I0G8H2D5B1C2A2",
+      "bill_no": "2215518",
+      "bill_name": "농수산물의 원산지 표시 등에 관한 법률 일부개정법률안",
+      "proposer": "김선교의원 등 10인",
+      "committee": "농림축산식품해양수산위원회",
+      "propose_dt": "2025-12-23",
+      "proc_result": null,
+      "detail_link": null
+    },
+    {
+      "bill_id": "PRC_Z2Y5Z0Y9G1F0E1F0D3L7K2I5J6O4M9",
+      "bill_no": "2214337",
+      "bill_name": "동물보호법 일부개정법률안",
+      "proposer": "위성곤의원 등 10인",
+      "committee": "농림축산식품해양수산위원회",
+      "propose_dt": "2025-11-18",
+      "proc_result": null,
+      "detail_link": null
+    },
+    {
+      "bill_id": "PRC_W2X5V1W1E1C9D1B4B4A6B4I6J3H8G8",
+      "bill_no": "2214407",
+      "bill_name": "동물보호법 일부개정법률안",
+      "proposer": "김선교의원 등 10인",
+      "committee": "농림축산식품해양수산위원회",
+      "propose_dt": "2025-11-19",
+      "proc_result": null,
+      "detail_link": null
+    },
+    {
+      "bill_id": "PRC_M2L5L1J2K1S5T1R2R4Q1Q0O5X0X3V2",
+      "bill_no": "2215360",
+      "bill_name": "농어업경영체 육성 및 지원에 관한 법률 일부개정법률안",
+      "proposer": "이원택의원 등 10인",
+      "committee": "농림축산식품해양수산위원회",
+      "propose_dt": "2025-12-18",
+      "proc_result": null,
+      "detail_link": null
+    },
+    {
+      "bill_id": "PRC_N2P5N1N0V2U3U1S2T0R4S3A2Y6Z1X4",
+      "bill_no": "2214037",
+      "bill_name": "형법 일부개정법률안",
+      "proposer": "조배숙의원 등 13인",
+      "committee": "법제사법위원회",
+      "propose_dt": "2025-11-07",
+      "proc_result": null,
+      "detail_link": null
+    },
+    {
+      "bill_id": "PRC_I2D5T1A2J0Z9V1I8R3S1S0Y5G2D2R7",
+      "bill_no": "2215141",
+      "bill_name": "형사소송법 일부개정법률안(대안)",
+      "proposer": "법제사법위원장",
+      "committee": "법제사법위원회",
+      "propose_dt": "2025-12-10",
+      "proc_result": null,
+      "detail_link": null
+    },
+    {
+      "bill_id": "PRC_D2C5A0Z8V1W1V1T4S3A8Z2Y0W9X4B6",
+      "bill_no": "2213914",
+      "bill_name": "가정폭력범죄의 처벌 등에 관한 특례법 일부개정법률안",
+      "proposer": "위성곤의원 등 11인",
+      "committee": "법제사법위원회",
+      "propose_dt": "2025-11-05",
+      "proc_result": null,
+      "detail_link": null
+    },
+    {
+      "bill_id": "PRC_T2T4R0S6R1R1Z1Z3Y4Y3X5V9W0D7E7",
+      "bill_no": "2213969",
+      "bill_name": "각급 법원의 설치와 관할구역에 관한 법률 일부개정법률안",
+      "proposer": "이재정의원 등 13인",
+      "committee": "법제사법위원회",
+      "propose_dt": "2025-11-06",
+      "proc_result": null,
+      "detail_link": null
+    },
+    {
+      "bill_id": "PRC_T2R5R1Q1R0Y7Z1X7Y2W3W3V4V7R3Q5",
+      "bill_no": "2214089",
+      "bill_name": "부패재산의 몰수 및 회복에 관한 특례법 일부개정법률안",
+      "proposer": "박은정의원 등 12인",
+      "committee": "법제사법위원회",
+      "propose_dt": "2025-11-11",
+      "proc_result": null,
+      "detail_link": null
+    },
+    {
+      "bill_id": "PRC_A2B5Z1A2Y2Z4G1H5G2K8L0J0J9I7I5",
+      "bill_no": "2215744",
+      "bill_name": "민법 일부개정법률안",
+      "proposer": "김한규의원 등 15인",
+      "committee": "법제사법위원회",
+      "propose_dt": "2025-12-30",
+      "proc_result": null,
+      "detail_link": null
+    },
+    {
+      "bill_id": "PRC_Y2W5S1S1Q1S3Q1Q7O5P5X2V7W3U2V7",
+      "bill_no": "2214248",
+      "bill_name": "검사징계법 폐지법률안",
+      "proposer": "김병기의원 등 23인",
+      "committee": "법제사법위원회",
+      "propose_dt": "2025-11-14",
+      "proc_result": null,
+      "detail_link": null
+    },
+    {
+      "bill_id": "PRC_F2D5E1C0D2K9M1K2K3I7J0H6D6E3C1",
+      "bill_no": "2214123",
+      "bill_name": "법원조직법 일부개정법률안",
+      "proposer": "황운하의원 등 11인",
+      "committee": "법제사법위원회",
+      "propose_dt": "2025-11-11",
+      "proc_result": null,
+      "detail_link": null
+    },
+    {
+      "bill_id": "PRC_M2N5L1M2H1I9G0H9F2E6E4M2M4L2M1",
+      "bill_no": "2215468",
+      "bill_name": "주택임대차보호법 일부개정법률안",
+      "proposer": "김소희의원 등 13인",
+      "committee": "법제사법위원회",
+      "propose_dt": "2025-12-22",
+      "proc_result": null,
+      "detail_link": null
+    },
+    {
+      "bill_id": "PRC_Q2R5Q1Q1P0N5N1V8W4U7V0T1U8S2O5",
+      "bill_no": "2214426",
+      "bill_name": "변호사법 일부개정법률안",
+      "proposer": "전현희의원 등 11인",
+      "committee": "법제사법위원회",
+      "propose_dt": "2025-11-20",
+      "proc_result": null,
+      "detail_link": null
+    },
+    {
+      "bill_id": "PRC_B2A5A0I7J0H7I1G0G4E3B2B4Z7A8Z6",
+      "bill_no": "2214431",
+      "bill_name": "공직선거법 일부개정법률안",
+      "proposer": "이인영의원 등 10인",
+      "committee": "행정안전위원회",
+      "propose_dt": "2025-11-20",
+      "proc_result": null,
+      "detail_link": null
+    },
+    {
+      "bill_id": "PRC_V2T5U1S2S1B2Z1Z3Y5Y9X1X2F3G7E3",
+      "bill_no": "2215383",
+      "bill_name": "지방자치단체 출자·출연 기관의 운영에 관한 법률 일부개정법률안",
+      "proposer": "김위상의원 등 11인",
+      "committee": "행정안전위원회",
+      "propose_dt": "2025-12-18",
+      "proc_result": null,
+      "detail_link": null
+    },
+    {
+      "bill_id": "PRC_H2G5O1O2M1N6M1M5K2L8T3R7S0Q9R6",
+      "bill_no": "2215506",
+      "bill_name": "공직선거법 일부개정법률안",
+      "proposer": "서영교의원 등 11인",
+      "committee": "행정안전위원회",
+      "propose_dt": "2025-12-22",
+      "proc_result": null,
+      "detail_link": null
+    },
+    {
+      "bill_id": "PRC_C2C5B1Z2A0Y3Y1H1H0F5E5F4D1D5L2",
+      "bill_no": "2214953",
+      "bill_name": "재난 및 안전관리 기본법 일부개정법률안",
+      "proposer": "임종득의원 등 10인",
+      "committee": "행정안전위원회",
+      "propose_dt": "2025-12-05",
+      "proc_result": null,
+      "detail_link": null
+    },
+    {
+      "bill_id": "PRC_H2H5F1G2O0P9N2N3M1K1L3G1H5F7G1",
+      "bill_no": "2215104",
+      "bill_name": "국가공무원법 일부개정법률안",
+      "proposer": "나경원의원 등 21인",
+      "committee": "행정안전위원회",
+      "propose_dt": "2025-12-10",
+      "proc_result": null,
+      "detail_link": null
+    },
+    {
+      "bill_id": "PRC_H2H5F1G2E0F3D1L6M5J2H4I7Q9Q3P0",
+      "bill_no": "2215353",
+      "bill_name": "공직선거법 일부개정법률안",
+      "proposer": "진성준의원 등 12인",
+      "committee": "행정안전위원회",
+      "propose_dt": "2025-12-18",
+      "proc_result": null,
+      "detail_link": null
+    },
+    {
+      "bill_id": "PRC_L2M5K1K1I2K6I1I0E2E1D0D4C0A1A9",
+      "bill_no": "2214643",
+      "bill_name": "공직선거법 일부개정법률안",
+      "proposer": "신정훈의원 등 11인",
+      "committee": "행정안전위원회",
+      "propose_dt": "2025-11-27",
+      "proc_result": null,
+      "detail_link": null
+    },
+    {
+      "bill_id": "PRC_F2F5B1B1Z0Y3Z1X3X4F5G2E3F2D6C2",
+      "bill_no": "2214495",
+      "bill_name": "소방장비관리법 일부개정법률안",
+      "proposer": "윤건영의원 등 17인",
+      "committee": "행정안전위원회",
+      "propose_dt": "2025-11-24",
+      "proc_result": null,
+      "detail_link": null
+    },
+    {
+      "bill_id": "PRC_D2E5C1D1B2C0J1K4J3H7H2G8G3C4D6",
+      "bill_no": "2214827",
+      "bill_name": "국가경찰과 자치경찰의 조직 및 운영에 관한 법률 일부개정법률안",
+      "proposer": "용혜인의원 등 12인",
+      "committee": "행정안전위원회",
+      "propose_dt": "2025-12-03",
+      "proc_result": null,
+      "detail_link": null
+    },
+    {
+      "bill_id": "PRC_U2V5D1E2C0B9B1Z0A4W0W1V6T6U3S4",
+      "bill_no": "2215399",
+      "bill_name": "집회 및 시위에 관한 법률 일부개정법률안",
+      "proposer": "손솔의원 등 11인",
+      "committee": "행정안전위원회",
+      "propose_dt": "2025-12-19",
+      "proc_result": null,
+      "detail_link": null
+    }
+  ]
+}

@@ -1,0 +1,196 @@
+{
+  "open_assembly": {
+    "bill_apis_count": 55,
+    "bill_apis": [
+      {
+        "inf_id": "ODI720001121MP14647",
+        "name": "국회도서관 정책에 관한 행정정보 공표",
+        "description": "국회도서관은 「공공기관의 정보공개에 관한 법률」 제7조에 따라 국민생활에 매우 큰 영향을 미치는 정책에 관한 정보 등에 대하여 국민의 정보공개 청구가 없더라도 사전에 공개 범위, 주기, 시기 및 방법 등 행정정보를 제공합니다. "
+      },
+      {
+        "inf_id": "O4K6HM0012064I15889",
+        "name": "법률안 심사 및 처리(의안검색)",
+        "description": "법률안 심사 및 처리 결과를 제공합니다."
+      },
+      {
+        "inf_id": "OF8AJV000972OP11430",
+        "name": "종료된 입법예고",
+        "description": "위원회에 회부된 법률안을 심사하기 전에 위원장이 법률안의 입법취지와 주요 내용과 관련된 종료된 입법예고 정보를 제공합니다. "
+      },
+      {
+        "inf_id": "OJAMPB0011929O11426",
+        "name": "국회도서관 행정감시 행정정보 공표",
+        "description": "국회도서관은 「공공기관의 정보공개에 관한 법률」 제7조에 따라 예산집행의 내용과 사업평가 결과 등 행정감시를 위하여 필요한 정보 등에 대하여 국민의 정보공개 청구가 없더라도 사전에 공개 범위, 주기, 시기 및 방법 등 행정정보를 제공합니다."
+      },
+      {
+        "inf_id": "OZ2W6L0011539T11384",
+        "name": "국회도서관 행정정보 공표목록",
+        "description": "국회도서관은 「공공기관의 정보공개에 관한 법률」 제7조에 따라 국민생활에 큰 영향을 미치는 주요 정책에 관한 정보, 대규모 예산이 투입되는 주요 사업에 관한 정보, 예산집행의 내용과 사업명 등 행정감시를 위하여 필요한 정보, 그 밖에 공공기관의 장이 정보 등에 대하여 국민의 정보공개 청구가 없더라도 사전에 공개 범위, 주기, 시기, 방법 등 행정정보를 제공합니다. "
+      },
+      {
+        "inf_id": "OBV24T000974AX17644",
+        "name": "법률안 심사 및 처리(본회의부의안건)",
+        "description": "법률안 심사 및 처리 결과 중 본회의부의안건 정보를 제공합니다. "
+      },
+      {
+        "inf_id": "OG88RA000978S210177",
+        "name": "법률안 심사 및 처리(위원회안, 대안)",
+        "description": "위원회에서 의결하고, 제출하기 전의 법률안 심사 및 처리(위원회안, 대안) 정보를 제공합니다. "
+      },
+      {
+        "inf_id": "OB61LZ000981FC12253",
+        "name": "법률안 심사 및 처리(계류의안)",
+        "description": "법률안 심사 및 처리 결과 중 계류의안 정보를 제공합니다."
+      },
+      {
+        "inf_id": "OM5S9O0009857U12121",
+        "name": "법률안 심사 및 처리(처리의안)",
+        "description": "법률안 심사 및 처리 결과 중 처리의안 정보를 제공합니다. "
+      },
+      {
+        "inf_id": "ODFFIG001072OX10139",
+        "name": "본회의 처리안건_기타",
+        "description": "본회의 안건처리 결과 중 기타 의안에 대한 처리 결과 정보를 제공합니다. "
+      },
+      {
+        "inf_id": "OK160H001152I912731",
+        "name": "국회도서관 사업에 관한 행정정보 공표",
+        "description": "국회도서관은 「공공기관의 정보공개에 관한 법률」 제7조에 따라 국가의 시책으로 시행하는 공사(工事) 등 대규모 예산이 투입되는 사업에 관한 정보 등에 대하여 국민의 정보공개 청구가 없더라도 사전에 공개 범위, 주기, 시기 및 방법 등 행정정보를 제공합니다. "
+      },
+      {
+        "inf_id": "O7OLVS0011544713501",
+        "name": "국회도서관 기타 행정정보 공표",
+        "description": "국회도서관은 「공공기관의 정보공개에 관한 법률」 제7조에 따라 공공기관의 장이 정하는 정보 등에 대하여 국민의 정보공개 청구가 없더라도 사전에 공개 범위, 주기, 시기 및 방법 등 행정정보를 제공합니다. "
+      },
+      {
+        "inf_id": "O8OFB2000905T918825",
+        "name": "국회예산정책처 정보공개청구 처리현황 목록",
+        "description": "국회예산정책처의 정보공개 처리현황을 제공합니다."
+      },
+      {
+        "inf_id": "O0UBVR000906UG11689",
+        "name": "국회입법조사처 정보공개청구 처리현황 목록",
+        "description": "국회입법조사처의 정보공개 처리현황을 제공합니다."
+      },
+      {
+        "inf_id": "OXN4AR0009078I18280",
+        "name": "국회도서관 정보공개청구 처리현황 목록",
+        "description": "국회도서관 정보공개청구 처리현황 정보를 제공합니다. "
+      },
+      {
+        "inf_id": "O6MZOL000912ZG15427",
+        "name": "국회사무처 정보공개청구 처리현황 목록",
+        "description": "국회사무처의 정보공개 처리현황을 제공합니다."
+      },
+      {
+        "inf_id": "OVDKBQ000915NE11865",
+        "name": "정보공개청구 이의신청 처리현황",
+        "description": "정보 비공개 결정에 대한 이의신청 처리현황을 제공합니다."
+      },
+      {
+        "inf_id": "OKAPKX000929X915616",
+        "name": "역대 의안 통계",
+        "description": "제헌국회부터 현재까지 역대 국회 의안 관련 통계 정보를 제공합니다. "
+      },
+      {
+        "inf_id": "OK7XM1000938DS17215",
+        "name": "국회의원 발의법률안",
+        "description": "국회의원별 대표발의법률안 정보를 제공합니다."
+      },
+      {
+        "inf_id": "OQ50H1000962NX16376",
+        "name": "청원 처리현황",
+        "description": "의원소개청원과 국민동의청원의 처리현황 정보를 제공합니다."
+      }
+    ]
+  },
+  "summary_apis": [
+    {
+      "inf_id": "OS46YD0012559515463",
+      "name": "법률안 제안이유 및 주요내용",
+      "description": "법률안 주요내용",
+      "ddc_url": "https://open.assembly.go.kr/portal/data/openapi/downloadOpenApiSpec.do?infId=OS46YD0012559515463&infSeq=1"
+    }
+  ],
+  "known_api_fields": [
+    {
+      "api_id": "nzmimeepazxkubdpn",
+      "name": "국회의원발의법률안",
+      "total_fields": 22,
+      "fields": [
+        "BILL_ID",
+        "BILL_NO",
+        "BILL_NAME",
+        "COMMITTEE",
+        "PROPOSE_DT",
+        "PROC_RESULT",
+        "AGE",
+        "DETAIL_LINK",
+        "PROPOSER",
+        "MEMBER_LIST",
+        "LAW_PROC_DT",
+        "LAW_PRESENT_DT",
+        "LAW_SUBMIT_DT",
+        "CMT_PROC_RESULT_CD",
+        "CMT_PROC_DT",
+        "CMT_PRESENT_DT",
+        "COMMITTEE_DT",
+        "PROC_DT",
+        "COMMITTEE_ID",
+        "PUBL_PROPOSER",
+        "LAW_PROC_RESULT_CD",
+        "RST_PROPOSER"
+      ],
+      "summary_fields": [
+        "DETAIL_LINK"
+      ],
+      "sample": {
+        "BILL_ID": "PRC_X2V5W1S2S1Q9R1P5O3O1W1X4V2W6U5",
+        "BILL_NO": "2216052",
+        "BILL_NAME": "영유아보육법 일부개정법률안",
+        "COMMITTEE": "None",
+        "PROPOSE_DT": "2026-01-14"
+      }
+    },
+    {
+      "api_id": "nwbpacrgavhjryiph",
+      "name": "의안상세정보",
+      "total_fields": 25,
+      "fields": [
+        "AGE",
+        "BILL_NO",
+        "BILL_NM",
+        "BILL_KIND",
+        "PROPOSER",
+        "COMMITTEE_NM",
+        "PROC_RESULT_CD",
+        "VOTE_TCNT",
+        "YES_TCNT",
+        "NO_TCNT",
+        "BLANK_TCNT",
+        "PROPOSE_DT",
+        "COMMITTEE_SUBMIT_DT",
+        "COMMITTEE_PRESENT_DT",
+        "COMMITTEE_PROC_DT",
+        "LAW_SUBMIT_DT",
+        "LAW_PRESENT_DT",
+        "LAW_PROC_DT",
+        "RGS_PRESENT_DT",
+        "RGS_PROC_DT",
+        "CURR_TRANS_DT",
+        "ANNOUNCE_DT",
+        "BILL_ID",
+        "LINK_URL",
+        "CURR_COMMITTEE_ID"
+      ],
+      "summary_fields": [],
+      "sample": {
+        "AGE": "22",
+        "BILL_NO": "2215397",
+        "BILL_NM": "지방세특례제한법 일부개정법률안(대안)(행정안전위원장)",
+        "BILL_KIND": "법률안",
+        "PROPOSER": "행정안전위원장"
+      }
+    }
+  ]
+}

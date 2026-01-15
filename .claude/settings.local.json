@@ -6,7 +6,29 @@
       "WebFetch(domain:open.law.go.kr)",
       "Bash(curl:*)",
       "Bash(git clean:*)",
-      "Bash(ls:*)"
+      "Bash(ls:*)",
+      "Bash(pip install:*)",
+      "WebFetch(domain:www.data.go.kr)",
+      "WebFetch(domain:open.assembly.go.kr)",
+      "WebFetch(domain:velog.io)",
+      "WebFetch(domain:www.law.go.kr)",
+      "WebFetch(domain:developers.upstage.ai)",
+      "WebFetch(domain:console.upstage.ai)",
+      "Bash(quarto --version:*)",
+      "Bash(where:*)",
+      "Bash(uv --version:*)",
+      "Bash(uv venv:*)",
+      "Bash(uv pip install:*)",
+      "Bash(winget install:*)",
+      "Bash(powershell.exe -Command \"winget install Posit.Quarto --accept-source-agreements --accept-package-agreements\")",
+      "Bash(choco --version)",
+      "Bash(.venv/Scripts/python.exe:*)",
+      "WebFetch(domain:gittykite.github.io)",
+      "WebFetch(domain:data.popong.com)",
+      "Bash(unzip:*)",
+      "Bash(tr:*)",
+      "Skill(cost-check)",
+      "Skill(worklog)"
     ]
   }
 }

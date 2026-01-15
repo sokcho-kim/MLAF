@@ -1,0 +1,359 @@
+{
+  "solar": {
+    "model": "Solar Embedding (Upstage)",
+    "evaluation": {
+      "golden_ranks": [
+        {
+          "golden_id": "golden_1",
+          "difficulty": "Easy",
+          "bill_name": "기후위기 대응을 위한 탄소중립ㆍ녹색성장 기본법 일부개정",
+          "rank": 34,
+          "similarity": 0.4037279109669154
+        },
+        {
+          "golden_id": "golden_2",
+          "difficulty": "Easy",
+          "bill_name": "중대재해 처벌 등에 관한 법률 일부개정법률안",
+          "rank": 58,
+          "similarity": 0.37927434791957243
+        },
+        {
+          "golden_id": "golden_3",
+          "difficulty": "Medium",
+          "bill_name": "개인정보 보호법 일부개정법률안",
+          "rank": 88,
+          "similarity": 0.3580970160853726
+        },
+        {
+          "golden_id": "golden_4",
+          "difficulty": "Hard",
+          "bill_name": "약사법 일부개정법률안",
+          "rank": 55,
+          "similarity": 0.38448155634772885
+        },
+        {
+          "golden_id": "golden_5",
+          "difficulty": "Hard",
+          "bill_name": "국유재산특례제한법 일부개정법률안",
+          "rank": 49,
+          "similarity": 0.3898875989602651
+        }
+      ],
+      "recall_at_10": 0.0,
+      "recall_at_20": 0.0,
+      "recall_at_50": 0.4,
+      "avg_hard_rank": 52.0,
+      "mean_rank": 56.8
+    },
+    "top_10": [
+      {
+        "rank": 1,
+        "bill_name": "국가첨단전략산업 경쟁력 강화 및 보호에 관한 특별조치법 일부개정법률안",
+        "bill_id": "PRC_Z2A5Y1Z2H1H6G1E6F5D6D0M5M5K5L2",
+        "committee": "산업통상자원중소벤처기업위원회",
+        "similarity": 0.5031505475672562
+      },
+      {
+        "rank": 2,
+        "bill_name": "지역 산업위기 대응 및 지역경제 회복을 위한 특별법 일부개정법률안",
+        "bill_id": "PRC_K2G5H1F1G1E8E1D6L1L8K1K1I8J4I7",
+        "committee": "산업통상자원중소벤처기업위원회",
+        "similarity": 0.47738177729309106
+      },
+      {
+        "rank": 3,
+        "bill_name": "소재ㆍ부품ㆍ장비산업 경쟁력 강화 및 공급망 안정화를 위한 특별조치법 일부개정법률안",
+        "bill_id": "PRC_B2A5B1Z1Z0H6I1G5E0F9D1E0Z3A7Z6",
+        "committee": "산업통상자원중소벤처기업위원회",
+        "similarity": 0.4698620002850337
+      },
+      {
+        "rank": 4,
+        "bill_name": "소재ㆍ부품ㆍ장비산업 경쟁력 강화 및 공급망 안정화를 위한 특별조치법 일부개정법률안",
+        "bill_id": "PRC_G2E5E1D1E1Z9A1Y7Z2X1X0W6E0E7C1",
+        "committee": "산업통상자원중소벤처기업위원회",
+        "similarity": 0.4698130059805184
+      },
+      {
+        "rank": 5,
+        "bill_name": "산업교육진흥 및 산학연협력촉진에 관한 법률 일부개정법률안",
+        "bill_id": "PRC_E2D5J0J9I0O8N1N1V4S2Q1P8V2V4U9",
+        "committee": "교육위원회",
+        "similarity": 0.4673888660332472
+      },
+      {
+        "rank": 6,
+        "bill_name": "폐광지역 개발 지원에 관한 특별법 일부개정법률안(대안)",
+        "bill_id": "PRC_K2A5M1S1T1A9A1U9X0X0D2U8R7Z6A1",
+        "committee": "산업통상자원중소벤처기업위원회",
+        "similarity": 0.46198580612779
+      },
+      {
+        "rank": 7,
+        "bill_name": "미래자동차 부품산업의 전환촉진 및 생태계 육성에 관한 특별법 일부개정법률안",
+        "bill_id": "PRC_C2D5B0A7A2Y8Z1H3I1G0G5E4D3E1Z8",
+        "committee": "산업통상자원중소벤처기업위원회",
+        "similarity": 0.45242722281174247
+      },
+      {
+        "rank": 8,
+        "bill_name": "부정경쟁방지 및 영업비밀보호에 관한 법률 일부개정법률안",
+        "bill_id": "PRC_I2G5H1C1B0C7A1A2Y0Z1H1I1G8H1F6",
+        "committee": "산업통상자원중소벤처기업위원회",
+        "similarity": 0.44968433862441476
+      },
+      {
+        "rank": 9,
+        "bill_name": "농어업경영체 육성 및 지원에 관한 법률 일부개정법률안",
+        "bill_id": "PRC_M2L5L1J2K1S5T1R2R4Q1Q0O5X0X3V2",
+        "committee": "농림축산식품해양수산위원회",
+        "similarity": 0.4489731480398166
+      },
+      {
+        "rank": 10,
+        "bill_name": "임업 및 산촌 진흥촉진에 관한 법률 일부개정법률안",
+        "bill_id": "PRC_C2B5B0Z7A0Y2Z0H9F3G9E1E6D5E4L4",
+        "committee": "농림축산식품해양수산위원회",
+        "similarity": 0.4484965178928039
+      }
+    ]
+  },
+  "openai": {
+    "model": "text-embedding-3-small (OpenAI)",
+    "evaluation": {
+      "golden_ranks": [
+        {
+          "golden_id": "golden_1",
+          "difficulty": "Easy",
+          "bill_name": "기후위기 대응을 위한 탄소중립ㆍ녹색성장 기본법 일부개정",
+          "rank": 99,
+          "similarity": 0.29068698736045795
+        },
+        {
+          "golden_id": "golden_2",
+          "difficulty": "Easy",
+          "bill_name": "중대재해 처벌 등에 관한 법률 일부개정법률안",
+          "rank": 36,
+          "similarity": 0.3880806882071234
+        },
+        {
+          "golden_id": "golden_3",
+          "difficulty": "Medium",
+          "bill_name": "개인정보 보호법 일부개정법률안",
+          "rank": 95,
+          "similarity": 0.30405118659986335
+        },
+        {
+          "golden_id": "golden_4",
+          "difficulty": "Hard",
+          "bill_name": "약사법 일부개정법률안",
+          "rank": 58,
+          "similarity": 0.3546396483645079
+        },
+        {
+          "golden_id": "golden_5",
+          "difficulty": "Hard",
+          "bill_name": "국유재산특례제한법 일부개정법률안",
+          "rank": 32,
+          "similarity": 0.401143040731804
+        }
+      ],
+      "recall_at_10": 0.0,
+      "recall_at_20": 0.0,
+      "recall_at_50": 0.4,
+      "avg_hard_rank": 45.0,
+      "mean_rank": 64.0
+    },
+    "top_10": [
+      {
+        "rank": 1,
+        "bill_name": "국가첨단전략산업 경쟁력 강화 및 보호에 관한 특별조치법 일부개정법률안",
+        "bill_id": "PRC_Z2A5Y1Z2H1H6G1E6F5D6D0M5M5K5L2",
+        "committee": "산업통상자원중소벤처기업위원회",
+        "similarity": 0.5338179341482967
+      },
+      {
+        "rank": 2,
+        "bill_name": "산업교육진흥 및 산학연협력촉진에 관한 법률 일부개정법률안",
+        "bill_id": "PRC_E2D5J0J9I0O8N1N1V4S2Q1P8V2V4U9",
+        "committee": "교육위원회",
+        "similarity": 0.5285199394728749
+      },
+      {
+        "rank": 3,
+        "bill_name": "지역 산업위기 대응 및 지역경제 회복을 위한 특별법 일부개정법률안",
+        "bill_id": "PRC_K2G5H1F1G1E8E1D6L1L8K1K1I8J4I7",
+        "committee": "산업통상자원중소벤처기업위원회",
+        "similarity": 0.49203761068438623
+      },
+      {
+        "rank": 4,
+        "bill_name": "미래자동차 부품산업의 전환촉진 및 생태계 육성에 관한 특별법 일부개정법률안",
+        "bill_id": "PRC_C2D5B0A7A2Y8Z1H3I1G0G5E4D3E1Z8",
+        "committee": "산업통상자원중소벤처기업위원회",
+        "similarity": 0.4814027260783609
+      },
+      {
+        "rank": 5,
+        "bill_name": "산업안전보건법 일부개정법률안",
+        "bill_id": "PRC_V2T5S1S2Q0R1Z1A7Y5Y1X3V3W1M2M7",
+        "committee": "환경노동위원회",
+        "similarity": 0.4758169593861747
+      },
+      {
+        "rank": 6,
+        "bill_name": "농어업경영체 육성 및 지원에 관한 법률 일부개정법률안",
+        "bill_id": "PRC_M2L5L1J2K1S5T1R2R4Q1Q0O5X0X3V2",
+        "committee": "농림축산식품해양수산위원회",
+        "similarity": 0.47579760998304493
+      },
+      {
+        "rank": 7,
+        "bill_name": "농업·농촌 및 식품산업 기본법 일부개정법률안(대안)",
+        "bill_id": "PRC_U2P5H0D9V2P9X2W0W5U5X2Y2F3O2D5",
+        "committee": "농림축산식품해양수산위원회",
+        "similarity": 0.4750581404272145
+      },
+      {
+        "rank": 8,
+        "bill_name": "농업·농촌 공익기능 증진 직접지불제도 운영에 관한 법률 일부개정법률안",
+        "bill_id": "PRC_G2C5D1B0C2A0A0Z9Z0H9G0G1E4F9D7",
+        "committee": "농림축산식품해양수산위원회",
+        "similarity": 0.46866365425271256
+      },
+      {
+        "rank": 9,
+        "bill_name": "대·중소기업 상생협력 촉진에 관한 법률 일부개정법률안(대안)",
+        "bill_id": "PRC_J2Z5N1G1P2Q0X1Y5U4Z1K0A9N4V9K4",
+        "committee": "산업통상자원중소벤처기업위원회",
+        "similarity": 0.46807582766272016
+      },
+      {
+        "rank": 10,
+        "bill_name": "임업 및 산촌 진흥촉진에 관한 법률 일부개정법률안",
+        "bill_id": "PRC_C2B5B0Z7A0Y2Z0H9F3G9E1E6D5E4L4",
+        "committee": "농림축산식품해양수산위원회",
+        "similarity": 0.462939113010825
+      }
+    ]
+  },
+  "multilingual_e5": {
+    "model": "Multilingual-E5-Large (fastembed)",
+    "evaluation": {
+      "golden_ranks": [
+        {
+          "golden_id": "golden_1",
+          "difficulty": "Easy",
+          "bill_name": "기후위기 대응을 위한 탄소중립ㆍ녹색성장 기본법 일부개정",
+          "rank": 13,
+          "similarity": 0.8054128085189631
+        },
+        {
+          "golden_id": "golden_2",
+          "difficulty": "Easy",
+          "bill_name": "중대재해 처벌 등에 관한 법률 일부개정법률안",
+          "rank": 55,
+          "similarity": 0.7851038349017858
+        },
+        {
+          "golden_id": "golden_3",
+          "difficulty": "Medium",
+          "bill_name": "개인정보 보호법 일부개정법률안",
+          "rank": 58,
+          "similarity": 0.7836028152854428
+        },
+        {
+          "golden_id": "golden_4",
+          "difficulty": "Hard",
+          "bill_name": "약사법 일부개정법률안",
+          "rank": 51,
+          "similarity": 0.7862102043101962
+        },
+        {
+          "golden_id": "golden_5",
+          "difficulty": "Hard",
+          "bill_name": "국유재산특례제한법 일부개정법률안",
+          "rank": 74,
+          "similarity": 0.7810568506438491
+        }
+      ],
+      "recall_at_10": 0.0,
+      "recall_at_20": 0.2,
+      "recall_at_50": 0.2,
+      "avg_hard_rank": 62.5,
+      "mean_rank": 50.2
+    },
+    "top_10": [
+      {
+        "rank": 1,
+        "bill_name": "대·중소기업 상생협력 촉진에 관한 법률 일부개정법률안(대안)",
+        "bill_id": "PRC_J2Z5N1G1P2Q0X1Y5U4Z1K0A9N4V9K4",
+        "committee": "산업통상자원중소벤처기업위원회",
+        "similarity": 0.8284969073157092
+      },
+      {
+        "rank": 2,
+        "bill_name": "소재ㆍ부품ㆍ장비산업 경쟁력 강화 및 공급망 안정화를 위한 특별조치법 일부개정법률안",
+        "bill_id": "PRC_G2E5E1D1E1Z9A1Y7Z2X1X0W6E0E7C1",
+        "committee": "산업통상자원중소벤처기업위원회",
+        "similarity": 0.8264211908512414
+      },
+      {
+        "rank": 3,
+        "bill_name": "소재ㆍ부품ㆍ장비산업 경쟁력 강화 및 공급망 안정화를 위한 특별조치법 일부개정법률안",
+        "bill_id": "PRC_B2A5B1Z1Z0H6I1G5E0F9D1E0Z3A7Z6",
+        "committee": "산업통상자원중소벤처기업위원회",
+        "similarity": 0.8264211908512414
+      },
+      {
+        "rank": 4,
+        "bill_name": "미래자동차 부품산업의 전환촉진 및 생태계 육성에 관한 특별법 일부개정법률안",
+        "bill_id": "PRC_C2D5B0A7A2Y8Z1H3I1G0G5E4D3E1Z8",
+        "committee": "산업통상자원중소벤처기업위원회",
+        "similarity": 0.8231983836154502
+      },
+      {
+        "rank": 5,
+        "bill_name": "농업·농촌 및 식품산업 기본법 일부개정법률안(대안)",
+        "bill_id": "PRC_U2P5H0D9V2P9X2W0W5U5X2Y2F3O2D5",
+        "committee": "농림축산식품해양수산위원회",
+        "similarity": 0.8178893241705939
+      },
+      {
+        "rank": 6,
+        "bill_name": "국가첨단전략산업 경쟁력 강화 및 보호에 관한 특별조치법 일부개정법률안",
+        "bill_id": "PRC_Z2A5Y1Z2H1H6G1E6F5D6D0M5M5K5L2",
+        "committee": "산업통상자원중소벤처기업위원회",
+        "similarity": 0.817113450567251
+      },
+      {
+        "rank": 7,
+        "bill_name": "담배사업법 일부개정법률안(대안)",
+        "bill_id": "PRC_J2Y5J0K9K2H2C1U6K4K5Z2Y3V1I0X9",
+        "committee": "기획재정위원회",
+        "similarity": 0.817042831272224
+      },
+      {
+        "rank": 8,
+        "bill_name": "산업교육진흥 및 산학연협력촉진에 관한 법률 일부개정법률안",
+        "bill_id": "PRC_E2D5J0J9I0O8N1N1V4S2Q1P8V2V4U9",
+        "committee": "교육위원회",
+        "similarity": 0.8162221892317839
+      },
+      {
+        "rank": 9,
+        "bill_name": "폐광지역 개발 지원에 관한 특별법 일부개정법률안(대안)",
+        "bill_id": "PRC_K2A5M1S1T1A9A1U9X0X0D2U8R7Z6A1",
+        "committee": "산업통상자원중소벤처기업위원회",
+        "similarity": 0.8140695373866541
+      },
+      {
+        "rank": 10,
+        "bill_name": "지역 산업위기 대응 및 지역경제 회복을 위한 특별법 일부개정법률안",
+        "bill_id": "PRC_K2G5H1F1G1E8E1D6L1L8K1K1I8J4I7",
+        "committee": "산업통상자원중소벤처기업위원회",
+        "similarity": 0.8138022793661046
+      }
+    ]
+  }
+}

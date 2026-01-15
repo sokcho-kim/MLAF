@@ -27,3 +27,5 @@ python-hwp>=0.1.0
 # Utilities
 python-dotenv>=1.0.0
 httpx>=0.25.0
+requests>=2.31.0
+xmltodict>=0.13.0

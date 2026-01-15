@@ -37,3 +37,29 @@ tmpclaude-*
 ## 작업일지
 - 위치: `docs/worklog/YYYY-MM-DD.md`
 - `/worklog` 스킬 사용 가능 (DobbyOps)
+
+## 문서 버전 관리
+계획서 등 주요 문서는 버전을 올려서 관리 (기존 버전 유지)
+
+### 파일명 규칙
+```
+{문서명}-v{버전번호}.md
+예: embedding-comparison-plan-v1.md → embedding-comparison-plan-v2.md
+```
+
+### 문서 헤더 형식
+```markdown
+# 문서 제목 v{버전}
+
+> **버전:** v{N}
+> **작성일시:** YYYY-MM-DD HH:MM
+> **이전 버전:** v{N-1}
+> **변경사항:**
+> - 변경 내용 1
+> - 변경 내용 2
+```
+
+### 원칙
+- 기존 버전 파일은 삭제하지 않고 유지
+- 버전 업데이트 시 새 파일 생성
+- 변경사항 명확히 기록
