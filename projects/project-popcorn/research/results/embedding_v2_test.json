@@ -1,0 +1,88 @@
+{
+  "description": "Title vs Title+Summary embedding comparison",
+  "tested_at": "2026-01-16 15:19:41",
+  "solar": [
+    {
+      "golden_id": "golden_1",
+      "difficulty": "Easy",
+      "bill_name": "기후위기 대응을 위한 탄소중립ㆍ녹색성장 기본법 일부개정법률안",
+      "sim_v1": 0.4037536965721987,
+      "sim_v2": 0.43602803925415257,
+      "improvement": 7.993572060381777
+    },
+    {
+      "golden_id": "golden_2",
+      "difficulty": "Easy",
+      "bill_name": "중대재해 처벌 등에 관한 법률 일부개정법률안",
+      "sim_v1": 0.3792667355518018,
+      "sim_v2": 0.44630404816307767,
+      "improvement": 17.67550547604501
+    },
+    {
+      "golden_id": "golden_3",
+      "difficulty": "Medium",
+      "bill_name": "개인정보 보호법 일부개정법률안",
+      "sim_v1": 0.3580970160853726,
+      "sim_v2": 0.3555076813078382,
+      "improvement": -0.723081919486605
+    },
+    {
+      "golden_id": "golden_4",
+      "difficulty": "Hard",
+      "bill_name": "약사법 일부개정법률안",
+      "sim_v1": 0.38448155634772885,
+      "sim_v2": 0.4542149271446704,
+      "improvement": 18.13698723531851
+    },
+    {
+      "golden_id": "golden_5",
+      "difficulty": "Hard",
+      "bill_name": "국유재산특례제한법 일부개정법률안",
+      "sim_v1": 0.39003045348570253,
+      "sim_v2": 0.5035126065652169,
+      "improvement": 29.095716005077104
+    }
+  ],
+  "openai": [
+    {
+      "golden_id": "golden_1",
+      "difficulty": "Easy",
+      "bill_name": "기후위기 대응을 위한 탄소중립ㆍ녹색성장 기본법 일부개정법률안",
+      "sim_v1": 0.2898176288247865,
+      "sim_v2": 0.44091701860413474,
+      "improvement": 52.1360244344203
+    },
+    {
+      "golden_id": "golden_2",
+      "difficulty": "Easy",
+      "bill_name": "중대재해 처벌 등에 관한 법률 일부개정법률안",
+      "sim_v1": 0.38248525588495585,
+      "sim_v2": 0.4645874542239368,
+      "improvement": 21.465454439288433
+    },
+    {
+      "golden_id": "golden_3",
+      "difficulty": "Medium",
+      "bill_name": "개인정보 보호법 일부개정법률안",
+      "sim_v1": 0.30405118659986335,
+      "sim_v2": 0.3417262953565541,
+      "improvement": 12.391041514424945
+    },
+    {
+      "golden_id": "golden_4",
+      "difficulty": "Hard",
+      "bill_name": "약사법 일부개정법률안",
+      "sim_v1": 0.354581143261833,
+      "sim_v2": 0.4959572972416837,
+      "improvement": 39.87131201600714
+    },
+    {
+      "golden_id": "golden_5",
+      "difficulty": "Hard",
+      "bill_name": "국유재산특례제한법 일부개정법률안",
+      "sim_v1": 0.401143040731804,
+      "sim_v2": 0.48658578742675956,
+      "improvement": 21.299820268371754
+    }
+  ]
+}

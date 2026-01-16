@@ -28,7 +28,8 @@
       "Bash(unzip:*)",
       "Bash(tr:*)",
       "Skill(cost-check)",
-      "Skill(worklog)"
+      "Skill(worklog)",
+      "Bash(.venv/Scripts/pip install:*)"
     ]
   }
 }
