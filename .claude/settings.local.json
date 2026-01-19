@@ -29,7 +29,12 @@
       "Bash(tr:*)",
       "Skill(cost-check)",
       "Skill(worklog)",
-      "Bash(.venv/Scripts/pip install:*)"
+      "Bash(.venv/Scripts/pip install:*)",
+      "Bash(python3:*)",
+      "Bash(uv run:*)",
+      "Bash(source .venv/bin/activate)",
+      "Bash(pkill:*)",
+      "Bash(quarto render:*)"
     ]
   }
 }

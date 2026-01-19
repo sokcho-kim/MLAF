@@ -1,0 +1,162 @@
+{
+  "scanned_at": "2026-01-18T23:50:32.157612",
+  "total_ministries": 13,
+  "results": [
+    {
+      "ministry": "과학기술정보통신부",
+      "total_bills": 1021,
+      "total_alerts": 225,
+      "detection_rate": 0.22037218413320275,
+      "alerts_by_level": {
+        "LOW": 202,
+        "MEDIUM": 22,
+        "HIGH": 1,
+        "CRITICAL": 0
+      }
+    },
+    {
+      "ministry": "교육부",
+      "total_bills": 1021,
+      "total_alerts": 375,
+      "detection_rate": 0.3672869735553379,
+      "alerts_by_level": {
+        "LOW": 339,
+        "MEDIUM": 36,
+        "HIGH": 0,
+        "CRITICAL": 0
+      }
+    },
+    {
+      "ministry": "외교부",
+      "total_bills": 1021,
+      "total_alerts": 152,
+      "detection_rate": 0.14887365328109697,
+      "alerts_by_level": {
+        "LOW": 145,
+        "MEDIUM": 7,
+        "HIGH": 0,
+        "CRITICAL": 0
+      }
+    },
+    {
+      "ministry": "법무부",
+      "total_bills": 1021,
+      "total_alerts": 520,
+      "detection_rate": 0.5093046033300686,
+      "alerts_by_level": {
+        "LOW": 478,
+        "MEDIUM": 42,
+        "HIGH": 0,
+        "CRITICAL": 0
+      }
+    },
+    {
+      "ministry": "국방부",
+      "total_bills": 1021,
+      "total_alerts": 402,
+      "detection_rate": 0.39373163565132224,
+      "alerts_by_level": {
+        "LOW": 361,
+        "MEDIUM": 41,
+        "HIGH": 0,
+        "CRITICAL": 0
+      }
+    },
+    {
+      "ministry": "행정안전부",
+      "total_bills": 1021,
+      "total_alerts": 768,
+      "detection_rate": 0.752203721841332,
+      "alerts_by_level": {
+        "LOW": 589,
+        "MEDIUM": 175,
+        "HIGH": 4,
+        "CRITICAL": 0
+      }
+    },
+    {
+      "ministry": "문화체육관광부",
+      "total_bills": 1021,
+      "total_alerts": 147,
+      "detection_rate": 0.14397649363369247,
+      "alerts_by_level": {
+        "LOW": 129,
+        "MEDIUM": 18,
+        "HIGH": 0,
+        "CRITICAL": 0
+      }
+    },
+    {
+      "ministry": "농림축산식품부",
+      "total_bills": 1021,
+      "total_alerts": 271,
+      "detection_rate": 0.2654260528893242,
+      "alerts_by_level": {
+        "LOW": 243,
+        "MEDIUM": 26,
+        "HIGH": 2,
+        "CRITICAL": 0
+      }
+    },
+    {
+      "ministry": "보건복지부",
+      "total_bills": 1021,
+      "total_alerts": 546,
+      "detection_rate": 0.534769833496572,
+      "alerts_by_level": {
+        "LOW": 499,
+        "MEDIUM": 45,
+        "HIGH": 2,
+        "CRITICAL": 0
+      }
+    },
+    {
+      "ministry": "기후에너지환경부",
+      "total_bills": 1021,
+      "total_alerts": 227,
+      "detection_rate": 0.22233104799216455,
+      "alerts_by_level": {
+        "LOW": 198,
+        "MEDIUM": 28,
+        "HIGH": 1,
+        "CRITICAL": 0
+      }
+    },
+    {
+      "ministry": "고용노동부",
+      "total_bills": 1021,
+      "total_alerts": 216,
+      "detection_rate": 0.21155729676787463,
+      "alerts_by_level": {
+        "LOW": 209,
+        "MEDIUM": 7,
+        "HIGH": 0,
+        "CRITICAL": 0
+      }
+    },
+    {
+      "ministry": "국토교통부",
+      "total_bills": 1021,
+      "total_alerts": 125,
+      "detection_rate": 0.12242899118511263,
+      "alerts_by_level": {
+        "LOW": 111,
+        "MEDIUM": 14,
+        "HIGH": 0,
+        "CRITICAL": 0
+      }
+    },
+    {
+      "ministry": "해양수산부",
+      "total_bills": 1021,
+      "total_alerts": 275,
+      "detection_rate": 0.2693437806072478,
+      "alerts_by_level": {
+        "LOW": 250,
+        "MEDIUM": 24,
+        "HIGH": 1,
+        "CRITICAL": 0
+      }
+    }
+  ]
+}

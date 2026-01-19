@@ -1,0 +1,377 @@
+"""
+리포트 생성 모듈
+
+Cross-Domain Radar 스캔 결과를 Markdown/JSON 리포트로 생성
+"""
+import json
+from datetime import datetime
+from pathlib import Path
+from typing import Optional
+
+try:
+    from .radar import RiskAlert
+    from .scorer import AlertLevel
+except ImportError:
+    from radar import RiskAlert
+    from scorer import AlertLevel
+
+
+class Reporter:
+    """리포트 생성 클래스"""
+
+    def __init__(self, output_dir: Optional[Path] = None):
+        """
+        Args:
+            output_dir: 리포트 출력 디렉토리
+        """
+        self.output_dir = output_dir or Path(__file__).parent.parent / "output"
+        self.output_dir.mkdir(parents=True, exist_ok=True)
+
+    def generate_full_scan_report(self, result: dict) -> Path:
+        """
+        전체 스캔 리포트 생성 (Markdown)
+
+        Args:
+            result: pipeline.run_full_scan() 결과
+
+        Returns:
+            생성된 리포트 파일 경로
+        """
+        alerts = result.get("alerts", [])
+        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+        report_path = self.output_dir / f"full_scan_report_{timestamp}.md"
+
+        content = self._build_full_scan_md(result)
+
+        with open(report_path, "w", encoding="utf-8") as f:
+            f.write(content)
+
+        return report_path
+
+    def generate_daily_report(self, result: dict) -> Path:
+        """
+        일일 리포트 생성 (Markdown)
+
+        Args:
+            result: pipeline.run_daily() 결과
+
+        Returns:
+            생성된 리포트 파일 경로
+        """
+        date_str = datetime.now().strftime("%Y-%m-%d")
+        report_path = self.output_dir / f"daily_report_{date_str}.md"
+
+        content = self._build_daily_md(result)
+
+        with open(report_path, "w", encoding="utf-8") as f:
+            f.write(content)
+
+        return report_path
+
+    def generate_weekly_summary(self, daily_results: list[dict]) -> Path:
+        """
+        주간 요약 리포트 생성
+
+        Args:
+            daily_results: 일일 결과 리스트 (7일치)
+
+        Returns:
+            생성된 리포트 파일 경로
+        """
+        week_str = datetime.now().strftime("%Y-W%W")
+        report_path = self.output_dir / f"weekly_summary_{week_str}.md"
+
+        content = self._build_weekly_md(daily_results)
+
+        with open(report_path, "w", encoding="utf-8") as f:
+            f.write(content)
+
+        return report_path
+
+    def export_to_json(self, result: dict, filename: Optional[str] = None) -> Path:
+        """
+        결과를 JSON으로 내보내기
+
+        Args:
+            result: 스캔 결과
+            filename: 파일명 (선택)
+
+        Returns:
+            생성된 JSON 파일 경로
+        """
+        if filename is None:
+            timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+            filename = f"export_{timestamp}.json"
+
+        output_path = self.output_dir / filename
+
+        # alerts 직렬화
+        serializable = result.copy()
+        serializable["alerts"] = [
+            alert.to_dict() if hasattr(alert, "to_dict") else alert
+            for alert in result.get("alerts", [])
+        ]
+
+        with open(output_path, "w", encoding="utf-8") as f:
+            json.dump(serializable, f, ensure_ascii=False, indent=2)
+
+        return output_path
+
+    def _build_full_scan_md(self, result: dict) -> str:
+        """전체 스캔 Markdown 생성"""
+        alerts = result.get("alerts", [])
+        alerts_by_level = result.get("alerts_by_level", {})
+
+        lines = [
+            f"# Cross-Domain Radar: 전체 스캔 리포트",
+            "",
+            f"> **부처:** {result.get('ministry', 'N/A')}",
+            f"> **스캔 시간:** {result.get('scanned_at', 'N/A')}",
+            f"> **임계값:** {result.get('threshold', 0.45)}",
+            "",
+            "---",
+            "",
+            "## 요약",
+            "",
+            f"| 항목 | 값 |",
+            f"|------|-----|",
+            f"| 전체 법안 수 | {result.get('total_bills', 0):,} |",
+            f"| 감지된 법안 수 | {result.get('total_alerts', 0)} |",
+            f"| 감지율 | {result.get('total_alerts', 0) / result.get('total_bills', 1) * 100:.1f}% |",
+            "",
+            "### Alert Level 분포",
+            "",
+            "| Level | 건수 |",
+            "|-------|------|",
+        ]
+
+        for level in ["CRITICAL", "HIGH", "MEDIUM", "LOW"]:
+            count = alerts_by_level.get(level, 0)
+            if count > 0:
+                lines.append(f"| {level} | {count} |")
+
+        lines.extend([
+            "",
+            "---",
+            "",
+            "## 감지된 법안 목록",
+            "",
+        ])
+
+        # Alert Level별 섹션
+        for level in ["CRITICAL", "HIGH", "MEDIUM", "LOW"]:
+            level_alerts = [a for a in alerts if self._get_alert_level(a) == level]
+            if not level_alerts:
+                continue
+
+            lines.extend([
+                f"### {level} ({len(level_alerts)}건)",
+                "",
+            ])
+
+            for i, alert in enumerate(level_alerts, 1):
+                lines.extend(self._format_alert_md(alert, i))
+
+        lines.extend([
+            "",
+            "---",
+            "",
+            f"*Generated by Cross-Domain Radar v2 at {datetime.now().isoformat()}*",
+        ])
+
+        return "\n".join(lines)
+
+    def _build_daily_md(self, result: dict) -> str:
+        """일일 리포트 Markdown 생성"""
+        alerts = result.get("alerts", [])
+        date_str = result.get("since_date", datetime.now().strftime("%Y-%m-%d"))
+
+        lines = [
+            f"# Cross-Domain Radar: 일일 리포트",
+            "",
+            f"> **부처:** {result.get('ministry', 'N/A')}",
+            f"> **기준일:** {date_str} 이후",
+            f"> **스캔 시간:** {result.get('scanned_at', 'N/A')}",
+            "",
+            "---",
+            "",
+            "## 요약",
+            "",
+            f"- 신규 법안: **{result.get('total_bills', 0)}**건",
+            f"- 감지된 법안: **{result.get('total_alerts', 0)}**건",
+            "",
+        ]
+
+        if not alerts:
+            lines.extend([
+                "**오늘 감지된 Cross-Domain 법안이 없습니다.**",
+                "",
+            ])
+        else:
+            lines.extend([
+                "---",
+                "",
+                "## 감지된 법안",
+                "",
+            ])
+
+            for i, alert in enumerate(alerts, 1):
+                lines.extend(self._format_alert_md(alert, i))
+
+        lines.extend([
+            "",
+            "---",
+            "",
+            f"*Generated at {datetime.now().isoformat()}*",
+        ])
+
+        return "\n".join(lines)
+
+    def _build_weekly_md(self, daily_results: list[dict]) -> str:
+        """주간 요약 Markdown 생성"""
+        total_bills = sum(r.get("total_bills", 0) for r in daily_results)
+        total_alerts = sum(r.get("total_alerts", 0) for r in daily_results)
+
+        # 모든 alerts 수집
+        all_alerts = []
+        for r in daily_results:
+            all_alerts.extend(r.get("alerts", []))
+
+        lines = [
+            f"# Cross-Domain Radar: 주간 요약",
+            "",
+            f"> **기간:** {len(daily_results)}일",
+            f"> **생성 시간:** {datetime.now().isoformat()}",
+            "",
+            "---",
+            "",
+            "## 주간 통계",
+            "",
+            f"| 항목 | 값 |",
+            f"|------|-----|",
+            f"| 스캔 일수 | {len(daily_results)} |",
+            f"| 총 스캔 법안 | {total_bills} |",
+            f"| 총 감지 법안 | {total_alerts} |",
+            "",
+            "---",
+            "",
+            "## 일별 현황",
+            "",
+            "| 날짜 | 스캔 | 감지 |",
+            "|------|------|------|",
+        ]
+
+        for r in daily_results:
+            date = r.get("since_date", "N/A")
+            bills = r.get("total_bills", 0)
+            alerts = r.get("total_alerts", 0)
+            lines.append(f"| {date} | {bills} | {alerts} |")
+
+        if all_alerts:
+            lines.extend([
+                "",
+                "---",
+                "",
+                "## Top 10 감지 법안",
+                "",
+            ])
+
+            # 스코어 기준 정렬
+            sorted_alerts = sorted(
+                all_alerts,
+                key=lambda x: x.similarity_score if hasattr(x, "similarity_score") else x.get("similarity_score", 0),
+                reverse=True,
+            )
+
+            for i, alert in enumerate(sorted_alerts[:10], 1):
+                lines.extend(self._format_alert_md(alert, i, compact=True))
+
+        lines.extend([
+            "",
+            "---",
+            "",
+            f"*Generated at {datetime.now().isoformat()}*",
+        ])
+
+        return "\n".join(lines)
+
+    def _format_alert_md(self, alert, index: int, compact: bool = False) -> list[str]:
+        """Alert를 Markdown 형식으로 포맷"""
+        # RiskAlert 객체 또는 dict 처리
+        if hasattr(alert, "to_dict"):
+            a = alert.to_dict()
+        else:
+            a = alert
+
+        level = a.get("alert_level", "N/A")
+        score = a.get("similarity_score", 0)
+        bill_name = a.get("bill_name", "N/A")
+        committee = a.get("committee", "N/A")
+        proposer = a.get("proposer", "N/A")
+        propose_dt = a.get("propose_dt", "N/A")
+        summary = a.get("summary_preview", "")
+
+        if compact:
+            return [
+                f"{index}. **[{level}]** {bill_name[:50]}... (Score: {score:.4f})",
+                "",
+            ]
+
+        lines = [
+            f"#### {index}. {bill_name}",
+            "",
+            f"| 항목 | 값 |",
+            f"|------|-----|",
+            f"| Alert Level | **{level}** |",
+            f"| Score | {score:.4f} |",
+            f"| 소관위원회 | {committee} |",
+            f"| 제안자 | {proposer} |",
+            f"| 제안일 | {propose_dt} |",
+            "",
+        ]
+
+        if summary:
+            lines.extend([
+                f"**제안이유 요약:**",
+                f"> {summary}",
+                "",
+            ])
+
+        return lines
+
+    def _get_alert_level(self, alert) -> str:
+        """Alert에서 level 추출"""
+        if hasattr(alert, "alert_level"):
+            return alert.alert_level
+        return alert.get("alert_level", "NONE")
+
+
+if __name__ == "__main__":
+    # 테스트
+    reporter = Reporter()
+
+    # 테스트 데이터
+    test_result = {
+        "scan_type": "full_scan",
+        "ministry": "산업통상부",
+        "threshold": 0.45,
+        "scanned_at": datetime.now().isoformat(),
+        "total_bills": 100,
+        "total_alerts": 5,
+        "alerts_by_level": {"LOW": 3, "MEDIUM": 2},
+        "alerts": [
+            {
+                "bill_id": "test_1",
+                "bill_name": "테스트 법안 1",
+                "alert_level": "MEDIUM",
+                "similarity_score": 0.56,
+                "committee": "산업통상자원중소벤처기업위원회",
+                "proposer": "홍길동",
+                "propose_dt": "2026-01-15",
+                "summary_preview": "이 법안은 테스트를 위한 것입니다.",
+            }
+        ],
+    }
+
+    report_path = reporter.generate_full_scan_report(test_result)
+    print(f"Test report generated: {report_path}")

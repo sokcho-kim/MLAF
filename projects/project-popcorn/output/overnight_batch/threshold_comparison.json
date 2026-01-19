@@ -1,0 +1,80 @@
+{
+  "scanned_at": "2026-01-18T23:50:35.663079",
+  "ministry": "산업통상부",
+  "thresholds_tested": [
+    0.4,
+    0.42,
+    0.44,
+    0.45,
+    0.48,
+    0.5
+  ],
+  "results": [
+    {
+      "threshold": 0.4,
+      "total_alerts": 889,
+      "detection_rate": 0.8707149853085211,
+      "alerts_by_level": {
+        "LOW": 530,
+        "MEDIUM": 82,
+        "HIGH": 2,
+        "CRITICAL": 0
+      }
+    },
+    {
+      "threshold": 0.42,
+      "total_alerts": 796,
+      "detection_rate": 0.7796278158667973,
+      "alerts_by_level": {
+        "LOW": 530,
+        "MEDIUM": 82,
+        "HIGH": 2,
+        "CRITICAL": 0
+      }
+    },
+    {
+      "threshold": 0.44,
+      "total_alerts": 685,
+      "detection_rate": 0.6709108716944172,
+      "alerts_by_level": {
+        "LOW": 530,
+        "MEDIUM": 82,
+        "HIGH": 2,
+        "CRITICAL": 0
+      }
+    },
+    {
+      "threshold": 0.45,
+      "total_alerts": 614,
+      "detection_rate": 0.6013712047012733,
+      "alerts_by_level": {
+        "LOW": 530,
+        "MEDIUM": 82,
+        "HIGH": 2,
+        "CRITICAL": 0
+      }
+    },
+    {
+      "threshold": 0.48,
+      "total_alerts": 420,
+      "detection_rate": 0.41136141038197843,
+      "alerts_by_level": {
+        "LOW": 336,
+        "MEDIUM": 82,
+        "HIGH": 2,
+        "CRITICAL": 0
+      }
+    },
+    {
+      "threshold": 0.5,
+      "total_alerts": 294,
+      "detection_rate": 0.28795298726738494,
+      "alerts_by_level": {
+        "LOW": 210,
+        "MEDIUM": 82,
+        "HIGH": 2,
+        "CRITICAL": 0
+      }
+    }
+  ]
+}

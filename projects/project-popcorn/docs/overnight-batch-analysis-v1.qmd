@@ -1,0 +1,374 @@
+---
+title: "Cross-Domain Radar 야간 배치 분석 리포트"
+subtitle: "부처별 감지 특성 및 임계값 최적화"
+author: "Project Popcorn"
+date: "2026-01-19"
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    code-fold: true
+    theme: cosmo
+    fig-width: 10
+    fig-height: 6
+execute:
+  echo: true
+  warning: false
+---
+
+## 개요
+
+### 분석 목적
+
+- **부처별 Cross-Domain 감지 특성 파악**: 어떤 부처가 타 소관 법안에 많이 영향받는지
+- **임계값 최적화**: 산업통상부 기준 최적 임계값 도출
+- **운영 전략 수립**: 부처별 맞춤 임계값 및 알림 전략 제시
+
+### 데이터셋
+
+| 항목 | 값 |
+|------|-----|
+| 전체 법안 수 | 1,021건 |
+| 분석 부처 수 | 14개 |
+| 테스트 임계값 | 6개 (0.40~0.50) |
+| 임베딩 모델 | OpenAI text-embedding-3-small |
+
+```{python}
+#| label: setup
+#| code-summary: "라이브러리 및 데이터 로드"
+
+import json
+import pandas as pd
+import matplotlib.pyplot as plt
+import matplotlib as mpl
+from pathlib import Path
+
+# 한글 폰트 설정
+plt.rcParams['font.family'] = 'AppleGothic'
+plt.rcParams['axes.unicode_minus'] = False
+
+# 데이터 로드
+data_dir = Path("../output/overnight_batch")
+
+with open(data_dir / "ministry_scan_summary.json", "r", encoding="utf-8") as f:
+    ministry_data = json.load(f)
+
+with open(data_dir / "threshold_comparison.json", "r", encoding="utf-8") as f:
+    threshold_data = json.load(f)
+
+# DataFrame 변환
+ministry_df = pd.DataFrame(ministry_data["results"])
+ministry_df["detection_rate_pct"] = ministry_df["detection_rate"] * 100
+
+threshold_df = pd.DataFrame(threshold_data["results"])
+threshold_df["detection_rate_pct"] = threshold_df["detection_rate"] * 100
+
+# 산업통상부 추가
+motie = {
+    "ministry": "산업통상부",
+    "total_bills": 1021,
+    "total_alerts": 614,
+    "detection_rate": 0.601,
+    "detection_rate_pct": 60.1,
+    "alerts_by_level": {"LOW": 530, "MEDIUM": 82, "HIGH": 2, "CRITICAL": 0}
+}
+ministry_df = pd.concat([ministry_df, pd.DataFrame([motie])], ignore_index=True)
+ministry_df = ministry_df.sort_values("detection_rate", ascending=False).reset_index(drop=True)
+```
+
+---
+
+## 부처별 스캔 결과
+
+### 감지율 순위
+
+```{python}
+#| label: fig-ministry-detection
+#| fig-cap: "부처별 Cross-Domain 법안 감지율"
+#| code-summary: "부처별 감지율 시각화"
+
+fig, ax = plt.subplots(figsize=(12, 8))
+
+colors = []
+for rate in ministry_df["detection_rate_pct"]:
+    if rate >= 50:
+        colors.append("#e74c3c")  # 빨강 (범용형)
+    elif rate >= 20:
+        colors.append("#f39c12")  # 주황 (중간형)
+    else:
+        colors.append("#27ae60")  # 초록 (특화형)
+
+bars = ax.barh(ministry_df["ministry"], ministry_df["detection_rate_pct"], color=colors)
+ax.set_xlabel("감지율 (%)", fontsize=12)
+ax.set_title("부처별 Cross-Domain 법안 감지율", fontsize=14, fontweight="bold")
+ax.axvline(x=50, color="red", linestyle="--", alpha=0.5, label="범용형 기준 (50%)")
+ax.axvline(x=20, color="orange", linestyle="--", alpha=0.5, label="특화형 기준 (20%)")
+
+# 값 표시
+for bar, rate in zip(bars, ministry_df["detection_rate_pct"]):
+    ax.text(bar.get_width() + 1, bar.get_y() + bar.get_height()/2,
+            f'{rate:.1f}%', va='center', fontsize=10)
+
+ax.legend(loc="lower right")
+ax.invert_yaxis()
+plt.tight_layout()
+plt.show()
+```
+
+### 부처 유형 분류
+
+```{python}
+#| label: tbl-ministry-types
+#| tbl-cap: "부처 유형별 분류"
+#| code-summary: "부처 유형 분류 테이블"
+
+def categorize(rate):
+    if rate >= 50:
+        return "🔴 범용형"
+    elif rate >= 20:
+        return "🟡 중간형"
+    else:
+        return "🟢 특화형"
+
+ministry_df["유형"] = ministry_df["detection_rate_pct"].apply(categorize)
+ministry_df["감지율"] = ministry_df["detection_rate_pct"].apply(lambda x: f"{x:.1f}%")
+
+display_df = ministry_df[["ministry", "total_alerts", "감지율", "유형"]].copy()
+display_df.columns = ["부처", "감지 법안", "감지율", "유형"]
+display_df
+```
+
+### Alert Level 분포
+
+```{python}
+#| label: fig-alert-levels
+#| fig-cap: "부처별 Alert Level 분포"
+#| code-summary: "Alert Level 스택 바 차트"
+
+# Alert Level 추출
+alert_data = []
+for _, row in ministry_df.iterrows():
+    levels = row["alerts_by_level"]
+    alert_data.append({
+        "ministry": row["ministry"],
+        "HIGH": levels.get("HIGH", 0),
+        "MEDIUM": levels.get("MEDIUM", 0),
+        "LOW": levels.get("LOW", 0),
+    })
+
+alert_df = pd.DataFrame(alert_data)
+
+fig, ax = plt.subplots(figsize=(12, 8))
+
+x = range(len(alert_df))
+width = 0.6
+
+low = ax.barh(alert_df["ministry"], alert_df["LOW"], label="LOW", color="#3498db")
+medium = ax.barh(alert_df["ministry"], alert_df["MEDIUM"], left=alert_df["LOW"],
+                  label="MEDIUM", color="#f39c12")
+high = ax.barh(alert_df["ministry"], alert_df["HIGH"],
+                left=alert_df["LOW"] + alert_df["MEDIUM"], label="HIGH", color="#e74c3c")
+
+ax.set_xlabel("감지 법안 수", fontsize=12)
+ax.set_title("부처별 Alert Level 분포", fontsize=14, fontweight="bold")
+ax.legend(loc="lower right")
+ax.invert_yaxis()
+plt.tight_layout()
+plt.show()
+```
+
+---
+
+## 임계값 비교 분석
+
+### 임계값별 감지율 변화
+
+```{python}
+#| label: fig-threshold
+#| fig-cap: "임계값에 따른 감지율 변화 (산업통상부)"
+#| code-summary: "임계값 감지율 라인 차트"
+
+fig, ax = plt.subplots(figsize=(10, 6))
+
+ax.plot(threshold_df["threshold"], threshold_df["detection_rate_pct"],
+        marker="o", linewidth=2, markersize=10, color="#3498db")
+
+# 현재 임계값 표시
+ax.axvline(x=0.45, color="red", linestyle="--", alpha=0.7, label="현재 임계값 (0.45)")
+ax.axhline(y=60.1, color="red", linestyle=":", alpha=0.5)
+
+# 값 표시
+for x, y in zip(threshold_df["threshold"], threshold_df["detection_rate_pct"]):
+    ax.annotate(f'{y:.1f}%', (x, y), textcoords="offset points",
+                xytext=(0, 10), ha='center', fontsize=11)
+
+ax.set_xlabel("임계값", fontsize=12)
+ax.set_ylabel("감지율 (%)", fontsize=12)
+ax.set_title("임계값에 따른 감지율 변화 (산업통상부)", fontsize=14, fontweight="bold")
+ax.legend()
+ax.grid(True, alpha=0.3)
+ax.set_ylim(20, 95)
+plt.tight_layout()
+plt.show()
+```
+
+### 임계값 구간별 감소량
+
+```{python}
+#| label: fig-threshold-diff
+#| fig-cap: "임계값 구간별 감지 법안 감소량"
+#| code-summary: "임계값 구간별 차이 바 차트"
+
+threshold_df["diff"] = threshold_df["total_alerts"].diff().fillna(0).astype(int)
+
+fig, ax = plt.subplots(figsize=(10, 5))
+
+labels = [f"{threshold_df.iloc[i]['threshold']:.2f}→{threshold_df.iloc[i+1]['threshold']:.2f}"
+          for i in range(len(threshold_df)-1)]
+diffs = threshold_df["diff"].iloc[1:].values
+
+colors = ["#e74c3c" if d < -100 else "#f39c12" for d in diffs]
+bars = ax.bar(labels, diffs, color=colors)
+
+ax.axhline(y=0, color="black", linewidth=0.5)
+ax.set_xlabel("임계값 구간", fontsize=12)
+ax.set_ylabel("감지 법안 변화", fontsize=12)
+ax.set_title("임계값 구간별 감지 법안 감소량", fontsize=14, fontweight="bold")
+
+for bar, d in zip(bars, diffs):
+    ax.text(bar.get_x() + bar.get_width()/2, bar.get_height() - 10,
+            str(d), ha='center', va='top', fontsize=11, fontweight="bold", color="white")
+
+plt.tight_layout()
+plt.show()
+```
+
+### 임계값별 상세 비교
+
+```{python}
+#| label: tbl-threshold
+#| tbl-cap: "임계값별 상세 결과"
+#| code-summary: "임계값 비교 테이블"
+
+threshold_display = threshold_df[["threshold", "total_alerts", "detection_rate_pct"]].copy()
+threshold_display.columns = ["임계값", "감지 법안", "감지율 (%)"]
+threshold_display["감지율 (%)"] = threshold_display["감지율 (%)"].apply(lambda x: f"{x:.1f}%")
+threshold_display["권장"] = ["", "", "", "✅ 권장", "", ""]
+threshold_display
+```
+
+---
+
+## 핵심 인사이트
+
+### 1. 부처 특성에 따른 전략
+
+::: {.callout-important}
+## 인사이트 1: 범용형 부처는 임계값 상향 필요
+**행정안전부**는 75%가 감지되어 노이즈가 많음
+→ 임계값 0.50 이상 또는 HIGH/MEDIUM만 알림 권장
+:::
+
+::: {.callout-tip}
+## 인사이트 2: 특화형 부처는 Cross-Domain 감지에 최적
+**국토교통부**(12.2%), **문화체관부**(14.4%)는 도메인 특화도가 높음
+→ 감지된 법안은 실제 Cross-Domain일 가능성 높음
+:::
+
+::: {.callout-note}
+## 인사이트 3: 산업통상부는 중간 위치
+60.1% 감지율로 범용/특화 중간
+→ 현재 임계값 0.45 적정, 필요시 0.44로 하향 가능
+:::
+
+### 2. 임계값 전략 매트릭스
+
+```{python}
+#| label: fig-strategy-matrix
+#| fig-cap: "부처 유형 × 임계값 전략 매트릭스"
+#| code-summary: "전략 매트릭스 히트맵"
+
+import numpy as np
+
+fig, ax = plt.subplots(figsize=(10, 6))
+
+# 매트릭스 데이터
+ministries_types = ["범용형\n(행정안전부 등)", "중간형\n(산업통상부 등)", "특화형\n(국토교통부 등)"]
+thresholds = ["0.42\n(고감도)", "0.45\n(균형)", "0.50\n(정밀)"]
+
+# 적합도 점수 (1: 부적합, 2: 보통, 3: 적합)
+matrix = np.array([
+    [1, 2, 3],  # 범용형
+    [2, 3, 2],  # 중간형
+    [3, 2, 1],  # 특화형
+])
+
+im = ax.imshow(matrix, cmap="RdYlGn", aspect="auto", vmin=1, vmax=3)
+
+ax.set_xticks(range(len(thresholds)))
+ax.set_yticks(range(len(ministries_types)))
+ax.set_xticklabels(thresholds, fontsize=11)
+ax.set_yticklabels(ministries_types, fontsize=11)
+
+# 값 표시
+labels = [["⚠️ 과다", "보통", "✅ 권장"],
+          ["보통", "✅ 권장", "보통"],
+          ["✅ 권장", "보통", "⚠️ 누락"]]
+
+for i in range(len(ministries_types)):
+    for j in range(len(thresholds)):
+        ax.text(j, i, labels[i][j], ha="center", va="center", fontsize=12)
+
+ax.set_xlabel("임계값", fontsize=12)
+ax.set_ylabel("부처 유형", fontsize=12)
+ax.set_title("부처 유형 × 임계값 전략 매트릭스", fontsize=14, fontweight="bold")
+plt.tight_layout()
+plt.show()
+```
+
+---
+
+## 권장사항
+
+### 단기 (즉시 적용)
+
+| 항목 | 권장 |
+|------|------|
+| 산업통상부 임계값 | 0.45 유지 |
+| 알림 필터 | HIGH/MEDIUM만 일일 알림, LOW는 주간 집계 |
+
+### 중기 (1개월 내)
+
+1. **부처별 맞춤 임계값 도입**
+   - 범용형 부처: 0.50+
+   - 중간형 부처: 0.45
+   - 특화형 부처: 0.42~0.44
+
+2. **다중 부처 동시 모니터링**
+   - 특화형 부처 3개 (국토부, 문화부, 외교부) 우선 적용
+
+### 장기 (3개월 내)
+
+1. **피드백 루프 구축**: 실제 Cross-Domain 여부 라벨링 → 임계값 자동 조정
+2. **부처 간 교차 분석**: A부처 소관 법안이 B부처에 미치는 영향 매트릭스
+
+---
+
+## 부록
+
+### 실행 환경
+
+- Python 3.12.12
+- OpenAI API (text-embedding-3-small)
+- 실행 시간: 약 10분 (캐시 활용)
+
+### 산출물 위치
+
+```
+output/overnight_batch/
+├── ministries/                    # 부처별 상세 리포트
+├── thresholds/                    # 임계값별 결과
+├── ministry_scan_summary.json     # 부처별 요약
+├── threshold_comparison.json      # 임계값 비교
+└── overnight_summary.md           # 전체 요약
+```
