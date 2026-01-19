@@ -1,0 +1,40 @@
+# Git
+.git
+.gitignore
+
+# Virtual environments
+.venv
+venv
+__pycache__
+*.pyc
+*.pyo
+
+# IDE
+.idea
+.vscode
+*.swp
+
+# Logs and output (mounted as volumes)
+logs/
+output/
+
+# Cache (optional - can be mounted)
+data/cache/
+
+# Temporary files
+*.tmp
+tmpclaude-*
+
+# Documentation
+docs/
+*.md
+!README.md
+
+# Development files
+*.ipynb
+tests/
+deploy/
+
+# OS files
+.DS_Store
+Thumbs.db

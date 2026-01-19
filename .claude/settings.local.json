@@ -34,7 +34,15 @@
       "Bash(uv run:*)",
       "Bash(source .venv/bin/activate)",
       "Bash(pkill:*)",
-      "Bash(quarto render:*)"
+      "Bash(quarto render:*)",
+      "Bash(tree:*)",
+      "Bash(pip freeze:*)",
+      "Bash(.venv/bin/pip freeze:*)",
+      "Bash(.venv/bin/python -m pip freeze:*)",
+      "Bash(uv pip freeze:*)",
+      "Bash(chmod:*)",
+      "Bash(docker build:*)",
+      "Bash(.venv/bin/python:*)"
     ]
   }
 }

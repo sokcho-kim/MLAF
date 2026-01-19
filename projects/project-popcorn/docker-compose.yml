@@ -1,9 +1,60 @@
-version: '3'
+# Cross-Domain Radar Docker Compose
+# Usage: docker-compose up -d
+
+version: '3.8'
+
 services:
+  # Main Radar Service
+  radar:
+    build: .
+    image: popcorn-radar:latest
+    container_name: popcorn-radar
+
+    # Environment variables
+    env_file:
+      - .env
+
+    # Volume mounts
+    volumes:
+      - ./data:/app/data
+      - ./logs:/app/logs
+      - ./output:/app/output
+      - ./config:/app/config:ro
+
+    environment:
+      - TZ=Asia/Seoul
+
+    restart: "no"
+
+    deploy:
+      resources:
+        limits:
+          memory: 2G
+        reservations:
+          memory: 512M
+
+  # Scheduler (cron-like)
+  scheduler:
+    image: mcuadros/ofelia:latest
+    container_name: popcorn-scheduler
+    depends_on:
+      - radar
+    command: daemon --docker
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+    labels:
+      ofelia.job-run.radar-daily.schedule: "0 0 9 * * *"
+      ofelia.job-run.radar-daily.container: "popcorn-radar"
+    restart: unless-stopped
+
+  # Vector DB (optional, for future use)
   qdrant:
     image: qdrant/qdrant
+    container_name: popcorn-qdrant
     ports:
       - "6333:6333"
     volumes:
       - ./qdrant_storage:/qdrant/storage
     restart: always
+    profiles:
+      - full

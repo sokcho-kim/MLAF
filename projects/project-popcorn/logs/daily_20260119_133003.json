@@ -1,0 +1,13 @@
+{
+  "started_at": "2026-01-19T13:30:03.232299",
+  "ministry": "산업통상부",
+  "status": "success",
+  "ingest": {
+    "skipped": true
+  },
+  "scan": {
+    "new_bills": 0,
+    "alerts": 0
+  },
+  "finished_at": "2026-01-19T13:30:03.721940"
+}

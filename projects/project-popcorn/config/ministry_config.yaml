@@ -1,0 +1,244 @@
+# 부처별 Cross-Domain Radar 설정
+#
+# 구조:
+#   threshold: 감지 임계값 (0.0~1.0)
+#   type: 부처 유형 (범용형/중간형/특화형)
+#   keywords: 관심 키워드 목록
+#   keyword_bonus: 키워드당 가산점 (최대 0.05 cap)
+#
+# 사용법:
+#   - 키워드가 법안 제목에 포함되면 가산점 부여
+#   - 최종 스코어 = CosineSim + min(매칭수 × keyword_bonus, 0.05)
+
+ministries:
+  # ========================================
+  # 범용형 부처 (감지율 50%+)
+  # - R&R이 광범위하여 임계값 상향
+  # ========================================
+  행정안전부:
+    threshold: 0.52
+    type: 범용형
+    keywords:
+      - 행정
+      - 지방
+      - 재난
+      - 안전
+      - 공무원
+    keyword_bonus: 0.02
+
+  보건복지부:
+    threshold: 0.50
+    type: 범용형
+    keywords:
+      - 의료
+      - 건강
+      - 복지
+      - 보건
+      - 요양
+    keyword_bonus: 0.02
+
+  법무부:
+    threshold: 0.50
+    type: 범용형
+    keywords:
+      - 법률
+      - 형사
+      - 민사
+      - 검찰
+      - 교정
+    keyword_bonus: 0.02
+
+  # ========================================
+  # 중간형 부처 (감지율 20~50%)
+  # - 기본 임계값 적용
+  # ========================================
+  산업통상부:
+    threshold: 0.45
+    type: 중간형
+    keywords:
+      - 에너지
+      - 탄소
+      - 산업
+      - 통상
+      - 수출
+      - 무역
+      - 전력
+      - 가스
+      - 신재생
+    keyword_bonus: 0.03
+
+  국방부:
+    threshold: 0.45
+    type: 중간형
+    keywords:
+      - 국방
+      - 군사
+      - 방위
+      - 병역
+    keyword_bonus: 0.02
+
+  교육부:
+    threshold: 0.45
+    type: 중간형
+    keywords:
+      - 교육
+      - 학교
+      - 대학
+      - 학생
+    keyword_bonus: 0.02
+
+  해양수산부:
+    threshold: 0.44
+    type: 중간형
+    keywords:
+      - 해양
+      - 수산
+      - 항만
+      - 어업
+      - 선박
+    keyword_bonus: 0.02
+
+  농림축산식품부:
+    threshold: 0.44
+    type: 중간형
+    keywords:
+      - 농업
+      - 축산
+      - 식품
+      - 농촌
+    keyword_bonus: 0.02
+
+  기후에너지환경부:
+    threshold: 0.44
+    type: 중간형
+    keywords:
+      - 환경
+      - 기후
+      - 탄소
+      - 오염
+      - 폐기물
+    keyword_bonus: 0.03
+
+  과학기술정보통신부:
+    threshold: 0.44
+    type: 중간형
+    keywords:
+      - 과학
+      - 기술
+      - 정보
+      - 통신
+      - 디지털
+      - AI
+      - 인공지능
+    keyword_bonus: 0.02
+
+  고용노동부:
+    threshold: 0.44
+    type: 중간형
+    keywords:
+      - 고용
+      - 노동
+      - 근로
+      - 임금
+      - 산재
+    keyword_bonus: 0.02
+
+  # ========================================
+  # 특화형 부처 (감지율 20% 미만)
+  # - 도메인 특화, 낮은 임계값으로 누락 방지
+  # ========================================
+  국토교통부:
+    threshold: 0.42
+    type: 특화형
+    keywords:
+      - 건설
+      - 도로
+      - 철도
+      - 주택
+      - 교통
+      - 부동산
+    keyword_bonus: 0.02
+
+  문화체육관광부:
+    threshold: 0.42
+    type: 특화형
+    keywords:
+      - 문화
+      - 체육
+      - 관광
+      - 예술
+      - 저작권
+    keyword_bonus: 0.02
+
+  외교부:
+    threshold: 0.42
+    type: 특화형
+    keywords:
+      - 외교
+      - 조약
+      - 국제
+      - 영사
+    keyword_bonus: 0.02
+
+  # ========================================
+  # 기타 부처
+  # ========================================
+  재정경제부:
+    threshold: 0.45
+    type: 중간형
+    keywords:
+      - 재정
+      - 세금
+      - 예산
+      - 금융
+    keyword_bonus: 0.02
+
+  통일부:
+    threshold: 0.42
+    type: 특화형
+    keywords:
+      - 통일
+      - 북한
+      - 남북
+    keyword_bonus: 0.02
+
+  국가보훈부:
+    threshold: 0.42
+    type: 특화형
+    keywords:
+      - 보훈
+      - 유공자
+      - 참전
+    keyword_bonus: 0.02
+
+  성평등가족부:
+    threshold: 0.44
+    type: 중간형
+    keywords:
+      - 가족
+      - 여성
+      - 청소년
+      - 양성평등
+    keyword_bonus: 0.02
+
+
+# ========================================
+# 글로벌 설정
+# ========================================
+global:
+  # 키워드 가산점 최대값
+  max_keyword_bonus: 0.05
+
+  # Alert Level 임계값
+  alert_levels:
+    CRITICAL: 0.75
+    HIGH: 0.65
+    MEDIUM: 0.55
+    LOW: 0.45  # 각 부처 threshold 이상
+
+  # 기본값 (설정 없는 부처용)
+  default:
+    threshold: 0.45
+    type: 중간형
+    keywords: []
+    keyword_bonus: 0.02
