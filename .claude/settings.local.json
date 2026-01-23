@@ -42,7 +42,13 @@
       "Bash(uv pip freeze:*)",
       "Bash(chmod:*)",
       "Bash(docker build:*)",
-      "Bash(.venv/bin/python:*)"
+      "Bash(.venv/bin/python:*)",
+      "Bash(pip3 install:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push)",
+      "Bash(pip3 show:*)",
+      "mcp__ide__executeCode"
     ]
   }
 }
