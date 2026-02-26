@@ -48,7 +48,11 @@
       "Bash(git commit:*)",
       "Bash(git push)",
       "Bash(pip3 show:*)",
-      "mcp__ide__executeCode"
+      "mcp__ide__executeCode",
+      "Bash(echo:*)",
+      "Bash(test:*)",
+      "Bash(wc:*)",
+      "WebFetch(domain:raw.githubusercontent.com)"
     ]
   }
 }

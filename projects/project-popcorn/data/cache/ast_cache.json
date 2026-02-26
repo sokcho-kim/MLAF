@@ -1,0 +1,1148 @@
+{
+  "92df10be7ecd301aa561508b9dcfb923": {
+    "subject": "국가, 지방자치단체, 에너지공급자, 에너지사용자, 모든 국민",
+    "condition": "Not Specified",
+    "action": "의무: 종합적인 시책을 수립ㆍ시행하여야 한다, 지역에너지시책을 수립ㆍ시행하여야 한다, 적극 참여하고 협력하여야 하며 노력하여야 한다, 적극 참여하고 협력하여야 하며 노력하여야 한다, 기여하여야 한다",
+    "exception": "Not Specified"
+  },
+  "fcfe6ed2b7748601e47a227cc4d4917d": {
+    "subject": "에너지에 관한 법령 제정 또는 개정 주체",
+    "condition": "에너지에 관한 법령을 제정하거나 개정하는 경우",
+    "action": "기본원칙과 이 법의 목적에 맞도록 하여야 한다 (성격: 의무)",
+    "exception": "원자력의 연구ㆍ개발ㆍ생산ㆍ이용 및 안전관리에 관하여는 관계 법률에서 정하는 바에 따른다"
+  },
+  "5adb0cb0fa0978d8add58750dac315e5": {
+    "subject": "국가와 지방자치단체",
+    "condition": "이 법의 목적을 달성하기 위하여",
+    "action": "행위 (성격 명시: 허용: 행정적ㆍ재정적 조치를 할 수 있다)",
+    "exception": "Not Specified"
+  },
+  "1b0b6e43be4e6e257ecb0f0b17598a6b": {
+    "subject": "기후위기 취약계층 (노인, 영유아, 어린이, 임산부, 장애인, 저소득계층 등)",
+    "condition": "기후위기로 인한 건강장해 위험이 큰 경우",
+    "action": "보호ㆍ지원 대책 등을 수립하여야 한다 (의무)",
+    "exception": "대통령령으로 정하는 계층은 제외한다"
+  },
+  "42b08d7d5eecfe754640f722daf93700": {
+    "subject": "사업의 안전보건에 관한 조건을 실질적으로 지배ㆍ결정할 수 있는 자",
+    "condition": "중대재해가 발생하는 경우",
+    "action": "의무: 안전보건관리체계를 강하게 구축해야 한다",
+    "exception": "Not Specified"
+  },
+  "2f267b867811293a332cc6fa0f929528": {
+    "subject": "Not Specified",
+    "condition": "Not Specified",
+    "action": "Not Specified",
+    "exception": "Not Specified"
+  },
+  "8dc1a0e8e43a4d5e0bfcb650bf627ae2": {
+    "subject": "에너지사용자 또는 에너지공급자",
+    "condition": "Not Specified",
+    "action": "Not Specified",
+    "exception": "Not Specified"
+  },
+  "39afa5c8e003a4e031debb23c54129c9": {
+    "subject": "Not Specified",
+    "condition": "Not Specified",
+    "action": "Not Specified",
+    "exception": "Not Specified"
+  },
+  "105ce9ef7c9f7ecd45e4e379808978fe": {
+    "subject": "개인정보처리자",
+    "condition": "개인정보의 유출로 인한 경우",
+    "action": "거절할 수 없다 (성격: 의무)",
+    "exception": "Not Specified"
+  },
+  "86bb0686133c663701480e6d14e0f4b4": {
+    "subject": "산업 데이터 생성 및 활용 관련 주체",
+    "condition": "Not Specified",
+    "action": "Not Specified",
+    "exception": "Not Specified"
+  },
+  "9c4984646ca0e9884a0ed8f308cfe5be": {
+    "subject": "Not Specified",
+    "condition": "Not Specified",
+    "action": "Not Specified",
+    "exception": "Not Specified"
+  },
+  "573c6dafa4ad58991022897306e94403": {
+    "subject": "국가, 지방자치단체",
+    "condition": "Not Specified",
+    "action": "의무: 종합적인 시책을 마련하여 추진하여야 한다",
+    "exception": "Not Specified"
+  },
+  "f9dd5324fc23b9eaae88c2933f2e556d": {
+    "subject": "사업시행자",
+    "condition": "조성사업에 관한 공사를 완료한 때",
+    "action": "준공보고서를 제출하고 준공확인을 받아야 한다 (의무)",
+    "exception": "대통령령으로 정하는 바에 따라 준공 전 사용신고를 하거나 사용허가를 받은 경우에는 그러하지 아니하다"
+  },
+  "d30c3524157c68969d3c2fe0954830bb": {
+    "subject": "보건복지부장관, 안전상비의약품 판매자",
+    "condition": "약국과 안전상비의약품 판매점이 없는 무약촌인 경우",
+    "action": "안전상비의약품 판매자 등록기준인 24시간 운영 조건의 예외를 두어야 한다 (성격: 의무)",
+    "exception": "Not Specified"
+  },
+  "5a460000d9a8c413ebebd1a88d5bf473": {
+    "subject": "수도권 외 지역의 입주기업체",
+    "condition": "공장설립등의 완료신고 또는 사업개시의 신고 후",
+    "action": "자산유동화등을 활용하여 자금을 조달할 수 있다 (허용)",
+    "exception": "대통령령으로 정하는 경우는 제외한다"
+  },
+  "5b07cbe0eabbdb41e6f5a8b3400ec8fb": {
+    "subject": "국민",
+    "condition": "Not Specified",
+    "action": "Not Specified",
+    "exception": "Not Specified"
+  },
+  "5d6ffe8e11a6ad911cdff76e9806b0e6": {
+    "subject": "모든 국민과 국가ㆍ지방자치단체",
+    "condition": "제품의 생산ㆍ조립ㆍ가공이나 수입ㆍ판매ㆍ대여 또는 사용과 관련된 행위를 하는 때",
+    "action": "안전을 우선적으로 고려해야 한다 (의무)",
+    "exception": "Not Specified"
+  },
+  "116fad8d7974db16c5c8e6455b8e9071": {
+    "subject": "사업자",
+    "condition": "Not Specified",
+    "action": "Not Specified",
+    "exception": "Not Specified"
+  },
+  "2d0cb5cb09da2dae8ce022238624baf6": {
+    "subject": "국가 및 지방자치단체",
+    "condition": "신ㆍ재생에너지 사업을 위한 국유재산 사용 시",
+    "action": "사용료(대부료) 감면을 추가해야 한다 (의무)",
+    "exception": "Not Specified"
+  },
+  "30a0d4d249db10124d6b3498c0bd56aa": {
+    "subject": "국가 또는 지방자치단체",
+    "condition": "신ㆍ재생에너지 기술개발 및 이용ㆍ보급에 관한 사업을 하는 자에게",
+    "action": "임대할 수 있다 (허용)",
+    "exception": "Not Specified"
+  },
+  "be5e2188ac6fe3d03ff4390c7113c7e7": {
+    "subject": "전원개발사업",
+    "condition": "Not Specified",
+    "action": "Not Specified",
+    "exception": "Not Specified"
+  },
+  "a7860123875e4b5df33efa52f86ccbd0": {
+    "subject": "Not Specified",
+    "condition": "Not Specified",
+    "action": "Not Specified",
+    "exception": "Not Specified"
+  },
+  "373e3576049404f5dec72c16d05357bd": {
+    "subject": "전원개발사업자",
+    "condition": "Not Specified",
+    "action": "전원개발사업을 시행해야 한다 (의무)",
+    "exception": "Not Specified"
+  },
+  "4245869723a5f51f76fddd0b1aac4ac6": {
+    "subject": "기후위기 취약계층",
+    "condition": "Not Specified",
+    "action": "기후위기 취약계층에 대한 보호ㆍ지원 대책 등을 수립하도록 하여야 한다",
+    "exception": "대통령령으로 정하는 계층은 제외한다",
+    "action_modality": "의무"
+  },
+  "797bc35c2babec0170f3928c5817bfc5": {
+    "subject": "Not Specified",
+    "condition": "Not Specified",
+    "action": "Not Specified",
+    "exception": "Not Specified",
+    "action_modality": "선언"
+  },
+  "4cbe6770fc2031f3aaf46ee29899062b": {
+    "subject": "Not Specified",
+    "condition": "Not Specified",
+    "action": "Not Specified",
+    "exception": "Not Specified",
+    "action_modality": "선언"
+  },
+  "de22bfcd40e2c106f71dde215f7036ed": {
+    "subject": "사업의 안전보건에 관한 조건을 지배ㆍ결정할 수 있는 자",
+    "condition": "Not Specified",
+    "action": "안전보건관리체계를 강하게 구축하고 국민의 생명을 보호하려는 것",
+    "exception": "Not Specified",
+    "action_modality": "선언"
+  },
+  "8791d4108573710070c8462ddbac804f": {
+    "subject": "Not Specified",
+    "condition": "Not Specified",
+    "action": "Not Specified",
+    "exception": "Not Specified",
+    "action_modality": "선언"
+  },
+  "3e16b19330e35abbdac38d278525c669": {
+    "subject": "개인정보처리자",
+    "condition": "개인정보 유출로 인한 경우",
+    "action": "개인정보 처리의 정지를 요구하거나 개인정보 처리에 대한 동의를 철회할 수 있다",
+    "exception": "개인정보처리자는 이를 거절할 수 없다",
+    "action_modality": "의무"
+  },
+  "862b18398fd7fea1db90da6837bbba71": {
+    "subject": "국가, 지방자치단체",
+    "condition": "Not Specified",
+    "action": "종합적인 시책을 마련하여 추진하여야 한다",
+    "exception": "Not Specified",
+    "action_modality": "의무"
+  },
+  "8045865a4efe53ea1ad4788479a31ee8": {
+    "subject": "산업 디지털 전환",
+    "condition": "다른 법률에 특별한 규정이 없는 경우",
+    "action": "이 법에서 정하는 바에 따른다",
+    "exception": "개인정보의 처리 및 정보주체의 권리 보장 등은 개인정보 보호법에 따른다",
+    "action_modality": "의무"
+  },
+  "d4350c58303e838d69796b25efd12a18": {
+    "subject": "산업통상부장관",
+    "condition": "3년마다",
+    "action": "산업 디지털 전환 종합계획을 수립하여 시행하여야 한다",
+    "exception": "대통령령으로 정하는 경우는 제외한다",
+    "action_modality": "의무"
+  },
+  "7d9d6a49f031da2d813f80d4e1d26d3e": {
+    "subject": "사업시행자",
+    "condition": "조성사업에 관한 공사를 완료한 때",
+    "action": "준공보고서를 제출하고 준공확인을 받아야 한다",
+    "exception": "대통령령으로 정하는 바에 따라 준공 전 사용신고를 하거나 사용허가를 받은 경우에는 그러하지 아니하다",
+    "action_modality": "의무"
+  },
+  "791b9db93b01e3284f9b3e024250019d": {
+    "subject": "보건복지부장관",
+    "condition": "약국과 안전상비의약품 판매점이 없는 무약촌",
+    "action": "안전상비의약품 판매자 등록기준의 24시간 운영 조건의 예외를 두고자 한다",
+    "exception": "Not Specified",
+    "action_modality": "의무"
+  },
+  "8e3ccfec710c81cf60af542fd87cf6b6": {
+    "subject": "수도권 외 지역의 입주기업체",
+    "condition": "공장설립등의 완료신고 또는 사업개시의 신고 후",
+    "action": "자산유동화등을 활용하여 자금을 조달할 수 있다",
+    "exception": "Not Specified",
+    "action_modality": "허용"
+  },
+  "fabdb909be6c5a15cadb0f81826ff609": {
+    "subject": "국가 및 지방자치단체, 사업자",
+    "condition": "Not Specified",
+    "action": "제품안전정책을 수립하고 시행할 책무를 진다; 안전한 제품을 제조 또는 유통하여야 하고, 제조 또는 유통되는 제품의 안전성을 확인할 책무를 진다",
+    "exception": "Not Specified",
+    "action_modality": "의무"
+  },
+  "c6ae26b8873b38bb813cca82aa7c2122": {
+    "subject": "국민",
+    "condition": "Not Specified",
+    "action": "국가나 지방자치단체의 제품안전정책의 수립ㆍ시행에 참여하고, 안전한 제품을 사용할 권리가 있다",
+    "exception": "Not Specified",
+    "action_modality": "선언"
+  },
+  "73454932a66d1ddba0eb7f2683086ab3": {
+    "subject": "Not Specified",
+    "condition": "다른 법률에 특별한 규정이 있는 경우를 제외하고",
+    "action": "이 법에서 정하는 바에 따른다",
+    "exception": "다른 법률에 특별한 규정이 있는 경우",
+    "action_modality": "Not Specified"
+  },
+  "18fb5eef6a0ea0703979de3ffd14ad2e": {
+    "subject": "국가 및 지방자치단체",
+    "condition": "신ㆍ재생에너지 사업을 위한 국유재산 사용",
+    "action": "사용료(대부료) 감면을 추가함",
+    "exception": "Not Specified",
+    "action_modality": "의무"
+  },
+  "4e56fb73178e42c9a148f9f22593f928": {
+    "subject": "국가 또는 지방자치단체",
+    "condition": "신ㆍ재생에너지 기술개발 및 이용ㆍ보급에 관한 사업을 하는 자에게",
+    "action": "국유재산 또는 공유재산을 임대하거나 처분할 수 있다",
+    "exception": "Not Specified",
+    "action_modality": "허용"
+  },
+  "26b7bee61ae8f9a5b789204c48425f1f": {
+    "subject": "발전사업자, 송전사업자, 방사성폐기물 관리사업자, 고준위 방사성폐기물 관리사업자",
+    "condition": "「전기사업법」 제7조, 「방사성폐기물 관리법」 제10조, 「고준위 방사성폐기물 관리에 관한 특별법」 제38조에 따라 허가를 받은 경우",
+    "action": "전원개발사업을 시행한다",
+    "exception": "Not Specified",
+    "action_modality": "의무"
+  },
+  "afe9fb526306d86e9f157a2caff7b758": {
+    "subject": "기후에너지환경부",
+    "condition": "전원개발사업에 관한 중요 사항",
+    "action": "전원개발사업추진위원회를 둔다",
+    "exception": "대통령령으로 정하는 경우",
+    "action_modality": "의무"
+  },
+  "025c0d3928bda004cb6da4762fe7f60f": {
+    "subject": "전원개발사업자",
+    "condition": "전원개발사업 실시계획 수립, 기후에너지환경부장관의 승인",
+    "action": "전원개발사업 실시계획을 수립하여 기후에너지환경부장관의 승인을 받아야 한다",
+    "exception": "대통령령으로 정하는 전원개발사업에 대하여는 그러하지 아니하다",
+    "action_modality": "의무"
+  },
+  "f1b80a62de990bf22244fdb4dd11d741": {
+    "subject": "한국산업은행",
+    "condition": "법정자본금 상한을 45조원으로 함",
+    "action": "첨단전략산업기금을 설치하고 자금 지원을 제공함",
+    "exception": "「공공기관의 운영에 관한 법률」을 적용하지 아니함",
+    "action_modality": "의무"
+  },
+  "5c3ae54d796ddfd34da860017d3ab237": {
+    "subject": "산업통상부장관",
+    "condition": "중ㆍ장기 산업발전전망에 따라",
+    "action": "첨단기술 및 첨단제품의 범위를 정하여 고시하여야 한다",
+    "exception": "Not Specified",
+    "action_modality": "의무"
+  },
+  "79609c82f2050228207e45483b2f52a1": {
+    "subject": "사업자",
+    "condition": "대통령령으로 정하는 바에 따라",
+    "action": "산업통상부장관의 인가를 받아 공제조합을 설립할 수 있다",
+    "exception": "Not Specified",
+    "action_modality": "인가/허가"
+  },
+  "f0a65bdeadf947e05b152d41dfcc9e24": {
+    "subject": "공제조합",
+    "condition": "Not Specified",
+    "action": "다음 각 호의 사업을 한다",
+    "exception": "Not Specified",
+    "action_modality": "허용"
+  },
+  "9a334f538aff50defa9bc25969e583a7": {
+    "subject": "정부",
+    "condition": "5년 단위",
+    "action": "전략산업등의 육성ㆍ보호 기본계획을 수립하여야 한다",
+    "exception": "대통령령으로 정하는 경미한 사항의 변경은 제외한다",
+    "action_modality": "의무"
+  },
+  "45b7e6fe57bd34051dca421257039810": {
+    "subject": "정부, 특화단지 입주기업 및 지원을 받는 기업",
+    "condition": "전략산업등을 영위하는 기업ㆍ기관 또는 단체 간의 협력 관계",
+    "action": "협력 관계를 공고히 하여 산업생태계 전반의 경쟁력을 높이고 동반성장을 달성하기 위한 시책을 강구하여야 한다, 연대협력 촉진을 위하여 노력하여야 한다",
+    "exception": "Not Specified",
+    "action_modality": "의무"
+  },
+  "8ffdb82bbf4e0b79db7f1be2fab40dd1": {
+    "subject": "위원회",
+    "condition": "Not Specified",
+    "action": "연대협력 협의회를 운영할 수 있다",
+    "exception": "대통령령으로 정하는 사항은 제외한다",
+    "action_modality": "허용"
+  },
+  "90e87a45b7bf84eb438b4e17c61d9177": {
+    "subject": "주변지역 주민",
+    "condition": "주민의 4분의 3 이상 동의",
+    "action": "지원금 비율을 달리 정할 수 있다",
+    "exception": "Not Specified",
+    "action_modality": "허용"
+  },
+  "33738aa121dace70f8cb34b02f188550": {
+    "subject": "송ㆍ변전설비 주변지역 주민",
+    "condition": "Not Specified",
+    "action": "주민지원사업, 주민복지사업, 소득증대사업, 육영사업 및 기타 필요한 사업을 지원한다",
+    "exception": "주민 전체가 합의한 경우에는 대통령령으로 정하는 바에 따라 달리 정할 수 있다",
+    "action_modality": "허용"
+  },
+  "5535c3d87f458438ff8f8dfbfc842874": {
+    "subject": "전기사업의 허가를 받으려는 자, 전기신사업의 등록을 하려는 자",
+    "condition": "결격사유에 해당하는 경우",
+    "action": "전기사업의 허가를 받을 수 없다, 전기신사업의 등록을 할 수 없다",
+    "exception": "제1항 또는 제2항의 사유에 해당하여 허가 또는 등록이 취소된 경우는 제외한다",
+    "action_modality": "금지"
+  },
+  "e681203c72bf44d19aa17338a5efdb7e": {
+    "subject": "방위사업청장, 국방기술품질원",
+    "condition": "소요제기-소요결정-선행연구 통합, 국방군사시설사업 시행",
+    "action": "소요기획절차를 마련하고, 국방기술품질원이 사업을 수행할 수 있도록 규정",
+    "exception": "Not Specified",
+    "action_modality": "의무"
+  },
+  "b3e39fce034b30bee462ea42015b171c": {
+    "subject": "방위사업청장",
+    "condition": "방위력개선사업을 위한 무기체계 등의 소요가 결정된 경우",
+    "action": "방위력개선사업의 추진방법을 결정하여야 한다",
+    "exception": "전시ㆍ사변ㆍ해외파병 등 방위력개선사업에 대한 긴급한 무기체계 등의 소요가 있거나 시범사업을 실시한 경우",
+    "action_modality": "의무"
+  },
+  "7935502b032ecf11fa36804283a9e313": {
+    "subject": "정부, 국방기술품질원",
+    "condition": "국방기술품질원의 운영을 위하여 필요한 경우",
+    "action": "군수품 또는 국유재산을 무상으로 사용허가ㆍ대부 또는 양여할 수 있다",
+    "exception": "「군수품관리법」 또는 「국유재산법」에도 불구하고",
+    "action_modality": "허용"
+  },
+  "1a078cefe7fea4ba748382f5764ef1d3": {
+    "subject": "기상청장, 관계 중앙행정기관의 장, 지방자치단체의 장",
+    "condition": "기후ㆍ기후변화 감시 및 예측 기본계획 수립 시, 미래의 기후위기 대응 계획 수립 시",
+    "action": "전문가 의견 청취, 국가 기후변화 표준시나리오 활용, 지역별 기후 감시 및 예측 정보 제공, 전문인력 양성",
+    "exception": "Not Specified",
+    "action_modality": "의무"
+  },
+  "7aec2175d35c393a552cc9ff213fa273": {
+    "subject": "국가, 지방자치단체, 에너지공급자, 에너지사용자, 모든 국민",
+    "condition": "이 법의 목적을 실현하기 위한 경우",
+    "action": "종합적인 시책을 수립ㆍ시행하여야 한다, 지역에너지시책을 수립ㆍ시행하여야 한다, 적극 참여하고 협력하여야 하며 노력하여야 한다, 적극 참여하고 협력하여야 하며 노력하여야 한다, 기여하여야 한다",
+    "exception": "해당 지방자치단체의 조례로 정할 수 있다",
+    "action_modality": "의무"
+  },
+  "4a59b55e7bb881dee8eadeaa0fb44ccb": {
+    "subject": "정부, 산업통상자원부장관, 에너지위원회",
+    "condition": "Not Specified",
+    "action": "에너지위원회를 둔다, 위원회는 위원장 1명을 포함한 25명 이내의 위원으로 구성한다, 위원장은 산업통상자원부장관이 된다, 위촉위원의 임기는 2년으로 하고, 연임할 수 있다",
+    "exception": "대통령령으로 정하는 경우는 제외한다",
+    "action_modality": "의무"
+  },
+  "7810317521211df2cd910e8d78be007f": {
+    "subject": "정부, 산업통상자원부장관",
+    "condition": "에너지복지 사업 실시 시, 3년마다",
+    "action": "에너지이용 소외계층에 관한 실태조사를 하고 그 결과를 공표하여야 한다",
+    "exception": "산업통상자원부장관이 필요하다고 인정하는 경우에는 추가로 간이조사를 할 수 있다",
+    "action_modality": "의무"
+  },
+  "eae64c979112b117ff7ab4af067bcc14": {
+    "subject": "국가와 지방자치단체",
+    "condition": "이 법의 목적을 달성하기 위하여",
+    "action": "학술연구ㆍ조사 및 기술개발 등에 필요한 행정적ㆍ재정적 조치를 할 수 있다",
+    "exception": "Not Specified",
+    "action_modality": "허용"
+  },
+  "2540c1ccacc53ea3ec1ea79847fe047b": {
+    "subject": "산업통상자원부장관",
+    "condition": "대통령령으로 정하는 바에 따라",
+    "action": "권한을 시ㆍ도지사 또는 시장ㆍ군수ㆍ구청장에게 위임할 수 있다 / 업무를 전담기관에 위탁할 수 있다",
+    "exception": "Not Specified",
+    "action_modality": "허용"
+  },
+  "2bedab1aead8a00a439ffaaaa8213b1e": {
+    "subject": "정부",
+    "condition": "Not Specified",
+    "action": "신ㆍ재생에너지의 기술개발 및 이용ㆍ보급의 촉진에 관한 시책을 마련하여야 한다",
+    "exception": "Not Specified",
+    "action_modality": "의무"
+  },
+  "779380dfd78e96bc189ca6550980b302": {
+    "subject": "정부",
+    "condition": "회계연도마다",
+    "action": "사업비를 세출예산에 계상하여야 한다",
+    "exception": "Not Specified",
+    "action_modality": "의무"
+  },
+  "7f922c9809d987c1399be6419dc02be0": {
+    "subject": "산업통상자원부장관",
+    "condition": "신ㆍ재생에너지 발전에 의하여 공급되는 전기의 기준가격을 발전원별로 정한 경우",
+    "action": "기준가격을 고시하여야 한다",
+    "exception": "Not Specified",
+    "action_modality": "의무"
+  },
+  "79f7dc4d34cf6cab46dae6211854b918": {
+    "subject": "산업통상자원부장관, 혼합의무자(석유정제업자 또는 석유수출입업자)",
+    "condition": "신ㆍ재생에너지의 이용ㆍ보급을 촉진하고 신ㆍ재생에너지 산업의 활성화를 위하여 필요하다고 인정하는 경우",
+    "action": "신ㆍ재생에너지 연료를 수송용연료에 혼합하게 할 수 있다",
+    "exception": "Not Specified",
+    "action_modality": "허용"
+  },
+  "dc615fcdeb295929a2ffd2a008f57b8a": {
+    "subject": "산업통상자원부장관",
+    "condition": "혼합의무자가 혼합의무비율을 충족시키지 못한 경우",
+    "action": "과징금을 부과할 수 있다",
+    "exception": "Not Specified",
+    "action_modality": "허용"
+  },
+  "214e29060a28be86b3b97cb0369218d8": {
+    "subject": "경상북도, 경상남도, 울산광역시의 피해자 및 피해지역",
+    "condition": "2025년 3월 21일부터 3월 30일까지 발생한 초대형산불",
+    "action": "피해구제와 생활 및 심리안정 등의 지원을 통해 피해지역의 안정과 회복 및 지속가능한 발전을 도모함",
+    "exception": "Not Specified",
+    "action_modality": "의무"
+  },
+  "048cc79dd712b0a8c25c55bdcd06612e": {
+    "subject": "Not Specified",
+    "condition": "Not Specified",
+    "action": "Not Specified",
+    "exception": "Not Specified",
+    "action_modality": "선언"
+  },
+  "1328584de2687b4c5b547322117053bb": {
+    "subject": "산업통상부장관",
+    "condition": "5년 단위, 전 국토를 대상으로",
+    "action": "산업집적활성화 기본계획을 수립하고 고시하여야 한다",
+    "exception": "대통령령으로 정하는 경미한 사항을 변경할 때에는 그러하지 아니하다",
+    "action_modality": "의무"
+  },
+  "d640af7c7655568eca9a5551b8bde43f": {
+    "subject": "시장ㆍ군수 또는 구청장",
+    "condition": "토지소유자나 그 밖의 이해관계인이 신청한 경우, 10일 이내",
+    "action": "공장설립이 가능한지 여부를 확인하여 알려 주어야 한다",
+    "exception": "Not Specified",
+    "action_modality": "의무"
+  },
+  "c2e17e995c3a53550fd20a15a418c2ba": {
+    "subject": "제13조제1항에 따른 승인을 받은 자의 상속인, 양수인, 합병 후 존속하는 법인 또는 합병에 따라 설립되는 법인",
+    "condition": "제13조제1항에 따른 승인을 받은 자가 사망, 양도, 합병한 경우",
+    "action": "그 공장에 관한 권리ㆍ의무를 승계한다",
+    "exception": "Not Specified",
+    "action_modality": "의무"
+  },
+  "d0ec518d8bdff11e231d0d7650eab992": {
+    "subject": "공장설립을 하려는 자",
+    "condition": "공장건축면적이 500제곱미터 이상인 경우",
+    "action": "시장ㆍ군수 또는 구청장의 승인을 받아야 한다",
+    "exception": "산업통상부령으로 정하는 경미한 사항을 변경하려는 경우에는 시장ㆍ군수 또는 구청장에게 신고하여야 한다",
+    "action_modality": "의무"
+  },
+  "42720e1862a0a210579f32c0fcf213a1": {
+    "subject": "공장을 이전한 자",
+    "condition": "과밀억제권역에서 유치지역이나 그 밖의 지역으로",
+    "action": "이전 사실의 확인을 받을 수 있다",
+    "exception": "Not Specified",
+    "action_modality": "허용"
+  },
+  "e1408e14f5cc756b95dd6ab86140baaf": {
+    "subject": "Not Specified",
+    "condition": "산업의 밀집도 등 입지잠재력, 지역발전의 효과, 산업용지의 확보와 지원시설 설치 용이성",
+    "action": "유치지역을 지정하여야 한다",
+    "exception": "Not Specified",
+    "action_modality": "의무"
+  },
+  "7ad861d1172330712ffc704cc9cf51fb": {
+    "subject": "산업통상부장관",
+    "condition": "제23조에 따라 지정ㆍ고시된 유치지역, 과밀억제권역에서 이전을 희망하는 공장",
+    "action": "우선입주하게 할 수 있다",
+    "exception": "Not Specified",
+    "action_modality": "허용"
+  },
+  "8e367646455c63e78108b9927fd75c7a": {
+    "subject": "시장ㆍ군수 또는 구청장",
+    "condition": "등록된 공장이 주거 밀집지역 인근에 위치하고, 주민의 환경피해 민원이 집단적으로 발생하는 경우",
+    "action": "해당 공장의 이전을 권고할 수 있다",
+    "exception": "Not Specified",
+    "action_modality": "허용"
+  },
+  "12ddcc9d1dad8fa89c9eacc3afeb6525": {
+    "subject": "관리권자",
+    "condition": "대통령령으로 정하는 바에 따라",
+    "action": "관리업무의 전부 또는 일부를 위임 또는 위탁할 수 있다",
+    "exception": "Not Specified",
+    "action_modality": "허용"
+  },
+  "1de092168633fc877dad7f44d50b4d48": {
+    "subject": "산업통상부장관",
+    "condition": "대통령령으로 정하는 바에 따라",
+    "action": "산업단지의 관리지침을 수립하고 고시하여야 한다",
+    "exception": "대통령령으로 정하는 경미한 사항의 변경은 제외한다",
+    "action_modality": "의무"
+  },
+  "36e56ed73308c8916a4adce365b71a69": {
+    "subject": "관리기관",
+    "condition": "산업단지가 지정된 경우",
+    "action": "산업단지관리기본계획을 수립하여야 한다",
+    "exception": "대통령령으로 정하는 경미한 사항을 변경하는 경우는 제외한다",
+    "action_modality": "의무"
+  },
+  "4816376915891714b63978d93eebca3d": {
+    "subject": "산업통상부장관 또는 지방자치단체의 장",
+    "condition": "산업단지에 있는 국유 또는 공유의 토지 또는 공장 및 건축물, 대통령령으로 정하는 바에 따라",
+    "action": "입주기업체 또는 지원기관에 매각하거나 임대할 수 있다",
+    "exception": "국유인 경우에는 그 관리청으로부터 관리전환을 받거나 재정경제부장관의 관리ㆍ처분에 관한 지정을 받은 것만 해당한다",
+    "action_modality": "허용"
+  },
+  "c4cd924b27539956cd40c6ffed542377": {
+    "subject": "관리기관",
+    "condition": "사업시행자로부터 분양ㆍ임대에 관한 업무를 위탁받으려는 경우",
+    "action": "분양ㆍ임대계획서를 관리권자에게 제출하여야 한다",
+    "exception": "농공단지의 경우에는 시ㆍ도지사 또는 대도시 시장의 승인을 받아야 한다",
+    "action_modality": "의무"
+  },
+  "5d09a1418b53a1b20163e83cd66ab1b6": {
+    "subject": "입주기업체",
+    "condition": "대통령령으로 정하는 경우, 공장설립등의 완료신고 전 또는 신고 후 10년 이내, 사업개시의 신고 전 또는 신고 후 대통령령으로 정하는 기간",
+    "action": "산업용지 또는 공장등을 관리기관에 양도하여야 한다",
+    "exception": "입주기업체 또는 같은 업종을 운영하려는 자에게 처분하려는 경우에는 그러하지 아니하다",
+    "action_modality": "의무"
+  },
+  "4c3b6d824535ddd689bf3ee20b92132d": {
+    "subject": "관리기관",
+    "condition": "입주기업체 또는 지원기관이 분양받은 산업용지가 입주계약에 의한 용도로 사용되지 않을 때",
+    "action": "산업용지를 환수할 수 있다",
+    "exception": "Not Specified",
+    "action_modality": "허용"
+  },
+  "a21e1186cf96e9e84ee19e45aee614d3": {
+    "subject": "Not Specified",
+    "condition": "Not Specified",
+    "action": "Not Specified",
+    "exception": "Not Specified",
+    "action_modality": "선언"
+  },
+  "6ab63310568a5d308535607cf84a5d14": {
+    "subject": "Not Specified",
+    "condition": "Not Specified",
+    "action": "Not Specified",
+    "exception": "Not Specified",
+    "action_modality": "선언"
+  },
+  "468a015869db9a9e83dd605370733aba": {
+    "subject": "용기ㆍ냉동기 또는 특정설비를 제조하려는 자",
+    "condition": "등록한 사항 중 산업통상자원부령으로 정하는 중요 사항을 변경하려는 경우",
+    "action": "시장ㆍ군수 또는 구청장에게 등록하여야 한다",
+    "exception": "대통령령으로 정하는 경우는 제외한다",
+    "action_modality": "의무"
+  },
+  "959dbc1a049144d5efed62102162fbc0": {
+    "subject": "허가관청, 등록관청 또는 신고관청",
+    "condition": "사업자등이 다음 각 호의 어느 하나에 해당하는 경우",
+    "action": "허가나 등록을 취소하거나 영업장 폐쇄 또는 사업의 정지나 제한 또는 저장소의 사용 정지나 사용 제한을 명할 수 있다",
+    "exception": "제1호, 제3호, 제5호 또는 제43호에 해당하는 경우에는 그 허가나 등록을 취소하거나 영업장 폐쇄를 명하여야 한다",
+    "action_modality": "의무"
+  },
+  "ff37538535e9cdd68c7792db39b4bca7": {
+    "subject": "고압가스제조자, 고압가스판매자",
+    "condition": "고압가스를 수요자에게 공급할 때",
+    "action": "안전점검을 하여야 하며, 위해 예방에 필요한 사항을 계도하여야 한다",
+    "exception": "Not Specified",
+    "action_modality": "의무"
+  },
+  "853b1bef139f19b1d1741a5a4272349b": {
+    "subject": "사업자등, 고압가스제조자, 고압가스판매자",
+    "condition": "제4조제6항, 제5조제2항, 제5조의3제2항 또는 제5조의4제2항에 따른 시설기준과 기술기준, 산업통상자원부령으로 정하는 바",
+    "action": "시설기준과 기술기준을 준수하여야 한다, 용기의 안전을 점검한 후 점검기준에 맞는 용기에 충전하여야 한다, 용기를 안전하게 유지ㆍ관리하여야 한다, 충전ㆍ판매 기록을 작성ㆍ보존하여야 한다",
+    "exception": "Not Specified",
+    "action_modality": "의무"
+  },
+  "033801efe15459014ea75ea69afe1b54": {
+    "subject": "고압가스를 수입하려는 자",
+    "condition": "산업통상자원부령으로 정하는 바에 따라, 수입 후 30일 이내",
+    "action": "수입품목과 수량 등을 시장ㆍ군수 또는 구청장에게 신고하여야 한다",
+    "exception": "일정한 용량 미만이거나 다른 법령에 따라 수입 현황이 파악되는 경우로서 산업통상자원부령으로 정하는 경우에는 그러하지 아니하다",
+    "action_modality": "의무"
+  },
+  "5cec9acf0cbd0cc6728f76440352b05d": {
+    "subject": "허가관청, 신고관청, 등록관청, 사용신고관청",
+    "condition": "대통령령으로 정하는 바에 따라, 위해 발생 또는 발생할 우려가 있다고 인정하는 경우",
+    "action": "필요한 조치를 명할 수 있다, 시설등의 이전ㆍ사용정지 또는 제한을 명하거나 고압가스의 폐기를 명할 수 있다, 시설등을 봉인할 수 있다",
+    "exception": "천재지변ㆍ전쟁, 그 밖의 불가항력의 사유로 인한 경우는 제외한다",
+    "action_modality": "허용"
+  },
+  "2dc17c22fda6e4336eb5d4749eb3170b": {
+    "subject": "사업자등, 특정고압가스 사용신고자 또는 용기등을 수입한 자",
+    "condition": "고압가스의 사고로 인한 타인의 생명ㆍ신체나 재산상의 손해",
+    "action": "보험에 가입하여야 한다",
+    "exception": "Not Specified",
+    "action_modality": "의무"
+  },
+  "271d6df8411f49ab89638ae9bf0ab5b3": {
+    "subject": "산업통상자원부장관",
+    "condition": "공사의 업무 중 다음 각 호의 어느 하나에 해당하는 사항",
+    "action": "지도ㆍ감독한다",
+    "exception": "Not Specified",
+    "action_modality": "의무"
+  },
+  "b772a8a7541d0d9896dfc2459d7dc7c4": {
+    "subject": "Not Specified",
+    "condition": "Not Specified",
+    "action": "정관 기재사항과 사업, 그 밖에 운영에 필요한 사항은 대통령령으로 정한다",
+    "exception": "Not Specified",
+    "action_modality": "선언"
+  },
+  "94afd1e848c92e91eb47a01da76adef0": {
+    "subject": "Not Specified",
+    "condition": "이 법 및 「공공기관의 운영에 관한 법률」에 규정된 것 외에는",
+    "action": "「민법」 중 재단법인에 관한 규정을 준용한다",
+    "exception": "Not Specified",
+    "action_modality": "선언"
+  },
+  "93964d2c91fd047843d57c38eee72236": {
+    "subject": "고압가스의 제조ㆍ저장ㆍ판매의 허가나 변경허가를 받으려는 자, 용기등의 제조등록ㆍ변경등록 또는 재등록을 하려는 자, 고압가스 수입업의 등록이나 변경등록을 하려는 자, 고압가스 운반자의 등록이나 변경등록을 하려는 자, 검사기관의 지정ㆍ변경지정 또는 재지정을 받으려는 자, 안전관리규정과 안전성향상계획에 대한 공사의 의견을 받으려는 자, 고압가스의 제조ㆍ저장ㆍ판매 또는 수입시설의 설치나 변경공사에 따른 중간검사ㆍ감리 또는 완성검사를 받으려는 자, 고압가스의 정기검사를 받으려는 자, 정밀안전검진을 받으려는 자, 용기등의 검사나 재검사를 받으려는 자, 품질검사를 받으려는 자, 고압가스의 수입신고를 하려는 자, 특정고압가스 사용시설의 완성검사나 정기검사를 받으려는 자, 교육을 받으려는 자, 확인을 받으려는 자",
+    "condition": "산업통상자원부령으로 정하는 바에 따라",
+    "action": "수수료를 내야 한다, 수수료나 교육비를 내야 한다, 비용을 부담한다",
+    "exception": "Not Specified",
+    "action_modality": "의무"
+  },
+  "913b93582ccc1d754edb77c7af5aef42": {
+    "subject": "산업통상자원부장관, 시ㆍ도지사 및 시장ㆍ군수ㆍ구청장",
+    "condition": "대통령령으로 정하는 바에 따라, 제9호의 경우는 중대한 위해가 발생하였거나 위해의 발생이 긴박하여 긴급하고 부득이하다고 인정할 때로 한정",
+    "action": "업무를 공사에 위탁할 수 있다",
+    "exception": "Not Specified",
+    "action_modality": "허용"
+  },
+  "7adafb67e1d0e4944de59323b79adc9e": {
+    "subject": "고압가스제조자, 고압가스판매자",
+    "condition": "고압가스를 판매하는 경우",
+    "action": "이 법을 적용하지 아니한다",
+    "exception": "「액화석유가스의 안전관리 및 사업법」과 「도시가스사업법」에서 규정한 사항에 대하여는 적용하지 아니한다",
+    "action_modality": "금지"
+  },
+  "f0dc06970c185a1fd2a7c43c2319bd7c": {
+    "subject": "고압가스를 제조, 저장, 판매, 운반, 검사하는 자",
+    "condition": "제4조, 제5조, 제23조, 제35조, 제36조의 규정 위반",
+    "action": "2년 이하의 징역 또는 2천만원 이하의 벌금에 처한다",
+    "exception": "Not Specified",
+    "action_modality": "벌칙"
+  },
+  "1be2cee5040b7d669290ff685d6b4916": {
+    "subject": "고압가스를 제조한 자, 안전관리자를 선임하지 아니한 자",
+    "condition": "제4조제2항 전단에 따른 신고를 하지 아니한 경우, 제15조제1항부터 제3항까지의 규정에 따른 안전관리자를 선임하지 아니한 경우",
+    "action": "500만원 이하의 벌금에 처한다",
+    "exception": "Not Specified",
+    "action_modality": "벌칙"
+  },
+  "351a884aae3d71b628be3bf7078f0bcc": {
+    "subject": "부탄 공급업체",
+    "condition": "수소를 제조하기 위한 목적으로 설비에 공급하는 경우",
+    "action": "부탄에 대한 세액과 프로판에 대한 세액과의 차액만큼 환급할 수 있도록 한다",
+    "exception": "Not Specified",
+    "action_modality": "의무"
+  },
+  "96658dc8b56a7cf2808d104b0ce2706f": {
+    "subject": "국가 및 지방자치단체, 수소사업자",
+    "condition": "Not Specified",
+    "action": "수소산업 육성, 청정수소의 개발ㆍ생산ㆍ보급 및 수소의 안전관리에 필요한 시책을 수립하고 추진하여야 한다; 기술개발ㆍ사업화 촉진과 수소의 환경친화적인 생산ㆍ저장ㆍ운송ㆍ이용을 위하여 노력하여야 한다",
+    "exception": "Not Specified",
+    "action_modality": "의무"
+  },
+  "a5f72b65857532a096920d835cde4bf4": {
+    "subject": "Not Specified",
+    "condition": "Not Specified",
+    "action": "이 법을 적용하지 아니한다 / 이 법에서 규정한 사항을 적용한다",
+    "exception": "「고압가스 안전관리법」, 「도시가스사업법」 및 「액화석유가스의 안전관리 및 사업법」에서 규정한 사항에 대해서는 이 법을 적용하지 아니한다",
+    "action_modality": "금지"
+  },
+  "e9a29ffabec8b4ca8ed649507163c1a8": {
+    "subject": "기후에너지환경부장관",
+    "condition": "사회적ㆍ경제적 여건변화 등으로 필요하다고 인정하는 경우",
+    "action": "수소경제 이행 기본계획을 수립하여야 하며, 필요 시 변경할 수 있다",
+    "exception": "대통령령으로 정하는 경미한 사항을 변경하는 경우는 제외한다",
+    "action_modality": "의무"
+  },
+  "dc07d9ad2a5c6f77abdad5f3f6c96c56": {
+    "subject": "산업통상부장관",
+    "condition": "매년 해당 연도 이후 5년간",
+    "action": "석유 수급 상황에 관한 예측을 하여야 한다",
+    "exception": "대통령령으로 정하는 바에 따라",
+    "action_modality": "의무"
+  },
+  "729ab1f96a2d54404f2733f193b94fd5": {
+    "subject": "Not Specified",
+    "condition": "천연가스와 석유가스에 관하여",
+    "action": "이 법을 적용하지 아니한다",
+    "exception": "「도시가스사업법」, 「고압가스 안전관리법」 및 「액화석유가스의 안전관리 및 사업법」에서 규정한 사항",
+    "action_modality": "금지"
+  },
+  "4054f233e3eed433abb1152eadc9f5fa": {
+    "subject": "석유정제업을 하려는 자",
+    "condition": "산업통상부령으로 정하는 바에 따라",
+    "action": "산업통상부장관에게 등록하여야 한다",
+    "exception": "Not Specified",
+    "action_modality": "의무"
+  },
+  "f63730e8e97ea42032050c9494670891": {
+    "subject": "고용노동부장관",
+    "condition": "체불임금 지급의무에 관하여 연대책임을 지는 직상수급인 및 그 상위 수급인",
+    "action": "체불임금 대지급금 지급분을 회수할 수 있는 근거를 마련함",
+    "exception": "Not Specified",
+    "action_modality": "의무"
+  },
+  "9c64b63fe4a7034518cdc8144003eda8": {
+    "subject": "산업통상부장관",
+    "condition": "중ㆍ장기 산업발전전망에 따라",
+    "action": "신산업의 창출을 촉진하기 위한 시책을 수립하여야 한다",
+    "exception": "Not Specified",
+    "action_modality": "의무"
+  },
+  "35faa9c40113f58e186de02928330016": {
+    "subject": "특별시장ㆍ광역시장ㆍ특별자치시장ㆍ도지사 또는 특별자치도지사",
+    "condition": "관할 구역의 지역적 특성을 고려하여, 5년마다 5년 이상을 계획기간으로",
+    "action": "지역에너지계획을 수립ㆍ시행하여야 한다",
+    "exception": "Not Specified",
+    "action_modality": "의무"
+  },
+  "999d3e49810eac2bf4cc5fc11f18c807": {
+    "subject": "중앙전공사상심사위원회, 퇴역하는 장교, 준사관 및 부사관",
+    "condition": "재심사 청구일부터 120일, 부득이한 사유가 있는 경우 30일 연장 가능",
+    "action": "재심사 및 의결 기한을 정하고, 예비역에 지원하여 일정 기간 복무할 수 있도록 한다",
+    "exception": "Not Specified",
+    "action_modality": "의무"
+  },
+  "42a9c643557f1980ece30375be1626c2": {
+    "subject": "위반자",
+    "condition": "제15조, 제29조, 제30조, 제31조, 제27조, 제40조, 제8조, 제11조, 제33조에 해당하는 행위",
+    "action": "3년 이하의 징역 또는 3천만원 이하의 벌금에 처한다 (2년 이하의 징역 또는 2천만원 이하의 벌금, 1년 이하의 징역 또는 1천만원 이하의 벌금에 처한다)",
+    "exception": "Not Specified",
+    "action_modality": "벌칙"
+  },
+  "09011f1bc1c63815d915b298f51f0d23": {
+    "subject": "표준계약서를 사용하는 사업자 또는 사업자단체",
+    "condition": "Not Specified",
+    "action": "영화발전기금 지원 등 재정지원을 할 수 있다",
+    "exception": "Not Specified",
+    "action_modality": "허용"
+  },
+  "e56dc0d7ebaafb55f1ad7ff68319fa29": {
+    "subject": "산업통상부장관",
+    "condition": "산업의 경쟁력 강화를 위하여",
+    "action": "기업이 경영하는 사업의 전문화를 유도하기 위한 시책을 수립할 수 있다",
+    "exception": "Not Specified",
+    "action_modality": "허용"
+  },
+  "dfe9221a51248e7d92cec2c4c1960f8c": {
+    "subject": "산업통상부장관",
+    "condition": "산업융합을 촉진하기 위하여",
+    "action": "산업융합과 관련한 기업의 애로와 건의 사항을 접수하여 조사하고, 산업융합과 관련된 제도의 개선 방안을 마련하여야 한다",
+    "exception": "Not Specified",
+    "action_modality": "의무"
+  },
+  "413c3d601d695e5bcb42f5a6e116617d": {
+    "subject": "농림축산식품부장관, 해양수산부장관, 국가, 지방자치단체",
+    "condition": "농어업 재해 발생 시",
+    "action": "재해 이전까지 생산에 투입된 비용의 전부 또는 일부를 보조하고, 보조 및 지원 기준을 실거래가 수준으로 정함",
+    "exception": "Not Specified",
+    "action_modality": "의무"
+  },
+  "e02e5ef853e00cb9169f41eacebcedcf": {
+    "subject": "Not Specified",
+    "condition": "Not Specified",
+    "action": "Not Specified",
+    "exception": "Not Specified",
+    "action_modality": "선언"
+  },
+  "2703a5f216f5a3f9d5df7ff32ece4a42": {
+    "subject": "시ㆍ도지사 및 대도시 시장",
+    "condition": "5년 단위, 관할 구역",
+    "action": "지역산업진흥계획을 수립할 수 있다",
+    "exception": "Not Specified",
+    "action_modality": "허용"
+  },
+  "0028f0dea9ea7158b2cfdc973fbb7a6e": {
+    "subject": "해당 공장의 소유자, 점유자, 그 밖의 이해관계인의 승계인",
+    "condition": "이 법에 따라 행한 절차나 그 밖의 행위",
+    "action": "그 효력이 있다",
+    "exception": "Not Specified",
+    "action_modality": "Not Specified"
+  },
+  "509cf4081f2e0c6ae18ee308befc6409": {
+    "subject": "시장ㆍ군수 또는 구청장, 공단, 대통령령으로 정하는 관리기관",
+    "condition": "지식기반산업의 집적활성화 또는 산업집적지경쟁력강화사업을 추진하기 위하여 필요한 경우",
+    "action": "지식기반산업집적지구 활성화계획을 수립하여 시ㆍ도지사에게 지식기반산업집적지구로 지정할 것을 요청할 수 있다",
+    "exception": "Not Specified",
+    "action_modality": "허용"
+  },
+  "26aad9cf3873da370e7cd472bd7ee066": {
+    "subject": "Not Specified",
+    "condition": "Not Specified",
+    "action": "고압가스의 종류와 범위는 대통령령으로 정한다",
+    "exception": "Not Specified",
+    "action_modality": "선언"
+  },
+  "917d7dcb16701ed760845e5822d49e95": {
+    "subject": "산업통상자원부장관",
+    "condition": "5년마다",
+    "action": "가스안전관리에 관한 기본계획을 수립ㆍ시행하여야 한다",
+    "exception": "대통령령으로 정하는 경미한 사항을 변경하려는 경우에는 협의 및 심의 절차를 생략할 수 있다",
+    "action_modality": "의무"
+  },
+  "1619a86697dab85d84e8b8ae0ffca677": {
+    "subject": "고압가스를 제조하려는 자",
+    "condition": "제조소마다, 중요 사항 변경 시",
+    "action": "허가를 받아야 한다",
+    "exception": "대통령령으로 정하는 종류 및 규모 이하의 고압가스를 제조하려는 경우는 신고하여야 한다",
+    "action_modality": "의무"
+  },
+  "d5d4cbc0d3ecb506c3e19fa8b91ffb32": {
+    "subject": "허가관청, 등록관청",
+    "condition": "사업 또는 저장소 사용의 정지나 제한을 명하여야 할 경우",
+    "action": "4천만원 이하의 과징금을 부과할 수 있다",
+    "exception": "Not Specified",
+    "action_modality": "허용"
+  },
+  "80a0ad5194b4b857e6af9ba1be982b3e": {
+    "subject": "고압가스의 양도ㆍ양수ㆍ운반 또는 휴대하는 자",
+    "condition": "산업통상자원부령으로 정하는 기준",
+    "action": "기준에 따라야 한다",
+    "exception": "Not Specified",
+    "action_modality": "의무"
+  },
+  "7cea9240543824d761be387408c368ee": {
+    "subject": "전통주 제조업체",
+    "condition": "일정 반출 수량 이하",
+    "action": "세율을 경감할 수 있도록 하려는 것",
+    "exception": "Not Specified",
+    "action_modality": "의무"
+  },
+  "7b09d7113122eb800d639dc5f3e543cb": {
+    "subject": "에너지에 관한 법령을 제정하거나 개정하는 경우",
+    "condition": "Not Specified",
+    "action": "기본원칙과 이 법의 목적에 맞도록 하여야 한다",
+    "exception": "원자력의 연구ㆍ개발ㆍ생산ㆍ이용 및 안전관리에 관하여는 관계 법률에서 정하는 바에 따른다",
+    "action_modality": "의무"
+  },
+  "6a29522a9fab9de78fa4238c80e8fdd9": {
+    "subject": "Not Specified",
+    "condition": "대통령령으로 정하는 업종, 중견기업에 대한 지원의 경우 모든 업종",
+    "action": "적용한다",
+    "exception": "중견기업에 대한 지원의 경우에는 모든 업종에 대하여 적용한다",
+    "action_modality": "선언"
+  },
+  "ff3552356904e36d655970ca34a5de8e": {
+    "subject": "산업통상부장관",
+    "condition": "이 법의 목적을 달성하기 위하여 관계 중앙행정기관의 장과 협의하여",
+    "action": "산업발전시책을 마련하여야 한다",
+    "exception": "Not Specified",
+    "action_modality": "의무"
+  },
+  "e20dd34dfe411d7df1060ca310db7ac3": {
+    "subject": "산업통상부장관",
+    "condition": "5년 단위",
+    "action": "중ㆍ장기 산업발전전망을 수립할 수 있다",
+    "exception": "Not Specified",
+    "action_modality": "허용"
+  },
+  "3fa5a70f62449b4f190094deee98251e": {
+    "subject": "청소년유해약물 등을 취급하거나 청소년유해업소를 운영하는 소상공인, 숙박업주",
+    "condition": "청소년의 법 위반 유발행위가 인정되는 경우",
+    "action": "나이 확인 요청에 협조해야 한다, 과징금 부과를 면제할 수 있다",
+    "exception": "특별한 사유가 없으면 요청에 협조해야 한다",
+    "action_modality": "의무|허용"
+  },
+  "ac44dc38447a63a1d1bbf02ab5e623ff": {
+    "subject": "산업통상자원부장관",
+    "condition": "에너지 및 에너지자원기술 분야의 전문인력 양성을 위한 경우",
+    "action": "필요한 사업을 할 수 있다",
+    "exception": "Not Specified",
+    "action_modality": "허용"
+  },
+  "67a9d4a9adb3e62e34a76b13283777f3": {
+    "subject": "산업통상부장관",
+    "condition": "자원의 수급과 이용을 통합적으로 고려하여",
+    "action": "산업의 자원생산성 향상에 관한 종합적인 시책을 수립ㆍ시행한다",
+    "exception": "Not Specified",
+    "action_modality": "의무"
+  },
+  "9c5f930fcd7a6638db4ec3450e1e83d8": {
+    "subject": "산업통상부장관",
+    "condition": "대통령령으로 정하는 기준에 해당하는 기업",
+    "action": "필요한 지원을 할 수 있다",
+    "exception": "Not Specified",
+    "action_modality": "허용"
+  },
+  "06b242d1af181bc09ffe901555927031": {
+    "subject": "산업통상부장관",
+    "condition": "생산성 제고와 산업의 경쟁력 강화를 위하여",
+    "action": "생산설비의 보전 시책을 마련하여야 한다",
+    "exception": "Not Specified",
+    "action_modality": "의무"
+  },
+  "a1e24936cf98875f805bacc54b1be05b": {
+    "subject": "산업통상부장관",
+    "condition": "2016년 1월 1일을 기준으로 3년마다",
+    "action": "타당성을 검토하여 개선 등의 조치를 하여야 한다",
+    "exception": "Not Specified",
+    "action_modality": "의무"
+  },
+  "74d3179c9895cedd9b29f36c3fd3b0f4": {
+    "subject": "국회기록원",
+    "condition": "국회 소관 기록물, 전현직 국회의원 및 교섭단체 또는 정당 기록물",
+    "action": "기록물의 생산ㆍ분류ㆍ정리ㆍ이관ㆍ수집ㆍ평가ㆍ폐기ㆍ보존ㆍ공개ㆍ활용 및 이에 부수되는 업무 수행",
+    "exception": "Not Specified",
+    "action_modality": "의무"
+  },
+  "8babd1208e92a316731c5ea789f28cbf": {
+    "subject": "산업통상자원부장관",
+    "condition": "에너지 수급에 중대한 차질이 발생할 경우",
+    "action": "비상시 에너지수급계획을 수립하여야 한다",
+    "exception": "Not Specified",
+    "action_modality": "의무"
+  },
+  "9e9dbf21e4111b595f8bc72d290c814a": {
+    "subject": "위원회",
+    "condition": "Not Specified",
+    "action": "다음 각 호의 사항을 심의한다",
+    "exception": "Not Specified",
+    "action_modality": "의무"
+  },
+  "c83ca2e78e25ab70b4724b58882f209f": {
+    "subject": "정부",
+    "condition": "10년 이상 계획기간, 5년마다",
+    "action": "에너지기술개발계획을 수립하고, 연차별 실행계획을 수립ㆍ시행하여야 한다",
+    "exception": "대통령령으로 정하는 바에 따라 관계 중앙행정기관의 장의 협의와 국가과학기술자문회의의 심의를 거쳐서 수립된다",
+    "action_modality": "의무"
+  },
+  "47d0d20c8de1e0ef76b9293da55c2121": {
+    "subject": "정부",
+    "condition": "Not Specified",
+    "action": "지식서비스산업의 발전을 촉진하는 사업을 할 수 있다",
+    "exception": "Not Specified",
+    "action_modality": "허용"
+  },
+  "d42a7cf77e96b857eb61c581be65d8da": {
+    "subject": "산업통상부장관",
+    "condition": "Not Specified",
+    "action": "지역진흥사업을 할 수 있다",
+    "exception": "Not Specified",
+    "action_modality": "허용"
+  },
+  "8980160d946988cefe3048d0043a3fa0": {
+    "subject": "산업통상부장관",
+    "condition": "기업 간 협력에 의한 산업의 경쟁력 강화를 위하여",
+    "action": "기업이 다음 각 호의 사업을 하는 경우에는 이에 필요한 지원을 할 수 있다",
+    "exception": "제1항에 따라 지원하려는 사업이 부당한 공동행위에 해당할 우려가 있을 때에는 공정거래위원회와 협의하여야 한다",
+    "action_modality": "허용"
+  },
+  "a0f6ee7a8c5610dc7525195fe13f9edd": {
+    "subject": "환경부 소속 기관의 장, 관련 분야 전문가",
+    "condition": "위해성 평가 과정",
+    "action": "전문가의 의견 청취, 소속 기관의 장으로 수정, 한국환경보전원 추가",
+    "exception": "Not Specified",
+    "action_modality": "의무"
+  },
+  "d030cb43f0ac47320826c1e748162470": {
+    "subject": "평가원의 임직원, 전담기관의 임직원",
+    "condition": "제16조의5제1항 또는 제23조제2항에 따른 업무에 종사하는 임직원에 한정",
+    "action": "공무원으로 본다",
+    "exception": "Not Specified",
+    "action_modality": "벌칙"
+  },
+  "314aaf30b8cadd6b33deaca15a09f60b": {
+    "subject": "기금을 관리하는 자",
+    "condition": "대통령령으로 정하는 기금, 대통령령으로 정하는 비율 이내",
+    "action": "기업구조개선 기관전용 사모집합투자기구에 출자할 수 있다",
+    "exception": "Not Specified",
+    "action_modality": "허용"
+  },
+  "f6cd43d386111978fc34f50acc6550ae": {
+    "subject": "한국생산성본부",
+    "condition": "산업의 생산성 향상을 효율적이고 체계적으로 추진하기 위하여",
+    "action": "한국생산성본부를 설립한다",
+    "exception": "한국생산성본부가 아닌 자는 한국생산성본부 또는 이와 유사한 명칭을 사용하지 못한다",
+    "action_modality": "의무"
+  },
+  "59a0305b74af3ac10b807848bcb1d410": {
+    "subject": "산업통상부장관",
+    "condition": "대통령령으로 정하는 바에 따라",
+    "action": "권한의 일부를 소속 기관의 장 또는 특별시장ㆍ광역시장ㆍ특별자치시장ㆍ도지사ㆍ특별자치도지사에게 위임할 수 있다",
+    "exception": "Not Specified",
+    "action_modality": "허용"
+  },
+  "ca28e895ad833ca70d1a8d9d2887f954": {
+    "subject": "선박소유자",
+    "condition": "Not Specified",
+    "action": "선박평형수관리기록부에 기재하여야 할 사항을 전자적 방법으로 기록하는 전자기록부에 관한 근거를 마련하고, 전자기록부 검사 신청 및 적합확인서 발급 등에 필요한 사항을 규정한다",
+    "exception": "Not Specified",
+    "action_modality": "의무"
+  },
+  "fd57299c6eb5c05f396b58fd3a431154": {
+    "subject": "질병관리청장, 시ㆍ도지사, 소독업자, 의료기관의 장, 감염병병원체 확인기관의 장",
+    "condition": "감염병 발생 또는 유행의 감시가 필요한 질병, 고위험병원체 보유 시",
+    "action": "감염병 위기대비 훈련 실시, 고위험병원체 허가 및 신고, 소독업 신고, 보고 또는 신고 의무 위반 시 과태료 부과",
+    "exception": "Not Specified",
+    "action_modality": "의무"
+  },
+  "6b53f5a38cfd7f4e994f4c05f709aa1e": {
+    "subject": "산업통상부장관",
+    "condition": "Not Specified",
+    "action": "외국과 산업부문의 협력을 증진하기 위한 시책을 수립할 수 있다",
+    "exception": "Not Specified",
+    "action_modality": "허용"
+  },
+  "b768e5ea4b91f4ad86ee65097f5f842e": {
+    "subject": "공제조합의 임원이나 직원",
+    "condition": "정관으로 정하는 바에 따라",
+    "action": "공제조합의 업무수행에 필요한 재판상 또는 재판 외의 모든 행위를 하게 할 수 있다",
+    "exception": "Not Specified",
+    "action_modality": "허용"
+  },
+  "e3ce4537401cacb8e11203be44edba16": {
+    "subject": "공제조합",
+    "condition": "법령이나 계약서 등에서 정하는 바에 따라 보증금 지급 사유 발생 시",
+    "action": "보증금을 보증채권자에게 지급하여야 한다",
+    "exception": "보증기간 만료일부터 2년간 행사하지 아니하면 시효로 인하여 소멸된다",
+    "action_modality": "의무"
+  },
+  "2de766d7ef57d938ce407c1f64e498e1": {
+    "subject": "해양수산부장관",
+    "condition": "Not Specified",
+    "action": "선원의 처우 개선에 관한 업무를 추가하려는 것",
+    "exception": "Not Specified",
+    "action_modality": "의무"
+  },
+  "f090b7b5dea07070d2c6f8fe3b294cbd": {
+    "subject": "중앙행정기관의 장 및 지방자치단체의 장",
+    "condition": "위험기상으로 인한 피해자료, 취약지역 등 관련 자료를 제공받는 경우",
+    "action": "재해 피해현황 자료의 제출이나 그 밖의 협력을 요청할 수 있다",
+    "exception": "Not Specified",
+    "action_modality": "허용"
+  },
+  "6506e7da8681bfcaa11d8b5d808a7051": {
+    "subject": "공공주택지구 지정 제안자",
+    "condition": "지구 지정 이전에 필요한 경우",
+    "action": "협의에 의한 토지 등의 취득 또는 사용을 할 수 있다",
+    "exception": "Not Specified",
+    "action_modality": "허용"
+  },
+  "153a972ebec046c972750119a07d97c8": {
+    "subject": "에너지공급자",
+    "condition": "정당한 사유 없이 제21조에 따른 질문에 대하여 진술 거부 또는 거짓 진술, 조사를 거부ㆍ방해 또는 기피, 정당한 사유 없이 제19조제4항에 따른 자료 제출 요구에 따르지 아니하거나 거짓으로 자료를 제출",
+    "action": "500만원 이하의 과태료를 부과한다 / 100만원 이하의 과태료를 부과한다",
+    "exception": "Not Specified",
+    "action_modality": "벌칙"
+  },
+  "0b45f0f6db475245bb0203311455cf37": {
+    "subject": "기업구조개선 기관전용 사모집합투자기구가 아닌 자",
+    "condition": "Not Specified",
+    "action": "기업구조개선 기관전용 사모집합투자기구의 명칭을 사용하여서는 아니 된다",
+    "exception": "Not Specified",
+    "action_modality": "금지"
+  },
+  "308d2bfeacd186e8b7c2ee2bfc55f0e8": {
+    "subject": "지방공사 직원",
+    "condition": "Not Specified",
+    "action": "결격사유 및 당연퇴직 요건을 규정하려는 것",
+    "exception": "Not Specified",
+    "action_modality": "의무"
+  },
+  "b96d989a43ad5b8d1763019f2ecb4518": {
+    "subject": "노인 관련 보건ㆍ복지 및 상담 등을 수행하는 기관 및 시설의 장",
+    "condition": "소속 신고의무자에게 교육 실시",
+    "action": "노인학대 예방 및 신고의무에 관한 교육을 실시하고 그 결과를 제출하여야 한다",
+    "exception": "Not Specified",
+    "action_modality": "의무"
+  },
+  "27ecaa414765a64a85f28940963baf17": {
+    "subject": "지방자치단체",
+    "condition": "필요한 경우, 다른 지방자치단체와 공동으로",
+    "action": "출자ㆍ출연 기관을 설립하거나 출자ㆍ출연할 수 있도록 하는 것",
+    "exception": "Not Specified",
+    "action_modality": "의무"
+  },
+  "d25c4b0b6baa796c9d571b1accbb2e7d": {
+    "subject": "한국공항공사",
+    "condition": "대구경북통합신공항 건설사업",
+    "action": "사업 범위에 군 공항 이전사업과 종전부지 개발사업을 추가",
+    "exception": "Not Specified",
+    "action_modality": "의무"
+  },
+  "91541145e90fa116305f9c17d6112d39": {
+    "subject": "환경부장관, 자동차제작자, 국토교통부장관, 시·도지사, 시장·군수",
+    "condition": "경유자동차의 대체 자동차가 없거나 대체 자동차의 수급이 원활하지 아니하는 경우",
+    "action": "특정 용도 자동차로 경유자동차를 사용할 수 있도록 예외의 근거를 마련함",
+    "exception": "법 시행 이전부터 어린이통학버스용으로 사용되어 온 기존 경유자동차는 계속 운행할 수 있음",
+    "action_modality": "의무"
+  },
+  "e04c62a1a4d8dcee99246258824fc77a": {
+    "subject": "기업, 근로자, 종교 관련 종사자, 연금계좌 납입자, 원천징수의무자",
+    "condition": "Not Specified",
+    "action": "출산ㆍ보육비 지원금 비과세 대상 확대, 세액공제 적용 대상 확대, 원천징수세율 인하, 추가 납부세액 분납 허용",
+    "exception": "Not Specified",
+    "action_modality": "의무"
+  },
+  "943e6694b46638dff9d4227c3314711f": {
+    "subject": "관계 중앙행정기관의 장",
+    "condition": "대통령령으로 정하는 바에 따라",
+    "action": "에너지기술 개발을 하게 할 수 있다",
+    "exception": "Not Specified",
+    "action_modality": "허용"
+  },
+  "9b064030a352af66c8266c8a69fbdc09": {
+    "subject": "정부",
+    "condition": "Not Specified",
+    "action": "인적 자원의 개발 등 기업의 경영능력 증진을 위한 사업에 대하여 필요한 지원을 할 수 있다",
+    "exception": "Not Specified",
+    "action_modality": "허용"
+  }
+}

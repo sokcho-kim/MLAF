@@ -1,0 +1,539 @@
+{
+  "test_date": "2026-02-15 19:48:22",
+  "model": "gpt-4o-mini",
+  "elapsed_seconds": 108.5,
+  "ast_stats": {
+    "cache_hit": 0,
+    "api_call": 20,
+    "parse_error": 0
+  },
+  "nli_stats": {
+    "cache_hit": 1,
+    "api_call": 14,
+    "parse_error": 0
+  },
+  "total_api_calls": 34,
+  "results": [
+    {
+      "golden_id": "golden_1",
+      "bill_name": "기후위기 대응을 위한 탄소중립ㆍ녹색성장 기본법 일부개정법률안",
+      "difficulty": "Easy",
+      "risk_description": "탄소 배출권, 공장 가동 규제 이슈",
+      "bill_ast": {
+        "subject": "기후위기 취약계층",
+        "condition": "Not Specified",
+        "action": "기후위기 취약계층에 대한 보호ㆍ지원 대책 등을 수립하도록 하여야 한다",
+        "exception": "대통령령으로 정하는 계층은 제외한다",
+        "action_modality": "의무"
+      },
+      "comparisons": [
+        {
+          "law_name": "에너지법",
+          "reason": "에너지 정책/공급 규제 충돌",
+          "status": "evaluated",
+          "articles_compared": 1,
+          "max_contradiction": 0.05,
+          "article_results": [
+            {
+              "article_id": "2",
+              "article_title": "정의",
+              "law_ast": {
+                "subject": "Not Specified",
+                "condition": "Not Specified",
+                "action": "Not Specified",
+                "exception": "Not Specified",
+                "action_modality": "선언"
+              },
+              "nli_analysis": {
+                "entailment_score": 0.05,
+                "contradiction_score": 0.05,
+                "neutral_score": 0.9
+              },
+              "reasoning": "기존 법률이 선언형 조문으로 구체적 행위 규제가 없어 논리적 충돌이 발생할 수 없으며, 신규 법안은 특정 주체에 대한 의무를 규정하고 있지만 기존 법률과의 직접적인 관계가 없음. 따라서 모든 노드 비교에서 무관한 관계로 평가되며, 규칙 1에 따라 높은 중립성을 보임.",
+              "alert_level": "NONE",
+              "component_analysis": {
+                "subject": "무관 (선언형 조문)",
+                "condition": "무관",
+                "action": "무관 (선언형 vs 실체 규정)",
+                "exception": "무관"
+              }
+            }
+          ]
+        },
+        {
+          "law_name": "에너지이용 합리화법",
+          "reason": "에너지 사용 규제 영향",
+          "status": "evaluated",
+          "articles_compared": 1,
+          "max_contradiction": 0.05,
+          "article_results": [
+            {
+              "article_id": "2",
+              "article_title": "정의",
+              "law_ast": {
+                "subject": "Not Specified",
+                "condition": "Not Specified",
+                "action": "Not Specified",
+                "exception": "Not Specified",
+                "action_modality": "선언"
+              },
+              "nli_analysis": {
+                "entailment_score": 0.05,
+                "contradiction_score": 0.05,
+                "neutral_score": 0.9
+              },
+              "reasoning": "기존 법률이 선언형 조문으로 구체적 행위 규제가 없어 논리적 충돌이 발생할 수 없으며, 신규 법안은 특정 주체에 대한 의무를 규정하고 있지만 기존 법률과의 직접적인 관계가 없음. 따라서 모든 노드 비교에서 무관한 관계로 평가되며, 규칙 1에 따라 높은 중립성을 보임.",
+              "alert_level": "NONE",
+              "component_analysis": {
+                "subject": "무관 (선언형 조문)",
+                "condition": "무관",
+                "action": "무관 (선언형 vs 실체 규정)",
+                "exception": "무관"
+              }
+            }
+          ]
+        }
+      ],
+      "max_contradiction": 0.05
+    },
+    {
+      "golden_id": "golden_2",
+      "bill_name": "중대재해 처벌 등에 관한 법률 일부개정법률안",
+      "difficulty": "Easy",
+      "risk_description": "산업 현장 안전, 경영자 처벌 이슈",
+      "bill_ast": {
+        "subject": "사업의 안전보건에 관한 조건을 지배ㆍ결정할 수 있는 자",
+        "condition": "Not Specified",
+        "action": "안전보건관리체계를 강하게 구축하고 국민의 생명을 보호하려는 것",
+        "exception": "Not Specified",
+        "action_modality": "선언"
+      },
+      "comparisons": [
+        {
+          "law_name": "중대재해 처벌 등에 관한 법률",
+          "reason": "산업부 직접 소관 법률",
+          "status": "evaluated",
+          "articles_compared": 1,
+          "max_contradiction": 0.05,
+          "article_results": [
+            {
+              "article_id": "2",
+              "article_title": "정의",
+              "law_ast": {
+                "subject": "Not Specified",
+                "condition": "Not Specified",
+                "action": "Not Specified",
+                "exception": "Not Specified",
+                "action_modality": "선언"
+              },
+              "nli_analysis": {
+                "entailment_score": 0.05,
+                "contradiction_score": 0.05,
+                "neutral_score": 0.9
+              },
+              "reasoning": "기존 법률이 선언형 조문으로 구체적 행위 규제가 없어 논리적 충돌이 발생할 수 없으며, 신규 법안의 주체와 조건이 명시되지 않아 서로 무관한 관계로 평가된다.",
+              "alert_level": "NONE",
+              "component_analysis": {
+                "subject": "무관 (선언형 조문)",
+                "condition": "무관",
+                "action": "무관 (선언형 vs 실체 규정)",
+                "exception": "무관"
+              }
+            }
+          ]
+        }
+      ],
+      "max_contradiction": 0.05
+    },
+    {
+      "golden_id": "golden_3",
+      "bill_name": "개인정보 보호법 일부개정법률안",
+      "difficulty": "Medium",
+      "risk_description": "자율주행, AI 등 신산업 데이터 활용 규제 이슈",
+      "bill_ast": {
+        "subject": "개인정보처리자",
+        "condition": "개인정보 유출로 인한 경우",
+        "action": "개인정보 처리의 정지를 요구하거나 개인정보 처리에 대한 동의를 철회할 수 있다",
+        "exception": "개인정보처리자는 이를 거절할 수 없다",
+        "action_modality": "의무"
+      },
+      "comparisons": [
+        {
+          "law_name": "산업 디지털 전환 촉진법",
+          "reason": "디지털 전환 데이터 활용 영향",
+          "status": "evaluated",
+          "articles_compared": 3,
+          "max_contradiction": 0.7,
+          "article_results": [
+            {
+              "article_id": "3",
+              "article_title": "국가 등의 책무",
+              "law_ast": {
+                "subject": "국가, 지방자치단체",
+                "condition": "Not Specified",
+                "action": "종합적인 시책을 마련하여 추진하여야 한다",
+                "exception": "Not Specified",
+                "action_modality": "의무"
+              },
+              "nli_analysis": {
+                "entailment_score": 0.0,
+                "contradiction_score": 0.0,
+                "neutral_score": 1.0
+              },
+              "reasoning": "주체가 완전히 달라(국가, 지방자치단체 vs 개인정보처리자) 논리적 충돌이 없음. 조건이 명시되지 않은 기존 법률과 특정 조건을 가진 신규 법안 간의 비교는 무관하게 처리됨. 각 법안의 규제 영역이 다르기 때문에 의미 있는 관계가 존재하지 않음.",
+              "alert_level": "NONE",
+              "component_analysis": {
+                "subject": "불일치 (국가, 지방자치단체 vs 개인정보처리자)",
+                "condition": "무관 (Not Specified vs 특정 조건)",
+                "action": "무관 (의무 vs 의무, 다른 규제 영역)",
+                "exception": "무관 (Not Specified vs 특정 예외)"
+              }
+            },
+            {
+              "article_id": "4",
+              "article_title": "다른 법률과의 관계",
+              "law_ast": {
+                "subject": "산업 디지털 전환",
+                "condition": "다른 법률에 특별한 규정이 없는 경우",
+                "action": "이 법에서 정하는 바에 따른다",
+                "exception": "개인정보의 처리 및 정보주체의 권리 보장 등은 개인정보 보호법에 따른다",
+                "action_modality": "의무"
+              },
+              "nli_analysis": {
+                "entailment_score": 0.0,
+                "contradiction_score": 0.7,
+                "neutral_score": 0.3
+              },
+              "reasoning": "주체가 완전히 다르며(산업 디지털 전환 vs 개인정보처리자) 발동 조건도 서로 다르기 때문에 논리적 충돌이 발생합니다. 또한, 신규 법안의 개인정보 처리 정지 요구는 기존 법안의 의무와 상충하며, 예외 조항에서도 서로 다른 방향으로 규제하고 있습니다.",
+              "alert_level": "HIGH",
+              "component_analysis": {
+                "subject": "불일치 (산업 디지털 전환 vs 개인정보처리자)",
+                "condition": "불일치 (다른 법률에 특별한 규정이 없는 경우 vs 개인정보 유출로 인한 경우)",
+                "action": "충돌 (의무 vs 의무, 개인정보 처리 정지 요구 vs 이 법에서 정하는 바에 따른다)",
+                "exception": "충돌 (예외 삭제 vs 예외 추가)"
+              }
+            },
+            {
+              "article_id": "5",
+              "article_title": "산업 디지털 전환 종합계획의 수립 등",
+              "law_ast": {
+                "subject": "산업통상부장관",
+                "condition": "3년마다",
+                "action": "산업 디지털 전환 종합계획을 수립하여 시행하여야 한다",
+                "exception": "대통령령으로 정하는 경우는 제외한다",
+                "action_modality": "의무"
+              },
+              "nli_analysis": {
+                "entailment_score": 0.0,
+                "contradiction_score": 0.0,
+                "neutral_score": 1.0
+              },
+              "reasoning": "주체가 완전히 달라(산업통상부장관 vs 개인정보처리자) 논리적 충돌이 없음. 발동 조건과 예외도 서로 다른 규제 영역에 속하므로 무관하게 처리됩니다. 따라서 두 법안 간에 의미 있는 논리적 관계가 없습니다.",
+              "alert_level": "NONE",
+              "component_analysis": {
+                "subject": "불일치 (산업통상부장관 vs 개인정보처리자)",
+                "condition": "불일치 (3년마다 vs 개인정보 유출로 인한 경우)",
+                "action": "무관 (의무 vs 의무, 다른 규제 영역)",
+                "exception": "무관 (대통령령으로 정하는 경우는 제외 vs 개인정보처리자는 이를 거절할 수 없다)"
+              }
+            }
+          ]
+        },
+        {
+          "law_name": "지능형 로봇 개발 및 보급 촉진법",
+          "reason": "AI/로봇 데이터 규제 영향",
+          "status": "evaluated",
+          "articles_compared": 1,
+          "max_contradiction": 0.0,
+          "article_results": [
+            {
+              "article_id": "37",
+              "article_title": "준공확인",
+              "law_ast": {
+                "subject": "사업시행자",
+                "condition": "조성사업에 관한 공사를 완료한 때",
+                "action": "준공보고서를 제출하고 준공확인을 받아야 한다",
+                "exception": "대통령령으로 정하는 바에 따라 준공 전 사용신고를 하거나 사용허가를 받은 경우에는 그러하지 아니하다",
+                "action_modality": "의무"
+              },
+              "nli_analysis": {
+                "entailment_score": 0.0,
+                "contradiction_score": 0.0,
+                "neutral_score": 1.0
+              },
+              "reasoning": "주체가 완전히 달라(사업시행자 vs 개인정보처리자) 논리적 충돌이 없음. 발동 조건도 서로 다른 상황을 다루고 있어 무관한 관계입니다. 각 법안의 규제 영역이 다르기 때문에 의미 있는 논리적 관계가 없습니다.",
+              "alert_level": "NONE",
+              "component_analysis": {
+                "subject": "불일치 (사업시행자 vs 개인정보처리자)",
+                "condition": "불일치 (조성사업 완료 vs 개인정보 유출)",
+                "action": "무관 (의무 vs 의무, 다른 규제 영역)",
+                "exception": "무관 (각기 다른 예외 조항)"
+              }
+            }
+          ]
+        }
+      ],
+      "max_contradiction": 0.7
+    },
+    {
+      "golden_id": "golden_4",
+      "bill_name": "약사법 일부개정법률안",
+      "difficulty": "Hard",
+      "risk_description": "의약품 제조 시설(공장) 설비 기준 강화 이슈 (핵심 타겟)",
+      "bill_ast": {
+        "subject": "보건복지부장관",
+        "condition": "약국과 안전상비의약품 판매점이 없는 무약촌",
+        "action": "안전상비의약품 판매자 등록기준의 24시간 운영 조건의 예외를 두고자 한다",
+        "exception": "Not Specified",
+        "action_modality": "의무"
+      },
+      "comparisons": [
+        {
+          "law_name": "산업집적활성화 및 공장설립에 관한 법률",
+          "reason": "공장 설립 기준 영향",
+          "status": "evaluated",
+          "articles_compared": 1,
+          "max_contradiction": 0.0,
+          "article_results": [
+            {
+              "article_id": "44-2",
+              "article_title": "입주기업의 자금확보 지원 등",
+              "law_ast": {
+                "subject": "수도권 외 지역의 입주기업체",
+                "condition": "공장설립등의 완료신고 또는 사업개시의 신고 후",
+                "action": "자산유동화등을 활용하여 자금을 조달할 수 있다",
+                "exception": "Not Specified",
+                "action_modality": "허용"
+              },
+              "nli_analysis": {
+                "entailment_score": 0.0,
+                "contradiction_score": 0.0,
+                "neutral_score": 1.0
+              },
+              "reasoning": "주체가 완전히 달라(수도권 외 지역의 입주기업체 vs 보건복지부장관) 논리적 충돌이 없음. 조건과 행동 또한 서로 다른 규제 영역에 속하므로 무관하게 처리됩니다. 따라서 두 법안 간에 의미 있는 논리적 관계가 없습니다.",
+              "alert_level": "NONE",
+              "component_analysis": {
+                "subject": "불일치 (수도권 외 지역의 입주기업체 vs 보건복지부장관)",
+                "condition": "불일치 (공장설립등의 완료신고 또는 사업개시의 신고 후 vs 약국과 안전상비의약품 판매점이 없는 무약촌)",
+                "action": "무관 (자금을 조달할 수 있다 vs 안전상비의약품 판매자 등록기준의 24시간 운영 조건의 예외)",
+                "exception": "무관 (Not Specified)"
+              }
+            }
+          ]
+        },
+        {
+          "law_name": "제품안전기본법",
+          "reason": "제품 안전 기준 영향",
+          "status": "evaluated",
+          "articles_compared": 3,
+          "max_contradiction": 0.05,
+          "article_results": [
+            {
+              "article_id": "4",
+              "article_title": "국가 등의 책무",
+              "law_ast": {
+                "subject": "국가 및 지방자치단체, 사업자",
+                "condition": "Not Specified",
+                "action": "제품안전정책을 수립하고 시행할 책무를 진다; 안전한 제품을 제조 또는 유통하여야 하고, 제조 또는 유통되는 제품의 안전성을 확인할 책무를 진다",
+                "exception": "Not Specified",
+                "action_modality": "의무"
+              },
+              "nli_analysis": {
+                "entailment_score": 0.0,
+                "contradiction_score": 0.0,
+                "neutral_score": 1.0
+              },
+              "reasoning": "주체가 완전히 달라(국가 및 지방자치단체, 사업자 vs 보건복지부장관) 논리적 충돌이 없음. 조건과 예외는 각각 'Not Specified'로 무관하게 처리되며, 액션도 서로 다른 규제 영역에 속하므로 무관하다.",
+              "alert_level": "NONE",
+              "component_analysis": {
+                "subject": "불일치 (국가 및 지방자치단체, 사업자 vs 보건복지부장관)",
+                "condition": "무관 (Not Specified vs 약국과 안전상비의약품 판매점이 없는 무약촌)",
+                "action": "무관 (의무 vs 의무, 다른 규제 영역)",
+                "exception": "무관 (Not Specified vs Not Specified)"
+              }
+            },
+            {
+              "article_id": "5",
+              "article_title": "국민의 권리",
+              "law_ast": {
+                "subject": "국민",
+                "condition": "Not Specified",
+                "action": "국가나 지방자치단체의 제품안전정책의 수립ㆍ시행에 참여하고, 안전한 제품을 사용할 권리가 있다",
+                "exception": "Not Specified",
+                "action_modality": "선언"
+              },
+              "nli_analysis": {
+                "entailment_score": 0.05,
+                "contradiction_score": 0.05,
+                "neutral_score": 0.9
+              },
+              "reasoning": "기존 법률이 선언형 조문으로 구체적 행위 규제가 없어 논리적 충돌이 발생할 수 없으며, 신규 법안은 보건복지부장관에 대한 규정으로 주체가 다르기 때문에 무관한 관계로 평가된다.",
+              "alert_level": "NONE",
+              "component_analysis": {
+                "subject": "무관 (주체가 다름)",
+                "condition": "무관 (조건이 명시되지 않음)",
+                "action": "무관 (선언형 vs 실체 규정)",
+                "exception": "무관 (예외가 명시되지 않음)"
+              }
+            },
+            {
+              "article_id": "6",
+              "article_title": "다른 법률과의 관계",
+              "law_ast": {
+                "subject": "Not Specified",
+                "condition": "다른 법률에 특별한 규정이 있는 경우를 제외하고",
+                "action": "이 법에서 정하는 바에 따른다",
+                "exception": "다른 법률에 특별한 규정이 있는 경우",
+                "action_modality": "Not Specified"
+              },
+              "nli_analysis": {
+                "entailment_score": 0.0,
+                "contradiction_score": 0.0,
+                "neutral_score": 1.0
+              },
+              "reasoning": "기존 법률의 주체가 명시되지 않은 반면, 신규 법안은 보건복지부장관을 주체로 하고 있어 주체가 다릅니다. 또한, 조건과 행위 모두 서로 다른 내용을 다루고 있어 논리적 충돌이 없습니다. 따라서 두 법안 간의 관계는 무관합니다.",
+              "alert_level": "NONE",
+              "component_analysis": {
+                "subject": "무관 (주체가 다름)",
+                "condition": "무관 (조건이 다름)",
+                "action": "무관 (행위가 다름)",
+                "exception": "무관 (예외가 다름)"
+              }
+            }
+          ]
+        }
+      ],
+      "max_contradiction": 0.05
+    },
+    {
+      "golden_id": "golden_5",
+      "bill_name": "국유재산특례제한법 일부개정법률안",
+      "difficulty": "Hard",
+      "risk_description": "산업단지/경제자유구역 세제 혜택 제한 이슈",
+      "bill_ast": {
+        "subject": "국가 및 지방자치단체",
+        "condition": "신ㆍ재생에너지 사업을 위한 국유재산 사용",
+        "action": "사용료(대부료) 감면을 추가함",
+        "exception": "Not Specified",
+        "action_modality": "의무"
+      },
+      "comparisons": [
+        {
+          "law_name": "신에너지 및 재생에너지 개발ㆍ이용ㆍ보급 촉진법",
+          "reason": "신재생에너지 사업 규제 영향",
+          "status": "evaluated",
+          "articles_compared": 1,
+          "max_contradiction": 0.85,
+          "article_results": [
+            {
+              "article_id": "26",
+              "article_title": "국유재산ㆍ공유재산의 임대 등",
+              "law_ast": {
+                "subject": "국가 또는 지방자치단체",
+                "condition": "신ㆍ재생에너지 기술개발 및 이용ㆍ보급에 관한 사업을 하는 자에게",
+                "action": "국유재산 또는 공유재산을 임대하거나 처분할 수 있다",
+                "exception": "Not Specified",
+                "action_modality": "허용"
+              },
+              "nli_analysis": {
+                "entailment_score": 0.0,
+                "contradiction_score": 0.85,
+                "neutral_score": 0.15
+              },
+              "reasoning": "주체는 유사하지만, 기존 법안의 허용 조치가 신규 법안의 의무로 변경되어 규제 수준이 역전됨. 조건은 유사하나, Action에서의 충돌로 인해 논리적 모순이 발생함. 따라서, 충돌 스코어가 높게 나타남.",
+              "alert_level": "CRITICAL",
+              "component_analysis": {
+                "subject": "일치 (국가 또는 지방자치단체 vs 국가 및 지방자치단체)",
+                "condition": "유사 (신ㆍ재생에너지 기술개발 및 이용ㆍ보급 vs 신ㆍ재생에너지 사업)",
+                "action": "충돌 (허용 vs 의무, 규제 수준 역전)",
+                "exception": "무관 (Not Specified)"
+              }
+            }
+          ]
+        },
+        {
+          "law_name": "전원개발촉진법",
+          "reason": "전원개발 사업 영향",
+          "status": "evaluated",
+          "articles_compared": 3,
+          "max_contradiction": 0.0,
+          "article_results": [
+            {
+              "article_id": "3",
+              "article_title": "전원개발사업자",
+              "law_ast": {
+                "subject": "발전사업자, 송전사업자, 방사성폐기물 관리사업자, 고준위 방사성폐기물 관리사업자",
+                "condition": "「전기사업법」 제7조, 「방사성폐기물 관리법」 제10조, 「고준위 방사성폐기물 관리에 관한 특별법」 제38조에 따라 허가를 받은 경우",
+                "action": "전원개발사업을 시행한다",
+                "exception": "Not Specified",
+                "action_modality": "의무"
+              },
+              "nli_analysis": {
+                "entailment_score": 0.0,
+                "contradiction_score": 0.0,
+                "neutral_score": 1.0
+              },
+              "reasoning": "주체가 완전히 달라(발전사업자 등 vs 국가 및 지방자치단체) 논리적 충돌이 없음. 조건과 행위도 서로 다른 규제 영역에 속하므로 무관하게 처리됨. 따라서 두 법안 간에 의미있는 논리적 관계가 없음.",
+              "alert_level": "NONE",
+              "component_analysis": {
+                "subject": "불일치 (발전사업자 등 vs 국가 및 지방자치단체)",
+                "condition": "불일치 (허가 조건 vs 국유재산 사용)",
+                "action": "무관 (전원개발사업 시행 vs 사용료 감면)",
+                "exception": "무관 (Not Specified)"
+              }
+            },
+            {
+              "article_id": "4",
+              "article_title": "전원개발사업추진위원회",
+              "law_ast": {
+                "subject": "기후에너지환경부",
+                "condition": "전원개발사업에 관한 중요 사항",
+                "action": "전원개발사업추진위원회를 둔다",
+                "exception": "대통령령으로 정하는 경우",
+                "action_modality": "의무"
+              },
+              "nli_analysis": {
+                "entailment_score": 0.0,
+                "contradiction_score": 0.0,
+                "neutral_score": 1.0
+              },
+              "reasoning": "주체가 완전히 다르며(기후에너지환경부 vs 국가 및 지방자치단체) 두 법안의 조건과 행위도 서로 다른 영역에 속해 있어 논리적 충돌이 없음. 따라서 모든 비교 항목에서 무관한 관계로 평가되었습니다.",
+              "alert_level": "NONE",
+              "component_analysis": {
+                "subject": "불일치 (기후에너지환경부 vs 국가 및 지방자치단체)",
+                "condition": "불일치 (전원개발사업 vs 신ㆍ재생에너지 사업)",
+                "action": "무관 (전원개발사업 추진 vs 사용료 감면)",
+                "exception": "무관 (예외 조항의 차이)"
+              }
+            },
+            {
+              "article_id": "5",
+              "article_title": "전원개발사업 실시계획의 승인",
+              "law_ast": {
+                "subject": "전원개발사업자",
+                "condition": "전원개발사업 실시계획 수립, 기후에너지환경부장관의 승인",
+                "action": "전원개발사업 실시계획을 수립하여 기후에너지환경부장관의 승인을 받아야 한다",
+                "exception": "대통령령으로 정하는 전원개발사업에 대하여는 그러하지 아니하다",
+                "action_modality": "의무"
+              },
+              "nli_analysis": {
+                "entailment_score": 0.0,
+                "contradiction_score": 0.0,
+                "neutral_score": 1.0
+              },
+              "reasoning": "주체가 완전히 달라(전원개발사업자 vs 국가 및 지방자치단체) 논리적 충돌이 없음. 조건과 행동도 서로 다른 규제 영역에 속하므로 무관하게 처리됨. 예외 조항이 명시되지 않아 추가적인 충돌 요소가 없음.",
+              "alert_level": "NONE",
+              "component_analysis": {
+                "subject": "불일치 (전원개발사업자 vs 국가 및 지방자치단체)",
+                "condition": "불일치 (전원개발사업 실시계획 수립 vs 신ㆍ재생에너지 사업을 위한 국유재산 사용)",
+                "action": "무관 (의무 vs 의무, 다른 규제 영역)",
+                "exception": "무관 (예외 조항이 없음)"
+              }
+            }
+          ]
+        }
+      ],
+      "max_contradiction": 0.85
+    }
+  ]
+}
